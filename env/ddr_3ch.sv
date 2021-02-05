@@ -44,42 +44,42 @@ input			apb_rst_n;		// To u_ddr_0 of ddr_wrapper.v, ...
 input			apb_sel;		// To u_ddr_0 of ddr_wrapper.v
 input [15:0]		apb_wdata;		// To u_ddr_0 of ddr_wrapper.v, ...
 input			apb_write;		// To u_ddr_0 of ddr_wrapper.v, ...
-input			axi0_araddr;		// To u_ddr_0 of ddr_wrapper.v
-input			axi0_arlen;		// To u_ddr_0 of ddr_wrapper.v
+input [CTRL_ADDR_WIDTH-1:0] axi0_araddr;	// To u_ddr_0 of ddr_wrapper.v
+input [3:0]		axi0_arlen;		// To u_ddr_0 of ddr_wrapper.v
 input			axi0_aruser_ap;		// To u_ddr_0 of ddr_wrapper.v
-input			axi0_aruser_id;		// To u_ddr_0 of ddr_wrapper.v
+input [3:0]		axi0_aruser_id;		// To u_ddr_0 of ddr_wrapper.v
 input			axi0_arvalid;		// To u_ddr_0 of ddr_wrapper.v
-input			axi0_awaddr;		// To u_ddr_0 of ddr_wrapper.v
-input			axi0_awlen;		// To u_ddr_0 of ddr_wrapper.v
+input [CTRL_ADDR_WIDTH-1:0] axi0_awaddr;	// To u_ddr_0 of ddr_wrapper.v
+input [3:0]		axi0_awlen;		// To u_ddr_0 of ddr_wrapper.v
 input			axi0_awuser_ap;		// To u_ddr_0 of ddr_wrapper.v
-input			axi0_awuser_id;		// To u_ddr_0 of ddr_wrapper.v
+input [3:0]		axi0_awuser_id;		// To u_ddr_0 of ddr_wrapper.v
 input			axi0_awvalid;		// To u_ddr_0 of ddr_wrapper.v
-input			axi0_wdata;		// To u_ddr_0 of ddr_wrapper.v
-input			axi0_wstrb;		// To u_ddr_0 of ddr_wrapper.v
-input			axi1_araddr;		// To u_ddr_1 of ddr_wrapper.v
-input			axi1_arlen;		// To u_ddr_1 of ddr_wrapper.v
+input [MEM_DQ_WIDTH*8-1:0] axi0_wdata;		// To u_ddr_0 of ddr_wrapper.v
+input [MEM_DQ_WIDTH*8/8-1:0] axi0_wstrb;	// To u_ddr_0 of ddr_wrapper.v
+input [CTRL_ADDR_WIDTH-1:0] axi1_araddr;	// To u_ddr_1 of ddr_wrapper.v
+input [3:0]		axi1_arlen;		// To u_ddr_1 of ddr_wrapper.v
 input			axi1_aruser_ap;		// To u_ddr_1 of ddr_wrapper.v
-input			axi1_aruser_id;		// To u_ddr_1 of ddr_wrapper.v
+input [3:0]		axi1_aruser_id;		// To u_ddr_1 of ddr_wrapper.v
 input			axi1_arvalid;		// To u_ddr_1 of ddr_wrapper.v
-input			axi1_awaddr;		// To u_ddr_1 of ddr_wrapper.v
-input			axi1_awlen;		// To u_ddr_1 of ddr_wrapper.v
+input [CTRL_ADDR_WIDTH-1:0] axi1_awaddr;	// To u_ddr_1 of ddr_wrapper.v
+input [3:0]		axi1_awlen;		// To u_ddr_1 of ddr_wrapper.v
 input			axi1_awuser_ap;		// To u_ddr_1 of ddr_wrapper.v
-input			axi1_awuser_id;		// To u_ddr_1 of ddr_wrapper.v
+input [3:0]		axi1_awuser_id;		// To u_ddr_1 of ddr_wrapper.v
 input			axi1_awvalid;		// To u_ddr_1 of ddr_wrapper.v
-input			axi1_wdata;		// To u_ddr_1 of ddr_wrapper.v
-input			axi1_wstrb;		// To u_ddr_1 of ddr_wrapper.v
-input			axi2_araddr;		// To u_ddr_2 of ddr_wrapper.v
-input			axi2_arlen;		// To u_ddr_2 of ddr_wrapper.v
+input [MEM_DQ_WIDTH*8-1:0] axi1_wdata;		// To u_ddr_1 of ddr_wrapper.v
+input [MEM_DQ_WIDTH*8/8-1:0] axi1_wstrb;	// To u_ddr_1 of ddr_wrapper.v
+input [CTRL_ADDR_WIDTH-1:0] axi2_araddr;	// To u_ddr_2 of ddr_wrapper.v
+input [3:0]		axi2_arlen;		// To u_ddr_2 of ddr_wrapper.v
 input			axi2_aruser_ap;		// To u_ddr_2 of ddr_wrapper.v
-input			axi2_aruser_id;		// To u_ddr_2 of ddr_wrapper.v
+input [3:0]		axi2_aruser_id;		// To u_ddr_2 of ddr_wrapper.v
 input			axi2_arvalid;		// To u_ddr_2 of ddr_wrapper.v
-input			axi2_awaddr;		// To u_ddr_2 of ddr_wrapper.v
-input			axi2_awlen;		// To u_ddr_2 of ddr_wrapper.v
+input [CTRL_ADDR_WIDTH-1:0] axi2_awaddr;	// To u_ddr_2 of ddr_wrapper.v
+input [3:0]		axi2_awlen;		// To u_ddr_2 of ddr_wrapper.v
 input			axi2_awuser_ap;		// To u_ddr_2 of ddr_wrapper.v
-input			axi2_awuser_id;		// To u_ddr_2 of ddr_wrapper.v
+input [3:0]		axi2_awuser_id;		// To u_ddr_2 of ddr_wrapper.v
 input			axi2_awvalid;		// To u_ddr_2 of ddr_wrapper.v
-input			axi2_wdata;		// To u_ddr_2 of ddr_wrapper.v
-input			axi2_wstrb;		// To u_ddr_2 of ddr_wrapper.v
+input [MEM_DQ_WIDTH*8-1:0] axi2_wdata;		// To u_ddr_2 of ddr_wrapper.v
+input [MEM_DQ_WIDTH*8/8-1:0] axi2_wstrb;	// To u_ddr_2 of ddr_wrapper.v
 input			ref_clk;		// To u_ddr_0 of ddr_wrapper.v, ...
 input			resetn;			// To u_ddr_0 of ddr_wrapper.v, ...
 // End of automatics
@@ -89,30 +89,30 @@ output [15:0]		apb_rdata;		// From u_ddr_0 of ddr_wrapper.v
 output			apb_ready;		// From u_ddr_0 of ddr_wrapper.v
 output			axi0_arready;		// From u_ddr_0 of ddr_wrapper.v
 output			axi0_awready;		// From u_ddr_0 of ddr_wrapper.v
-output			axi0_rdata;		// From u_ddr_0 of ddr_wrapper.v
-output			axi0_rid;		// From u_ddr_0 of ddr_wrapper.v
+output [MEM_DQ_WIDTH*8-1:0] axi0_rdata;		// From u_ddr_0 of ddr_wrapper.v
+output [3:0]		axi0_rid;		// From u_ddr_0 of ddr_wrapper.v
 output			axi0_rlast;		// From u_ddr_0 of ddr_wrapper.v
 output			axi0_rvalid;		// From u_ddr_0 of ddr_wrapper.v
 output			axi0_wready;		// From u_ddr_0 of ddr_wrapper.v
-output			axi0_wusero_id;		// From u_ddr_0 of ddr_wrapper.v
+output [3:0]		axi0_wusero_id;		// From u_ddr_0 of ddr_wrapper.v
 output			axi0_wusero_last;	// From u_ddr_0 of ddr_wrapper.v
 output			axi1_arready;		// From u_ddr_1 of ddr_wrapper.v
 output			axi1_awready;		// From u_ddr_1 of ddr_wrapper.v
-output			axi1_rdata;		// From u_ddr_1 of ddr_wrapper.v
-output			axi1_rid;		// From u_ddr_1 of ddr_wrapper.v
+output [MEM_DQ_WIDTH*8-1:0] axi1_rdata;		// From u_ddr_1 of ddr_wrapper.v
+output [3:0]		axi1_rid;		// From u_ddr_1 of ddr_wrapper.v
 output			axi1_rlast;		// From u_ddr_1 of ddr_wrapper.v
 output			axi1_rvalid;		// From u_ddr_1 of ddr_wrapper.v
 output			axi1_wready;		// From u_ddr_1 of ddr_wrapper.v
-output			axi1_wusero_id;		// From u_ddr_1 of ddr_wrapper.v
+output [3:0]		axi1_wusero_id;		// From u_ddr_1 of ddr_wrapper.v
 output			axi1_wusero_last;	// From u_ddr_1 of ddr_wrapper.v
 output			axi2_arready;		// From u_ddr_2 of ddr_wrapper.v
 output			axi2_awready;		// From u_ddr_2 of ddr_wrapper.v
-output			axi2_rdata;		// From u_ddr_2 of ddr_wrapper.v
-output			axi2_rid;		// From u_ddr_2 of ddr_wrapper.v
+output [MEM_DQ_WIDTH*8-1:0] axi2_rdata;		// From u_ddr_2 of ddr_wrapper.v
+output [3:0]		axi2_rid;		// From u_ddr_2 of ddr_wrapper.v
 output			axi2_rlast;		// From u_ddr_2 of ddr_wrapper.v
 output			axi2_rvalid;		// From u_ddr_2 of ddr_wrapper.v
 output			axi2_wready;		// From u_ddr_2 of ddr_wrapper.v
-output			axi2_wusero_id;		// From u_ddr_2 of ddr_wrapper.v
+output [3:0]		axi2_wusero_id;		// From u_ddr_2 of ddr_wrapper.v
 output			axi2_wusero_last;	// From u_ddr_2 of ddr_wrapper.v
 output			core_clk;		// From u_ddr_0 of ddr_wrapper.v
 output			ddr_init_done;		// From u_ddr_0 of ddr_wrapper.v
@@ -126,7 +126,7 @@ output			pll_lock;		// From u_ddr_0 of ddr_wrapper.v
 
 
 /* ddr_wrapper AUTO_TEMPLATE(
-	.axi\(.*\) (axi@\1),
+	.axi\(.*\) (axi@\1[]),
 );*/
 
 ddr_wrapper #(
@@ -144,12 +144,12 @@ ddr_wrapper #(
 	   .apb_ready			(apb_ready),
 	   .axi_arready			(axi0_arready),		 // Templated
 	   .axi_awready			(axi0_awready),		 // Templated
-	   .axi_rdata			(axi0_rdata),		 // Templated
-	   .axi_rid			(axi0_rid),		 // Templated
+	   .axi_rdata			(axi0_rdata[MEM_DQ_WIDTH*8-1:0]), // Templated
+	   .axi_rid			(axi0_rid[3:0]),	 // Templated
 	   .axi_rlast			(axi0_rlast),		 // Templated
 	   .axi_rvalid			(axi0_rvalid),		 // Templated
 	   .axi_wready			(axi0_wready),		 // Templated
-	   .axi_wusero_id		(axi0_wusero_id),	 // Templated
+	   .axi_wusero_id		(axi0_wusero_id[3:0]),	 // Templated
 	   .axi_wusero_last		(axi0_wusero_last),	 // Templated
 	   .core_clk			(core_clk),
 	   .ddr_init_done		(ddr_init_done),
@@ -165,18 +165,18 @@ ddr_wrapper #(
 	   .apb_sel			(apb_sel),
 	   .apb_wdata			(apb_wdata[15:0]),
 	   .apb_write			(apb_write),
-	   .axi_araddr			(axi0_araddr),		 // Templated
-	   .axi_arlen			(axi0_arlen),		 // Templated
+	   .axi_araddr			(axi0_araddr[CTRL_ADDR_WIDTH-1:0]), // Templated
+	   .axi_arlen			(axi0_arlen[3:0]),	 // Templated
 	   .axi_aruser_ap		(axi0_aruser_ap),	 // Templated
-	   .axi_aruser_id		(axi0_aruser_id),	 // Templated
+	   .axi_aruser_id		(axi0_aruser_id[3:0]),	 // Templated
 	   .axi_arvalid			(axi0_arvalid),		 // Templated
-	   .axi_awaddr			(axi0_awaddr),		 // Templated
-	   .axi_awlen			(axi0_awlen),		 // Templated
+	   .axi_awaddr			(axi0_awaddr[CTRL_ADDR_WIDTH-1:0]), // Templated
+	   .axi_awlen			(axi0_awlen[3:0]),	 // Templated
 	   .axi_awuser_ap		(axi0_awuser_ap),	 // Templated
-	   .axi_awuser_id		(axi0_awuser_id),	 // Templated
+	   .axi_awuser_id		(axi0_awuser_id[3:0]),	 // Templated
 	   .axi_awvalid			(axi0_awvalid),		 // Templated
-	   .axi_wdata			(axi0_wdata),		 // Templated
-	   .axi_wstrb			(axi0_wstrb),		 // Templated
+	   .axi_wdata			(axi0_wdata[MEM_DQ_WIDTH*8-1:0]), // Templated
+	   .axi_wstrb			(axi0_wstrb[MEM_DQ_WIDTH*8/8-1:0]), // Templated
 	   .ref_clk			(ref_clk),
 	   .resetn			(resetn));
 
@@ -203,12 +203,12 @@ ddr_wrapper #(
 	   // Outputs
 	   .axi_arready			(axi1_arready),		 // Templated
 	   .axi_awready			(axi1_awready),		 // Templated
-	   .axi_rdata			(axi1_rdata),		 // Templated
-	   .axi_rid			(axi1_rid),		 // Templated
+	   .axi_rdata			(axi1_rdata[MEM_DQ_WIDTH*8-1:0]), // Templated
+	   .axi_rid			(axi1_rid[3:0]),	 // Templated
 	   .axi_rlast			(axi1_rlast),		 // Templated
 	   .axi_rvalid			(axi1_rvalid),		 // Templated
 	   .axi_wready			(axi1_wready),		 // Templated
-	   .axi_wusero_id		(axi1_wusero_id),	 // Templated
+	   .axi_wusero_id		(axi1_wusero_id[3:0]),	 // Templated
 	   .axi_wusero_last		(axi1_wusero_last),	 // Templated
 	   // Inputs
 	   .apb_addr			(apb_addr[7:0]),
@@ -216,18 +216,18 @@ ddr_wrapper #(
 	   .apb_rst_n			(apb_rst_n),
 	   .apb_wdata			(apb_wdata[15:0]),
 	   .apb_write			(apb_write),
-	   .axi_araddr			(axi1_araddr),		 // Templated
-	   .axi_arlen			(axi1_arlen),		 // Templated
+	   .axi_araddr			(axi1_araddr[CTRL_ADDR_WIDTH-1:0]), // Templated
+	   .axi_arlen			(axi1_arlen[3:0]),	 // Templated
 	   .axi_aruser_ap		(axi1_aruser_ap),	 // Templated
-	   .axi_aruser_id		(axi1_aruser_id),	 // Templated
+	   .axi_aruser_id		(axi1_aruser_id[3:0]),	 // Templated
 	   .axi_arvalid			(axi1_arvalid),		 // Templated
-	   .axi_awaddr			(axi1_awaddr),		 // Templated
-	   .axi_awlen			(axi1_awlen),		 // Templated
+	   .axi_awaddr			(axi1_awaddr[CTRL_ADDR_WIDTH-1:0]), // Templated
+	   .axi_awlen			(axi1_awlen[3:0]),	 // Templated
 	   .axi_awuser_ap		(axi1_awuser_ap),	 // Templated
-	   .axi_awuser_id		(axi1_awuser_id),	 // Templated
+	   .axi_awuser_id		(axi1_awuser_id[3:0]),	 // Templated
 	   .axi_awvalid			(axi1_awvalid),		 // Templated
-	   .axi_wdata			(axi1_wdata),		 // Templated
-	   .axi_wstrb			(axi1_wstrb),		 // Templated
+	   .axi_wdata			(axi1_wdata[MEM_DQ_WIDTH*8-1:0]), // Templated
+	   .axi_wstrb			(axi1_wstrb[MEM_DQ_WIDTH*8/8-1:0]), // Templated
 	   .ref_clk			(ref_clk),
 	   .resetn			(resetn));
 
@@ -255,12 +255,12 @@ ddr_wrapper #(
 	   // Outputs
 	   .axi_arready			(axi2_arready),		 // Templated
 	   .axi_awready			(axi2_awready),		 // Templated
-	   .axi_rdata			(axi2_rdata),		 // Templated
-	   .axi_rid			(axi2_rid),		 // Templated
+	   .axi_rdata			(axi2_rdata[MEM_DQ_WIDTH*8-1:0]), // Templated
+	   .axi_rid			(axi2_rid[3:0]),	 // Templated
 	   .axi_rlast			(axi2_rlast),		 // Templated
 	   .axi_rvalid			(axi2_rvalid),		 // Templated
 	   .axi_wready			(axi2_wready),		 // Templated
-	   .axi_wusero_id		(axi2_wusero_id),	 // Templated
+	   .axi_wusero_id		(axi2_wusero_id[3:0]),	 // Templated
 	   .axi_wusero_last		(axi2_wusero_last),	 // Templated
 	   // Inputs
 	   .apb_addr			(apb_addr[7:0]),
@@ -268,18 +268,18 @@ ddr_wrapper #(
 	   .apb_rst_n			(apb_rst_n),
 	   .apb_wdata			(apb_wdata[15:0]),
 	   .apb_write			(apb_write),
-	   .axi_araddr			(axi2_araddr),		 // Templated
-	   .axi_arlen			(axi2_arlen),		 // Templated
+	   .axi_araddr			(axi2_araddr[CTRL_ADDR_WIDTH-1:0]), // Templated
+	   .axi_arlen			(axi2_arlen[3:0]),	 // Templated
 	   .axi_aruser_ap		(axi2_aruser_ap),	 // Templated
-	   .axi_aruser_id		(axi2_aruser_id),	 // Templated
+	   .axi_aruser_id		(axi2_aruser_id[3:0]),	 // Templated
 	   .axi_arvalid			(axi2_arvalid),		 // Templated
-	   .axi_awaddr			(axi2_awaddr),		 // Templated
-	   .axi_awlen			(axi2_awlen),		 // Templated
+	   .axi_awaddr			(axi2_awaddr[CTRL_ADDR_WIDTH-1:0]), // Templated
+	   .axi_awlen			(axi2_awlen[3:0]),	 // Templated
 	   .axi_awuser_ap		(axi2_awuser_ap),	 // Templated
-	   .axi_awuser_id		(axi2_awuser_id),	 // Templated
+	   .axi_awuser_id		(axi2_awuser_id[3:0]),	 // Templated
 	   .axi_awvalid			(axi2_awvalid),		 // Templated
-	   .axi_wdata			(axi2_wdata),		 // Templated
-	   .axi_wstrb			(axi2_wstrb),		 // Templated
+	   .axi_wdata			(axi2_wdata[MEM_DQ_WIDTH*8-1:0]), // Templated
+	   .axi_wstrb			(axi2_wstrb[MEM_DQ_WIDTH*8/8-1:0]), // Templated
 	   .ref_clk			(ref_clk),
 	   .resetn			(resetn));
 
