@@ -1,0 +1,118 @@
+Magic 271485
+Revision Verdi3_L-2016.06-1
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 62 116 1432 818 205 65
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/home/hao/wrk/my_uvm/my_uvm_3ch/script/case_NORMAL_WR_axi_test/tb_top_000.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 110000000.000000 128689647847.270004
+cursor 110000000.000000
+marker 110000000.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 32
+; marker line index
+markerPos 64
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "G1"
+activeDirFile "" "/home/hao/wrk/my_uvm/my_uvm_3ch/script/case_NORMAL_WR_axi_test/tb_top_000.fsdb"
+addSignal -h 15 -UNSIGNED -HEX /tb_top/u_ddr_wrapper/axi0_arlen[3:0]
+addSignal -h 15 -holdScope axi0_aruser_ap
+addSignal -h 15 -UNSIGNED -HEX -holdScope axi0_aruser_id[3:0]
+addSignal -h 15 -holdScope axi0_arvalid
+addSignal -h 15 -UNSIGNED -HEX -holdScope axi0_awaddr[27:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope axi0_awlen[3:0]
+addSignal -h 15 -holdScope axi0_awuser_ap
+addSignal -h 15 -UNSIGNED -HEX -holdScope axi0_awuser_id[3:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope axi0_wdata[255:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope axi0_wstrb[31:0]
+addSignal -h 15 -holdScope axi0_arready
+addSignal -h 15 -holdScope axi0_awready
+addSignal -h 15 -holdScope axi0_awvalid
+addSignal -h 15 -UNSIGNED -HEX -holdScope axi0_rdata[255:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope axi0_rid[3:0]
+addSignal -h 15 -holdScope axi0_rlast
+addSignal -h 15 -holdScope axi0_rvalid
+addSignal -h 15 -holdScope axi0_wready
+addSignal -h 15 -UNSIGNED -HEX -holdScope axi0_wusero_id[3:0]
+addSignal -h 15 -holdScope axi0_wusero_last
+addGroup "G2"
+addSignal -h 15 -UNSIGNED -HEX /tb_top/u_ddr_wrapper/axi1_araddr[27:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope axi1_arlen[3:0]
+addSignal -h 15 -holdScope axi1_aruser_ap
+addSignal -h 15 -UNSIGNED -HEX -holdScope axi1_aruser_id[3:0]
+addSignal -h 15 -holdScope axi1_arvalid
+addSignal -h 15 -UNSIGNED -HEX -holdScope axi1_awaddr[27:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope axi1_awlen[3:0]
+addSignal -h 15 -holdScope axi1_awuser_ap
+addSignal -h 15 -UNSIGNED -HEX -holdScope axi1_awuser_id[3:0]
+addSignal -h 15 -holdScope axi1_awvalid
+addSignal -h 15 -UNSIGNED -HEX -holdScope axi1_wdata[255:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope axi1_wstrb[31:0]
+addSignal -h 15 -holdScope axi1_arready
+addSignal -h 15 -holdScope axi1_awready
+addSignal -h 15 -UNSIGNED -HEX -holdScope axi1_rdata[255:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope axi1_rid[3:0]
+addSignal -h 15 -holdScope axi1_rlast
+addSignal -h 15 -holdScope axi1_rvalid
+addSignal -h 15 -holdScope axi1_wready
+addSignal -h 15 -UNSIGNED -HEX -holdScope axi1_wusero_id[3:0]
+addSignal -h 15 -holdScope axi1_wusero_last
+addGroup "G3"
+addSignal -h 15 -UNSIGNED -HEX /tb_top/u_ddr_wrapper/axi2_araddr[27:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope axi2_arlen[3:0]
+addSignal -h 15 -holdScope axi2_aruser_ap
+addSignal -h 15 -UNSIGNED -HEX -holdScope axi2_aruser_id[3:0]
+addSignal -h 15 -holdScope axi2_arvalid
+addSignal -h 15 -UNSIGNED -HEX -holdScope axi2_awaddr[27:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope axi2_awlen[3:0]
+addSignal -h 15 -holdScope axi2_awuser_ap
+addSignal -h 15 -UNSIGNED -HEX -holdScope axi2_awuser_id[3:0]
+addSignal -h 15 -holdScope axi2_awvalid
+addSignal -h 15 -UNSIGNED -HEX -holdScope axi2_wdata[255:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope axi2_wstrb[31:0]
+addSignal -h 15 -holdScope axi2_arready
+addSignal -h 15 -holdScope axi2_awready
+addSignal -h 15 -UNSIGNED -HEX -holdScope axi2_rdata[255:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope axi2_rid[3:0]
+addSignal -h 15 -holdScope axi2_rlast
+addSignal -h 15 -holdScope axi2_rvalid
+addSignal -h 15 -holdScope axi2_wready
+addSignal -h 15 -UNSIGNED -HEX -holdScope axi2_wusero_id[3:0]
+addSignal -h 15 -holdScope axi2_wusero_last
+addGroup "G4"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+

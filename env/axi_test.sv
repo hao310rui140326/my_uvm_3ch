@@ -103,15 +103,24 @@ endclass
 task axi_test::main_phase(uvm_phase phase);
    apb_case_sequence seq0;
    axi_test_sequence seq1;
+   axi_test_sequence seq2;
+   axi_test_sequence seq3;
 
    seq0 = new("seq0");
    seq0.starting_phase = phase;
    seq1 = new("seq1");
    seq1.starting_phase = phase;
+   seq2 = new("seq2");
+   seq2.starting_phase = phase;
+   seq3 = new("seq3");
+   seq3.starting_phase = phase;
+
    //env.i_agt.sqr.set_arbitration(SEQ_ARB_STRICT_FIFO);
    //fork
       seq0.start(env.apb_sqr, null, 100);
       seq1.start(env.axi_sqr0, null, 200);
+      seq2.start(env.axi_sqr1, null, 300);
+      seq3.start(env.axi_sqr2, null, 400);
    //join
 endtask
 
