@@ -111,7 +111,7 @@ task axi_test::main_phase(uvm_phase phase);
    //env.i_agt.sqr.set_arbitration(SEQ_ARB_STRICT_FIFO);
    //fork
       seq0.start(env.apb_sqr, null, 100);
-      seq1.start(env.axi_sqr, null, 200);
+      seq1.start(env.axi_sqr0, null, 200);
    //join
 endtask
 

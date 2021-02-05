@@ -9,6 +9,7 @@
 ../../env/dump.sv
 ../../env/monitor.sv
 ../../env/forcelist.sv
+../../env/ddr_3ch.sv
 ../../env/ddr_wrapper.sv
 ../../env/ddr3_model.sv
 ../../env/ddr3_reg.sv

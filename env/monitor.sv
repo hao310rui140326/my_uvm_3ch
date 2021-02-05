@@ -20,7 +20,7 @@ end
 `else
 	initial begin 
 		//wait  (time_cnt==32'd10);
-		wait  (tb_top.u_ddr_wrapper.u_ddr3_ctrl.ddr_init_done);
+		wait  (tb_top.u_ddr_wrapper.ddr_init_done);
 		$display("%m------:%t dfi_init_complete is high now!", $time);
 		#10_000_000;
 		$finish ;

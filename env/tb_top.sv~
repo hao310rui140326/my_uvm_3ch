@@ -1,9 +1,35 @@
 `timescale 1ns/1ps 
 
+
+`include  "../../env/apb_transaction.sv"
+`include  "../../env/axi_transaction.sv"
+`include  "../../env/apb_driver.sv"
+`include  "../../env/axi_driver.sv"
+`include  "../../env/apb_monitor.sv"
+`include  "../../env/axi_monitor.sv"
+`include  "../../env/apb_model.sv"
+`include  "../../env/axi_model.sv"
+`include  "../../env/apb_scoreboard.sv"
+`include  "../../env/axi_scoreboard.sv"
+`include  "../../env/apb_sequencer.sv"
+`include  "../../env/axi_sequencer.sv"
+`include  "../../env/my_env.sv"
+`include  "../../env/base_test.sv"
+`include  "../../env/apb_case0.sv"
+`include  "../../env/apb_pd_wone.sv"
+`include  "../../env/apb_pd_state.sv"
+`include  "../../env/apb_mrs_state.sv"
+`include  "../../env/apb_sr_state.sv"
+`include  "../../env/apb_case_rall.sv"
+`include  "../../env/apb_case_wall.sv"
+`include  "../../env/apb_case_wrall.sv"
+`include  "../../env/axi_normal.sv"
+`include  "../../env/axi_test.sv"
+
+
 module tb_top(/*AUTOARG*/
    // Outputs
-   pll_lock, debug_data, debug_calib_ctrl, ddrphy_cpd_lock,
-   ddr_init_done, core_clk
+   debug_data, debug_calib_ctrl
    );
 
   parameter MEM_ROW_ADDR_WIDTH   = 15         ;
@@ -17,55 +43,113 @@ module tb_top(/*AUTOARG*/
 /*AUTOINPUT*/
 /*AUTOOUTPUT*/
 // Beginning of automatic outputs (from unused autoinst outputs)
-output			core_clk;		// From u_ddr_wrapper of ddr_wrapper.v
-output			ddr_init_done;		// From u_ddr_wrapper of ddr_wrapper.v
-output			ddrphy_cpd_lock;	// From u_ddr_wrapper of ddr_wrapper.v
 output [29:0]		debug_calib_ctrl;	// From u_ddr_wrapper of ddr_wrapper.v
 output [66*MEM_DQS_WIDTH-1:0] debug_data;	// From u_ddr_wrapper of ddr_wrapper.v
-output			pll_lock;		// From u_ddr_wrapper of ddr_wrapper.v
 // End of automatics
 /*AUTOWIRE*/
 // Beginning of automatic wires (for undeclared instantiated-module outputs)
+wire			core_clk;		// From u_ddr_wrapper of ddr_wrapper.v
 wire			ref_clk;		// From u_clk_gen of clk_gen.v
 wire			rst_n;			// From u_rst_gen of rst_gen.v
 // End of automatics
 
 `include "ddr3_parameters.vh"
 
+ tvip_reg_if   areg(ref_clk,rst_n);
  tvip_apb_if   apbd(ref_clk,rst_n);
- tvip_axi_if   axid(core_clk,rst_n);
+ tvip_axi_if   axid0(core_clk,rst_n);
+ tvip_axi_if   axid1(core_clk,rst_n);
+ tvip_axi_if   axid2(core_clk,rst_n);
  tvip_ini_if   inid(ref_clk,rst_n);
+ tvip_mem_if   memd(core_clk,rst_n);
 
 
-/*ddr_wrapper  AUTO_TEMPLATE(
+/*ddr3_reg AUTO_TEMPLATE(
+      .aclk          		(ref_clk),
+      .areset_n      		(rst_n),
+      .apb_addr			(apbd.apb_addr[7:0]),
+      .apb_enable		(apbd.apb_enable),
+      .apb_sel			(apbd.apb_sel),
+      .apb_wdata		(apbd.apb_wdata[15:0]),
+      .apb_write		(apbd.apb_write),
+      .apb_rdata		(apbd.apb_rdata[15:0]),
+      .apb_ready		(apbd.apb_ready),
+      .reg_rdata     		(areg.reg_rdata),
+      .reg_vld       		(areg.reg_vld  ),
+      .reg_raddr       		(areg.reg_raddr),
+);*/
+
+/*ddr_3ch  AUTO_TEMPLATE(
     .resetn		(rst_n), 
     .apb_clk		(ref_clk),	 
     .apb_rst_n		(rst_n),	 
 
-    .axi_awaddr     (axid.awaddr),            
-    .axi_awuser_ap  (1'd0),
-    .axi_awuser_id  (axid.awid),
-    .axi_awlen      (axid.awlen),
-    .axi_awready    (axid.awready),
-    .axi_awvalid    (axid.awvalid),
+    .axi0_awaddr     (axid0.awaddr),            
+    .axi0_awuser_ap  (1'd0),
+    .axi0_awuser_id  (axid0.awid),
+    .axi0_awlen      (axid0.awlen),
+    .axi0_awready    (axid0.awready),
+    .axi0_awvalid    (axid0.awvalid),
+    .axi0_wdata      (axid0.wdata),
+    .axi0_wstrb      (axid0.wstrb),
+    .axi0_wready     (axid0.wready),
+    .axi0_wusero_id  (axid0.bid),
+    .axi0_wusero_last(axid0.wlast),
+    .axi0_araddr     (axid0.araddr),
+    .axi0_aruser_ap  (1'd0),
+    .axi0_aruser_id  (axid0.arid),
+    .axi0_arlen      (axid0.arlen),
+    .axi0_arready    (axid0.arready),
+    .axi0_arvalid    (axid0.arvalid),
+    .axi0_rdata      (axid0.rdata),
+    .axi0_rid        (axid0.rid),
+    .axi0_rlast      (axid0.rlast),
+    .axi0_rvalid     (axid0.rvalid),
 
-    .axi_wdata      (axid.wdata),
-    .axi_wstrb      (axid.wstrb),
-    .axi_wready     (axid.wready),
-    .axi_wusero_id  (axid.bid),
-    .axi_wusero_last(axid.wlast),
+    .axi1_awaddr     (axid1.awaddr),            
+    .axi1_awuser_ap  (1'd0),
+    .axi1_awuser_id  (axid1.awid),
+    .axi1_awlen      (axid1.awlen),
+    .axi1_awready    (axid1.awready),
+    .axi1_awvalid    (axid1.awvalid),
+    .axi1_wdata      (axid1.wdata),
+    .axi1_wstrb      (axid1.wstrb),
+    .axi1_wready     (axid1.wready),
+    .axi1_wusero_id  (axid1.bid),
+    .axi1_wusero_last(axid1.wlast),
+    .axi1_araddr     (axid1.araddr),
+    .axi1_aruser_ap  (1'd0),
+    .axi1_aruser_id  (axid1.arid),
+    .axi1_arlen      (axid1.arlen),
+    .axi1_arready    (axid1.arready),
+    .axi1_arvalid    (axid1.arvalid),
+    .axi1_rdata      (axid1.rdata),
+    .axi1_rid        (axid1.rid),
+    .axi1_rlast      (axid1.rlast),
+    .axi1_rvalid     (axid1.rvalid),
 
-    .axi_araddr     (axid.araddr),
-    .axi_aruser_ap  (1'd0),
-    .axi_aruser_id  (axid.arid),
-    .axi_arlen      (axid.arlen),
-    .axi_arready    (axid.arready),
-    .axi_arvalid    (axid.arvalid),
 
-    .axi_rdata      (axid.rdata),
-    .axi_rid        (axid.rid),
-    .axi_rlast      (axid.rlast),
-    .axi_rvalid     (axid.rvalid),
+    .axi2_awaddr     (axid2.awaddr),            
+    .axi2_awuser_ap  (1'd0),
+    .axi2_awuser_id  (axid2.awid),
+    .axi2_awlen      (axid2.awlen),
+    .axi2_awready    (axid2.awready),
+    .axi2_awvalid    (axid2.awvalid),
+    .axi2_wdata      (axid2.wdata),
+    .axi2_wstrb      (axid2.wstrb),
+    .axi2_wready     (axid2.wready),
+    .axi2_wusero_id  (axid2.bid),
+    .axi2_wusero_last(axid2.wlast),
+    .axi2_araddr     (axid2.araddr),
+    .axi2_aruser_ap  (1'd0),
+    .axi2_aruser_id  (axid2.arid),
+    .axi2_arlen      (axid2.arlen),
+    .axi2_arready    (axid2.arready),
+    .axi2_arvalid    (axid2.arvalid),
+    .axi2_rdata      (axid2.rdata),
+    .axi2_rid        (axid2.rid),
+    .axi2_rlast      (axid2.rlast),
+    .axi2_rvalid     (axid2.rvalid),
 
     .apb_addr		(apbd.apb_addr[7:0]),
     .apb_enable		(apbd.apb_enable),
@@ -81,8 +165,51 @@ wire			rst_n;			// From u_rst_gen of rst_gen.v
 
 );*/
 
+/*assoc_mem  AUTO_TEMPLATE(
+    .rst_n		(rst_n), 
+    .clk		(core_clk),
+    .wen                (memd.we),
+    .wdin               (memd.wdata),
+    .wb                 (memd.wb),
+    .ren                (memd.re),
+    .waddr              (memd.waddr),
+    .raddr              (memd.raddr),
+    .rvld               (memd.rvld),
+    .rdout              (memd.rdout),   
+);*/
 
-ddr_wrapper u_ddr_wrapper(/*AUTOINST*/
+
+
+ddr3_reg  u_ddr3_reg(/*AUTOINST*/
+      .aclk          		(ref_clk),
+      .areset_n      		(rst_n),
+      .apb_addr			(apbd.apb_addr[7:0]),
+      .apb_enable		(apbd.apb_enable),
+      .apb_sel			(apbd.apb_sel),
+      .apb_wdata		(apbd.apb_wdata[15:0]),
+      .apb_write		(apbd.apb_write),
+      .apb_rdata		(apbd.apb_rdata[15:0]),
+      .apb_ready		(apbd.apb_ready),
+      .reg_rdata     		(areg.reg_rdata),
+      .reg_vld       		(areg.reg_vld  ),
+      .reg_raddr       		(areg.reg_raddr)
+);
+
+assoc_mem u_assoc_mem(/*AUTOINST*/
+		      // Outputs
+		      .rdout		(memd.rdout),		 // Templated
+		      .rvld		(memd.rvld),		 // Templated
+		      // Inputs
+		      .clk		(core_clk),		 // Templated
+		      .rst_n		(rst_n),		 // Templated
+		      .wen		(memd.we),		 // Templated
+		      .ren		(memd.re),		 // Templated
+		      .wdin		(memd.wdata),		 // Templated
+		      .wb		(memd.wb),		 // Templated
+		      .waddr		(memd.waddr),		 // Templated
+		      .raddr		(memd.raddr));		 // Templated
+
+ddr_3ch u_ddr_wrapper(/*AUTOINST*/
 			  // Outputs
 			  .apb_rdata		(apbd.apb_rdata[15:0]), // Templated
 			  .apb_ready		(apbd.apb_ready), // Templated
@@ -96,11 +223,11 @@ ddr_wrapper u_ddr_wrapper(/*AUTOINST*/
 			  .axi_wusero_id	(axid.bid),	 // Templated
 			  .axi_wusero_last	(axid.wlast),	 // Templated
 			  .core_clk		(core_clk),
-			  .ddr_init_done	(inid.ini_done),
-			  .ddrphy_cpd_lock	(inid.ini_phy_lock),
+			  .ddr_init_done	(inid.ini_done), // Templated
+			  .ddrphy_cpd_lock	(inid.ini_phy_lock), // Templated
 			  .debug_calib_ctrl	(debug_calib_ctrl[29:0]),
 			  .debug_data		(debug_data[66*MEM_DQS_WIDTH-1:0]),
-			  .pll_lock		(inid.ini_pll_lock),
+			  .pll_lock		(inid.ini_pll_lock), // Templated
 			  // Inputs
 			  .apb_addr		(apbd.apb_addr[7:0]), // Templated
 			  .apb_clk		(ref_clk),	 // Templated
@@ -131,6 +258,8 @@ clk_gen u_clk_gen(/*AUTOINST*/
 		  .ref_clk		(ref_clk));
 dump dump();
 monitor monitor();
+forcelist forcelist();
+
 GTP_GRS GRS_INST(
 		.GRS_N (rst_n)
 	);
@@ -145,10 +274,19 @@ initial begin
    uvm_config_db#(virtual tvip_ini_if)::set(null, "uvm_test_top.env.apb_drv", "vini", inid);
    uvm_config_db#(virtual tvip_apb_if)::set(null, "uvm_test_top.env.apb_mon", "vapb", apbd);
    uvm_config_db#(virtual tvip_ini_if)::set(null, "uvm_test_top.env.apb_mon", "vini", inid);
+   uvm_config_db#(virtual tvip_reg_if)::set(null, "uvm_test_top.env.apb_mdl", "vreg", areg);
 
-   //uvm_config_db#(virtual tvip_apb_if)::set(null, "uvm_test_top.env.axi_drv", "vapb", apbd);
    uvm_config_db#(virtual tvip_axi_if)::set(null, "uvm_test_top.env.axi_drv", "vaxi", axid);
+   uvm_config_db#(virtual tvip_axi_if)::set(null, "uvm_test_top.env.axi_mon", "vaxi", axid);
+   uvm_config_db#(virtual tvip_mem_if)::set(null, "uvm_test_top.env.axi_mdl", "vmem", memd);
+
    uvm_config_db#(virtual tvip_ini_if)::set(null, "uvm_test_top.env.axi_drv", "vini", inid);
+   uvm_config_db#(virtual tvip_ini_if)::set(null, "uvm_test_top.env.axi_mon", "vini", inid);
+   uvm_config_db#(virtual tvip_mem_if)::set(null, "uvm_test_top.env.axi_drv", "vmem", memd);
+   uvm_config_db#(virtual tvip_mem_if)::set(null, "uvm_test_top.env.axi_mon", "vmem", memd);
+
+   uvm_config_db#(virtual tvip_mem_if)::set(null, "uvm_test_top.env.axi_scb", "vmem", memd);   
+
 
 end
 
