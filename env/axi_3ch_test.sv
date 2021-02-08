@@ -1,9 +1,9 @@
-`ifndef AXI_CASE__SV
-`define AXI_CASE__SV
-class apb_case_sequence extends uvm_sequence #(apb_transaction);
+`ifndef AXI_3CH__SV
+`define AXI_3CH__SV
+class apb_3ch_sequence extends uvm_sequence #(apb_transaction);
    apb_transaction m_trans;
 
-   function  new(string name= "apb_case_sequence");
+   function  new(string name= "apb_3ch_sequence");
       super.new(name);
    endfunction 
    
@@ -42,19 +42,19 @@ class apb_case_sequence extends uvm_sequence #(apb_transaction);
          	`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==5;apb_rd_wr==apb_transaction::APB_READ;}  )	 
 	`endif
       
-         `uvm_info("apb_case_sequence", "send one transaction", UVM_LOW)      
+         `uvm_info("apb_3ch_sequence", "send one transaction", UVM_LOW)      
       #100;
       if(starting_phase != null) 
          starting_phase.drop_objection(this);
    endtask
 
-   `uvm_object_utils(apb_case_sequence)
+   `uvm_object_utils(apb_3ch_sequence)
 endclass
 
-class axi_test_sequence extends uvm_sequence #(axi_transaction);
+class axi_3ch_sequence extends uvm_sequence #(axi_transaction);
    axi_transaction m_trans;
 
-   function  new(string name= "axi_test_sequence");
+   function  new(string name= "axi_3ch_sequence");
       super.new(name);
    endfunction 
    
@@ -82,31 +82,31 @@ class axi_test_sequence extends uvm_sequence #(axi_transaction);
                 	`uvm_do_with(m_trans,{axi_enable == 1'b1;axi_write==1'b0;axi_len==`AXI_LEN;axi_raddr==`AXI_ADDR;axi_rd_wr==axi_transaction::AXI_SEQ_ONE;}  )
  	        `endif
       end
-	 `uvm_info("axi_test_sequence", "send one transaction", UVM_LOW)
+	 `uvm_info("axi_3ch_sequence", "send one transaction", UVM_LOW)
 
       #100;
       if(starting_phase != null) 
          starting_phase.drop_objection(this);
    endtask
 
-   `uvm_object_utils(axi_test_sequence)
+   `uvm_object_utils(axi_3ch_sequence)
 endclass
 
 
-class axi_test extends base_test;
+class axi_3ch_test extends base_test;
 
-   function new(string name = "axi_test", uvm_component parent = null);
+   function new(string name = "axi_3ch_test", uvm_component parent = null);
       super.new(name,parent);
    endfunction 
-   `uvm_component_utils(axi_test)
+   `uvm_component_utils(axi_3ch_test)
    extern virtual task main_phase(uvm_phase phase);
 endclass
 
-task axi_test::main_phase(uvm_phase phase);
-   apb_case_sequence seq0;
-   axi_test_sequence seq1;
-   axi_test_sequence seq2;
-   axi_test_sequence seq3;
+task axi_3ch_test::main_phase(uvm_phase phase);
+   apb_3ch_sequence seq0;
+   axi_3ch_sequence seq1;
+   axi_3ch_sequence seq2;
+   axi_3ch_sequence seq3;
 
    seq0 = new("seq0");
    seq0.starting_phase = phase;
@@ -121,11 +121,14 @@ task axi_test::main_phase(uvm_phase phase);
    seq0.start(env.apb_sqr, null, 100);
 
    //env.i_agt.sqr.set_arbitration(SEQ_ARB_STRICT_FIFO);
-   //fork
-      seq1.start(env.axi_sqr0, null, 200);
+   fork
+      //seq1.start(env.axi_sqr0, null, 200);
       //seq2.start(env.axi_sqr1, null, 300);
       //seq3.start(env.axi_sqr2, null, 400);
-   //join
+      seq1.start(env.axi_sqr0);
+      seq2.start(env.axi_sqr1);
+      seq3.start(env.axi_sqr2);
+   join
 endtask
 
 `endif

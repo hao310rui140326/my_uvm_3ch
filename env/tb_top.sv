@@ -25,6 +25,7 @@
 `include  "../../env/apb_case_wrall.sv"
 `include  "../../env/axi_normal.sv"
 `include  "../../env/axi_test.sv"
+`include  "../../env/axi_3ch_test.sv"
 
 
 module tb_top(/*AUTOARG*/

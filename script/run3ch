@@ -1,0 +1,2 @@
+make  CASE=axi_3ch_test   MODE=NORMAL   TMODE=WR_RAND       DUMP=$1 
+make  CASE=axi_3ch_test   MODE=NORMAL   TMODE=RAND_ALL      DUMP=$1 

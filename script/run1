@@ -1,1 +1,1 @@
-make  CASE=axi_test   MODE=NORMAL   TMODE=WR         DUMP=$1 
+make  CASE=axi_test   MODE=NORMAL   TMODE=WR_RAND      DUMP=$1 
