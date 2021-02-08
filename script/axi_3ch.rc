@@ -2,11 +2,11 @@ Magic 271485
 Revision Verdi3_L-2016.06-1
 
 ; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
-viewPort 62 116 1432 818 205 65
+viewPort 170 119 1432 818 205 65
 
 ; File list:
 ; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
-openDirFile -d / "" "/home/hao/wrk/my_uvm/my_uvm_3ch/script/case_NORMAL_WR_axi_test/tb_top_000.fsdb"
+openDirFile -d / "" "/home/hao/wrk/my_uvm/my_uvm_3ch/script/case_NORMAL_WR_RAND_axi_test/tb_top_000.fsdb"
 
 ; file time scale:
 ; fileTimeScale ### s|ms|us|ns|ps
@@ -16,16 +16,16 @@ signalSpacing 5
 
 ; windowTimeUnit is used for zoom, cursor & marker
 ; waveform viewport range
-zoom 110000000.000000 128689647847.270004
-cursor 110000000.000000
+zoom 123517808269.889709 128264185512.360825
+cursor 128336582027.000000
 marker 110000000.000000
 
 ; user define markers
 ; userMarker time_pos marker_name color linestyle
 ; visible top row signal index
-top 32
+top 0
 ; marker line index
-markerPos 64
+markerPos 89
 
 ; event list
 ; addEvent event_name event_expression
@@ -45,8 +45,8 @@ COMPLEX_EVENT_END
 curSTATUS ByChange
 
 
-addGroup "G1"
-activeDirFile "" "/home/hao/wrk/my_uvm/my_uvm_3ch/script/case_NORMAL_WR_axi_test/tb_top_000.fsdb"
+addGroup "ch0" -e FALSE
+activeDirFile "" "/home/hao/wrk/my_uvm/my_uvm_3ch/script/case_NORMAL_WR_RAND_axi_test/tb_top_000.fsdb"
 addSignal -h 15 -UNSIGNED -HEX /tb_top/u_ddr_wrapper/axi0_arlen[3:0]
 addSignal -h 15 -holdScope axi0_aruser_ap
 addSignal -h 15 -UNSIGNED -HEX -holdScope axi0_aruser_id[3:0]
@@ -67,7 +67,7 @@ addSignal -h 15 -holdScope axi0_rvalid
 addSignal -h 15 -holdScope axi0_wready
 addSignal -h 15 -UNSIGNED -HEX -holdScope axi0_wusero_id[3:0]
 addSignal -h 15 -holdScope axi0_wusero_last
-addGroup "G2"
+addGroup "ch1" -e FALSE
 addSignal -h 15 -UNSIGNED -HEX /tb_top/u_ddr_wrapper/axi1_araddr[27:0]
 addSignal -h 15 -UNSIGNED -HEX -holdScope axi1_arlen[3:0]
 addSignal -h 15 -holdScope axi1_aruser_ap
@@ -89,7 +89,7 @@ addSignal -h 15 -holdScope axi1_rvalid
 addSignal -h 15 -holdScope axi1_wready
 addSignal -h 15 -UNSIGNED -HEX -holdScope axi1_wusero_id[3:0]
 addSignal -h 15 -holdScope axi1_wusero_last
-addGroup "G3"
+addGroup "ch2" -e FALSE
 addSignal -h 15 -UNSIGNED -HEX /tb_top/u_ddr_wrapper/axi2_araddr[27:0]
 addSignal -h 15 -UNSIGNED -HEX -holdScope axi2_arlen[3:0]
 addSignal -h 15 -holdScope axi2_aruser_ap
@@ -111,7 +111,32 @@ addSignal -h 15 -holdScope axi2_rvalid
 addSignal -h 15 -holdScope axi2_wready
 addSignal -h 15 -UNSIGNED -HEX -holdScope axi2_wusero_id[3:0]
 addSignal -h 15 -holdScope axi2_wusero_last
-addGroup "G4"
+addGroup "ram"
+addSignal -h 15 /tb_top/u_assoc_mem/wen0
+addSignal -h 15 -UNSIGNED -HEX -holdScope wdin0[255:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope wb0[31:0]
+addSignal -h 15 -holdScope ren0
+addSignal -h 15 -UNSIGNED -HEX -holdScope waddr0[27:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope raddr0[27:0]
+addSignal -h 15 -holdScope rvld0
+addSignal -h 15 -UNSIGNED -HEX -holdScope rdout0[255:0]
+addSignal -h 15 -holdScope wen1
+addSignal -h 15 -UNSIGNED -HEX -holdScope wdin1[255:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope wb1[31:0]
+addSignal -h 15 -holdScope ren1
+addSignal -h 15 -UNSIGNED -HEX -holdScope waddr1[27:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope raddr1[27:0]
+addSignal -h 15 -holdScope rvld1
+addSignal -h 15 -UNSIGNED -HEX -holdScope rdout1[255:0]
+addSignal -h 15 -holdScope wen2
+addSignal -h 15 -UNSIGNED -HEX -holdScope wdin2[255:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope wb2[31:0]
+addSignal -h 15 -holdScope ren2
+addSignal -h 15 -UNSIGNED -HEX -holdScope waddr2[27:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope raddr2[27:0]
+addSignal -h 15 -holdScope rvld2
+addSignal -h 15 -UNSIGNED -HEX -holdScope rdout2[255:0]
+addGroup "G5"
 
 ; getSignalForm Scope Hierarchy Status
 ; active file of getSignalForm
