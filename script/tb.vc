@@ -10,6 +10,7 @@
 ../../env/monitor.sv
 ../../env/forcelist.sv
 ../../env/ddr_3ch.sv
+../../env/ddra_3ch.sv
 ../../env/ddr_wrapper.sv
 ../../env/ddr3_model.sv
 ../../env/ddr3_reg.sv
@@ -19,6 +20,7 @@
 ../../env/vip/tvip_axi_if.sv  
 ../../env/vip/tvip_ini_if.sv 
 ../../env/vip/tvip_mem_if.sv 
+../../env/ips_ddr_mm_top_model.sv
 ../../env/tb_top.sv
 ../lib.sv
 ../ddr3.sv
