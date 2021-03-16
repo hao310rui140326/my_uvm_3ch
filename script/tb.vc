@@ -19,9 +19,11 @@
 ../../env/vip/tvip_axi_if.sv  
 ../../env/vip/tvip_ini_if.sv 
 ../../env/vip/tvip_mem_if.sv 
-../../env/tb_top.sv 
-../all.sv
-../all_vp.sv    
+../../env/tb_top.sv
+../lib.sv
+../ddr3.sv
+../all_vp.sv 
+../dut.sv
 +define+SIMULATION  
 +define+RTL_SIM 
 +define+den4096Mb   

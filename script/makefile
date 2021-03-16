@@ -31,7 +31,8 @@ grep:
 
 gen_v:
 	perl my_cat.pl vp.vc   all_vp.sv  vp
-	perl my_cat.pl v.vc all.sv v
+	perl my_cat.pl dut.vc  dut.sv v
+	perl my_cat.pl lib.vc  lib.sv v
 	cat  ../../../example_design/bench/mem/ddr3.sv   >> all.sv
 	##vcs -full64 +sv  -protect128 all.sv
 
