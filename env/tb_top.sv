@@ -87,72 +87,72 @@ wire			rst_n;			// From u_rst_gen of rst_gen.v
     .apb_clk		(ref_clk),	 
     .apb_rst_n		(rst_n),	 
 
-    .axi0_awaddr     (axid0.awaddr),            
-    .axi0_awuser_ap  (1'd0),
-    .axi0_awuser_id  (axid0.awid),
-    .axi0_awlen      (axid0.awlen),
-    .axi0_awready    (axid0.awready),
-    .axi0_awvalid    (axid0.awvalid),
-    .axi0_wdata      (axid0.wdata),
-    .axi0_wstrb      (axid0.wstrb),
-    .axi0_wready     (axid0.wready),
-    .axi0_wusero_id  (axid0.bid),
-    .axi0_wusero_last(axid0.wlast),
-    .axi0_araddr     (axid0.araddr),
-    .axi0_aruser_ap  (1'd0),
-    .axi0_aruser_id  (axid0.arid),
-    .axi0_arlen      (axid0.arlen),
-    .axi0_arready    (axid0.arready),
-    .axi0_arvalid    (axid0.arvalid),
-    .axi0_rdata      (axid0.rdata),
-    .axi0_rid        (axid0.rid),
-    .axi0_rlast      (axid0.rlast),
-    .axi0_rvalid     (axid0.rvalid),
+    .axi_slv0_awaddr     (axid0.awaddr),            
+    .axi_slv0_awuser_ap  (1'd0),
+    .axi_slv0_awuser_id  (axid0.awid),
+    .axi_slv0_awlen      (axid0.awlen),
+    .axi_slv0_awready    (axid0.awready),
+    .axi_slv0_awvalid    (axid0.awvalid),
+    .axi_slv0_wdata      (axid0.wdata),
+    .axi_slv0_wstrb      (axid0.wstrb),
+    .axi_slv0_wready     (axid0.wready),
+    .axi_slv0_wusero_id  (axid0.bid),
+    .axi_slv0_wusero_last(axid0.wlast),
+    .axi_slv0_araddr     (axid0.araddr),
+    .axi_slv0_aruser_ap  (1'd0),
+    .axi_slv0_aruser_id  (axid0.arid),
+    .axi_slv0_arlen      (axid0.arlen),
+    .axi_slv0_arready    (axid0.arready),
+    .axi_slv0_arvalid    (axid0.arvalid),
+    .axi_slv0_rdata      (axid0.rdata),
+    .axi_slv0_rid        (axid0.rid),
+    .axi_slv0_rlast      (axid0.rlast),
+    .axi_slv0_rvalid     (axid0.rvalid),
 
-    .axi1_awaddr     (axid1.awaddr),            
-    .axi1_awuser_ap  (1'd0),
-    .axi1_awuser_id  (axid1.awid),
-    .axi1_awlen      (axid1.awlen),
-    .axi1_awready    (axid1.awready),
-    .axi1_awvalid    (axid1.awvalid),
-    .axi1_wdata      (axid1.wdata),
-    .axi1_wstrb      (axid1.wstrb),
-    .axi1_wready     (axid1.wready),
-    .axi1_wusero_id  (axid1.bid),
-    .axi1_wusero_last(axid1.wlast),
-    .axi1_araddr     (axid1.araddr),
-    .axi1_aruser_ap  (1'd0),
-    .axi1_aruser_id  (axid1.arid),
-    .axi1_arlen      (axid1.arlen),
-    .axi1_arready    (axid1.arready),
-    .axi1_arvalid    (axid1.arvalid),
-    .axi1_rdata      (axid1.rdata),
-    .axi1_rid        (axid1.rid),
-    .axi1_rlast      (axid1.rlast),
-    .axi1_rvalid     (axid1.rvalid),
+    .axi_slv1_awaddr     (axid1.awaddr),            
+    .axi_slv1_awuser_ap  (1'd0),
+    .axi_slv1_awuser_id  (axid1.awid),
+    .axi_slv1_awlen      (axid1.awlen),
+    .axi_slv1_awready    (axid1.awready),
+    .axi_slv1_awvalid    (axid1.awvalid),
+    .axi_slv1_wdata      (axid1.wdata),
+    .axi_slv1_wstrb      (axid1.wstrb),
+    .axi_slv1_wready     (axid1.wready),
+    .axi_slv1_wusero_id  (axid1.bid),
+    .axi_slv1_wusero_last(axid1.wlast),
+    .axi_slv1_araddr     (axid1.araddr),
+    .axi_slv1_aruser_ap  (1'd0),
+    .axi_slv1_aruser_id  (axid1.arid),
+    .axi_slv1_arlen      (axid1.arlen),
+    .axi_slv1_arready    (axid1.arready),
+    .axi_slv1_arvalid    (axid1.arvalid),
+    .axi_slv1_rdata      (axid1.rdata),
+    .axi_slv1_rid        (axid1.rid),
+    .axi_slv1_rlast      (axid1.rlast),
+    .axi_slv1_rvalid     (axid1.rvalid),
 
 
-    .axi2_awaddr     (axid2.awaddr),            
-    .axi2_awuser_ap  (1'd0),
-    .axi2_awuser_id  (axid2.awid),
-    .axi2_awlen      (axid2.awlen),
-    .axi2_awready    (axid2.awready),
-    .axi2_awvalid    (axid2.awvalid),
-    .axi2_wdata      (axid2.wdata),
-    .axi2_wstrb      (axid2.wstrb),
-    .axi2_wready     (axid2.wready),
-    .axi2_wusero_id  (axid2.bid),
-    .axi2_wusero_last(axid2.wlast),
-    .axi2_araddr     (axid2.araddr),
-    .axi2_aruser_ap  (1'd0),
-    .axi2_aruser_id  (axid2.arid),
-    .axi2_arlen      (axid2.arlen),
-    .axi2_arready    (axid2.arready),
-    .axi2_arvalid    (axid2.arvalid),
-    .axi2_rdata      (axid2.rdata),
-    .axi2_rid        (axid2.rid),
-    .axi2_rlast      (axid2.rlast),
-    .axi2_rvalid     (axid2.rvalid),
+    .axi_slv2_awaddr     (axid2.awaddr),            
+    .axi_slv2_awuser_ap  (1'd0),
+    .axi_slv2_awuser_id  (axid2.awid),
+    .axi_slv2_awlen      (axid2.awlen),
+    .axi_slv2_awready    (axid2.awready),
+    .axi_slv2_awvalid    (axid2.awvalid),
+    .axi_slv2_wdata      (axid2.wdata),
+    .axi_slv2_wstrb      (axid2.wstrb),
+    .axi_slv2_wready     (axid2.wready),
+    .axi_slv2_wusero_id  (axid2.bid),
+    .axi_slv2_wusero_last(axid2.wlast),
+    .axi_slv2_araddr     (axid2.araddr),
+    .axi_slv2_aruser_ap  (1'd0),
+    .axi_slv2_aruser_id  (axid2.arid),
+    .axi_slv2_arlen      (axid2.arlen),
+    .axi_slv2_arready    (axid2.arready),
+    .axi_slv2_arvalid    (axid2.arvalid),
+    .axi_slv2_rdata      (axid2.rdata),
+    .axi_slv2_rid        (axid2.rid),
+    .axi_slv2_rlast      (axid2.rlast),
+    .axi_slv2_rvalid     (axid2.rvalid),
 
     .apb_addr		(apbd.apb_addr[7:0]),
     .apb_enable		(apbd.apb_enable),
@@ -252,33 +252,33 @@ ddr_3ch u_ddr_wrapper(/*AUTOINST*/
 		      // Outputs
 		      .apb_rdata	(apbd.apb_rdata[15:0]),	 // Templated
 		      .apb_ready	(apbd.apb_ready),	 // Templated
-		      .axi0_arready	(axid0.arready),	 // Templated
-		      .axi0_awready	(axid0.awready),	 // Templated
-		      .axi0_rdata	(axid0.rdata),		 // Templated
-		      .axi0_rid		(axid0.rid),		 // Templated
-		      .axi0_rlast	(axid0.rlast),		 // Templated
-		      .axi0_rvalid	(axid0.rvalid),		 // Templated
-		      .axi0_wready	(axid0.wready),		 // Templated
-		      .axi0_wusero_id	(axid0.bid),		 // Templated
-		      .axi0_wusero_last	(axid0.wlast),		 // Templated
-		      .axi1_arready	(axid1.arready),	 // Templated
-		      .axi1_awready	(axid1.awready),	 // Templated
-		      .axi1_rdata	(axid1.rdata),		 // Templated
-		      .axi1_rid		(axid1.rid),		 // Templated
-		      .axi1_rlast	(axid1.rlast),		 // Templated
-		      .axi1_rvalid	(axid1.rvalid),		 // Templated
-		      .axi1_wready	(axid1.wready),		 // Templated
-		      .axi1_wusero_id	(axid1.bid),		 // Templated
-		      .axi1_wusero_last	(axid1.wlast),		 // Templated
-		      .axi2_arready	(axid2.arready),	 // Templated
-		      .axi2_awready	(axid2.awready),	 // Templated
-		      .axi2_rdata	(axid2.rdata),		 // Templated
-		      .axi2_rid		(axid2.rid),		 // Templated
-		      .axi2_rlast	(axid2.rlast),		 // Templated
-		      .axi2_rvalid	(axid2.rvalid),		 // Templated
-		      .axi2_wready	(axid2.wready),		 // Templated
-		      .axi2_wusero_id	(axid2.bid),		 // Templated
-		      .axi2_wusero_last	(axid2.wlast),		 // Templated
+		      .axi_slv0_arready	(axid0.arready),	 // Templated
+		      .axi_slv0_awready	(axid0.awready),	 // Templated
+		      .axi_slv0_rdata	(axid0.rdata),		 // Templated
+		      .axi_slv0_rid		(axid0.rid),		 // Templated
+		      .axi_slv0_rlast	(axid0.rlast),		 // Templated
+		      .axi_slv0_rvalid	(axid0.rvalid),		 // Templated
+		      .axi_slv0_wready	(axid0.wready),		 // Templated
+		      .axi_slv0_wusero_id	(axid0.bid),		 // Templated
+		      .axi_slv0_wusero_last	(axid0.wlast),		 // Templated
+		      .axi_slv1_arready	(axid1.arready),	 // Templated
+		      .axi_slv1_awready	(axid1.awready),	 // Templated
+		      .axi_slv1_rdata	(axid1.rdata),		 // Templated
+		      .axi_slv1_rid		(axid1.rid),		 // Templated
+		      .axi_slv1_rlast	(axid1.rlast),		 // Templated
+		      .axi_slv1_rvalid	(axid1.rvalid),		 // Templated
+		      .axi_slv1_wready	(axid1.wready),		 // Templated
+		      .axi_slv1_wusero_id	(axid1.bid),		 // Templated
+		      .axi_slv1_wusero_last	(axid1.wlast),		 // Templated
+		      .axi_slv2_arready	(axid2.arready),	 // Templated
+		      .axi_slv2_awready	(axid2.awready),	 // Templated
+		      .axi_slv2_rdata	(axid2.rdata),		 // Templated
+		      .axi_slv2_rid		(axid2.rid),		 // Templated
+		      .axi_slv2_rlast	(axid2.rlast),		 // Templated
+		      .axi_slv2_rvalid	(axid2.rvalid),		 // Templated
+		      .axi_slv2_wready	(axid2.wready),		 // Templated
+		      .axi_slv2_wusero_id	(axid2.bid),		 // Templated
+		      .axi_slv2_wusero_last	(axid2.wlast),		 // Templated
 		      .core_clk		(core_clk),
 		      .ddr_init_done	(inid.ini_done),	 // Templated
 		      .ddrphy_cpd_lock	(inid.ini_phy_lock),	 // Templated
@@ -293,42 +293,42 @@ ddr_3ch u_ddr_wrapper(/*AUTOINST*/
 		      .apb_sel		(apbd.apb_sel),		 // Templated
 		      .apb_wdata	(apbd.apb_wdata[15:0]),	 // Templated
 		      .apb_write	(apbd.apb_write),	 // Templated
-		      .axi0_araddr	(axid0.araddr),		 // Templated
-		      .axi0_arlen	(axid0.arlen),		 // Templated
-		      .axi0_aruser_ap	(1'd0),			 // Templated
-		      .axi0_aruser_id	(axid0.arid),		 // Templated
-		      .axi0_arvalid	(axid0.arvalid),	 // Templated
-		      .axi0_awaddr	(axid0.awaddr),		 // Templated
-		      .axi0_awlen	(axid0.awlen),		 // Templated
-		      .axi0_awuser_ap	(1'd0),			 // Templated
-		      .axi0_awuser_id	(axid0.awid),		 // Templated
-		      .axi0_awvalid	(axid0.awvalid),	 // Templated
-		      .axi0_wdata	(axid0.wdata),		 // Templated
-		      .axi0_wstrb	(axid0.wstrb),		 // Templated
-		      .axi1_araddr	(axid1.araddr),		 // Templated
-		      .axi1_arlen	(axid1.arlen),		 // Templated
-		      .axi1_aruser_ap	(1'd0),			 // Templated
-		      .axi1_aruser_id	(axid1.arid),		 // Templated
-		      .axi1_arvalid	(axid1.arvalid),	 // Templated
-		      .axi1_awaddr	(axid1.awaddr),		 // Templated
-		      .axi1_awlen	(axid1.awlen),		 // Templated
-		      .axi1_awuser_ap	(1'd0),			 // Templated
-		      .axi1_awuser_id	(axid1.awid),		 // Templated
-		      .axi1_awvalid	(axid1.awvalid),	 // Templated
-		      .axi1_wdata	(axid1.wdata),		 // Templated
-		      .axi1_wstrb	(axid1.wstrb),		 // Templated
-		      .axi2_araddr	(axid2.araddr),		 // Templated
-		      .axi2_arlen	(axid2.arlen),		 // Templated
-		      .axi2_aruser_ap	(1'd0),			 // Templated
-		      .axi2_aruser_id	(axid2.arid),		 // Templated
-		      .axi2_arvalid	(axid2.arvalid),	 // Templated
-		      .axi2_awaddr	(axid2.awaddr),		 // Templated
-		      .axi2_awlen	(axid2.awlen),		 // Templated
-		      .axi2_awuser_ap	(1'd0),			 // Templated
-		      .axi2_awuser_id	(axid2.awid),		 // Templated
-		      .axi2_awvalid	(axid2.awvalid),	 // Templated
-		      .axi2_wdata	(axid2.wdata),		 // Templated
-		      .axi2_wstrb	(axid2.wstrb),		 // Templated
+		      .axi_slv0_araddr	(axid0.araddr),		 // Templated
+		      .axi_slv0_arlen	(axid0.arlen),		 // Templated
+		      .axi_slv0_aruser_ap	(1'd0),			 // Templated
+		      .axi_slv0_aruser_id	(axid0.arid),		 // Templated
+		      .axi_slv0_arvalid	(axid0.arvalid),	 // Templated
+		      .axi_slv0_awaddr	(axid0.awaddr),		 // Templated
+		      .axi_slv0_awlen	(axid0.awlen),		 // Templated
+		      .axi_slv0_awuser_ap	(1'd0),			 // Templated
+		      .axi_slv0_awuser_id	(axid0.awid),		 // Templated
+		      .axi_slv0_awvalid	(axid0.awvalid),	 // Templated
+		      .axi_slv0_wdata	(axid0.wdata),		 // Templated
+		      .axi_slv0_wstrb	(axid0.wstrb),		 // Templated
+		      .axi_slv1_araddr	(axid1.araddr),		 // Templated
+		      .axi_slv1_arlen	(axid1.arlen),		 // Templated
+		      .axi_slv1_aruser_ap	(1'd0),			 // Templated
+		      .axi_slv1_aruser_id	(axid1.arid),		 // Templated
+		      .axi_slv1_arvalid	(axid1.arvalid),	 // Templated
+		      .axi_slv1_awaddr	(axid1.awaddr),		 // Templated
+		      .axi_slv1_awlen	(axid1.awlen),		 // Templated
+		      .axi_slv1_awuser_ap	(1'd0),			 // Templated
+		      .axi_slv1_awuser_id	(axid1.awid),		 // Templated
+		      .axi_slv1_awvalid	(axid1.awvalid),	 // Templated
+		      .axi_slv1_wdata	(axid1.wdata),		 // Templated
+		      .axi_slv1_wstrb	(axid1.wstrb),		 // Templated
+		      .axi_slv2_araddr	(axid2.araddr),		 // Templated
+		      .axi_slv2_arlen	(axid2.arlen),		 // Templated
+		      .axi_slv2_aruser_ap	(1'd0),			 // Templated
+		      .axi_slv2_aruser_id	(axid2.arid),		 // Templated
+		      .axi_slv2_arvalid	(axid2.arvalid),	 // Templated
+		      .axi_slv2_awaddr	(axid2.awaddr),		 // Templated
+		      .axi_slv2_awlen	(axid2.awlen),		 // Templated
+		      .axi_slv2_awuser_ap	(1'd0),			 // Templated
+		      .axi_slv2_awuser_id	(axid2.awid),		 // Templated
+		      .axi_slv2_awvalid	(axid2.awvalid),	 // Templated
+		      .axi_slv2_wdata	(axid2.wdata),		 // Templated
+		      .axi_slv2_wstrb	(axid2.wstrb),		 // Templated
 		      .ref_clk		(ref_clk),
 		      .resetn		(rst_n));		 // Templated
 rst_gen u_rst_gen(/*AUTOINST*/
