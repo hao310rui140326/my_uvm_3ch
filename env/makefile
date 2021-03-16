@@ -10,6 +10,7 @@ emacs:
 	emacs   --batch   ddr3_model.sv           -f verilog-auto     -f save-buffer
 	emacs   --batch   ddr_wrapper.sv          -f verilog-auto     -f save-buffer
 	emacs   --batch   ddr_3ch.sv          -f verilog-auto     -f save-buffer
+	emacs   --batch   ddra_3ch.sv          -f verilog-auto     -f save-buffer
 	emacs   --batch   tb_top.sv               -f verilog-auto     -f save-buffer
 	rm ddr3.v ddr3_parameters.vh   
 verdi:
