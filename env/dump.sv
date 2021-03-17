@@ -11,6 +11,9 @@ parameter   DUMP_ED = 1_000_000;
 			//wait ( tb.u_tx_sys.tcp_frame_cnt[63:0]==32'd224000 );  //53287
 			$fsdbAutoSwitchDumpfile(1000,"tb_top.fsdb",100);
 			$fsdbDumpoff;
+			$fsdbDumpSVA;
+			//$fsdbDumpMDA;
+			//$fsdbDumpMem;
 			$fsdbDumpvars(0,tb_top);
 			$fsdbDumpon;
 			#DUMP_ED ;

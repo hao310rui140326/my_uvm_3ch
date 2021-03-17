@@ -66,7 +66,7 @@ wire			rst_n;			// From u_rst_gen of rst_gen.v
  tvip_mem_if   memd1(core_clk,rst_n);
  tvip_mem_if   memd2(core_clk,rst_n);
 
-
+ axi_sva   u_axi_sva(axid0,axid1,axid2);
 /*ddr3_reg AUTO_TEMPLATE(
       .aclk          		(ref_clk),
       .areset_n      		(rst_n),

@@ -20,6 +20,7 @@
 ../../env/vip/tvip_axi_if.sv  
 ../../env/vip/tvip_ini_if.sv 
 ../../env/vip/tvip_mem_if.sv 
+../../env/axi_sva.sv
 ../../env/ips_ddr_mm_top_model.sv
 ../../env/tb_top.sv
 ../lib.sv
