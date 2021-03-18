@@ -6,13 +6,14 @@ module axi_sva(
 
 wire         arb_en       =  tb_top.u_ddr3_reg.arb_mode[0];
 wire   [1:0] arb_mode     =  tb_top.u_ddr3_reg.arb_mode[2:1];
+//wire     [1:0]  arb_mode   =  'd1;
+//wire     [1:0]  arb_mode   =  'd3;
 
 wire   [15:0]    weight_setting0  = tb_top.u_ddr3_reg.WEIGHT_SETTING0[15:0];
 wire   [15:0]    weight_setting1  = tb_top.u_ddr3_reg.WEIGHT_SETTING1[15:0];
 wire   [15:0]    weight_setting2  = tb_top.u_ddr3_reg.WEIGHT_SETTING2[15:0];
 
-//wire   arb_mode   =  'd2;
-//wire   arb_mode   =  'd3;
+
 wire clk      = axi0.aclk    ;
 wire rst_n    = axi0.areset_n    ;
 
@@ -101,7 +102,7 @@ end
 //endproperty
 
 property perror;
-	@(posedge clk)  (  !( (wasuc1&&wasuc0) || (wasuc2&&wasuc1) || (wasuc2&&wasuc0)  )  ) ;
+	@(posedge clk)    (  !( (wasuc1&&wasuc0) || (wasuc2&&wasuc1) || (wasuc2&&wasuc0)  )  ) ;
 endproperty
 
 
@@ -116,7 +117,7 @@ aerror : assert property(perror);
 
 /////////////////////////////////////////////////////////////////////////
 property pnarbitor;
-	@(posedge clk)   (~arb_en)  ?  ((!wasuc1)&&(!wasuc2)) : 1    ;
+	@(posedge clk)    (~arb_en)  ?  ((!wasuc1)&&(!wasuc2)) : 1    ;
 endproperty
 anarbitor : assert property(pnarbitor);
 /////////////////////////////////////////////////////////////////////////
@@ -132,26 +133,26 @@ amode0 : assert property(pmode0_0 and  pmode0_1);
 
 /////////////////////////////////////////////////////////////////////////
 property pmode1_0;
-	@(posedge clk)   ((arb_mode=='d1)&&arb_en)  ?  (~( wavalid0_dly&&(  ((axi1_wacnt>1)&&wasuc1)  || ((axi2_wacnt>1)&&wasuc2) )  )) : 1    ;
+	@(posedge clk)   ((arb_mode=='d1)&&arb_en)  ?  (!( wavalid0_dly&&(  ((axi1_wacnt>1)&&wasuc1)  || ((axi2_wacnt>1)&&wasuc2) )  )) : 1    ;
 endproperty
 property pmode1_1;
-	@(posedge clk)   ((arb_mode=='d1)&&arb_en)  ?  (~( wavalid1_dly&&(  ((axi0_wacnt>1)&&wasuc0)  || ((axi2_wacnt>1)&&wasuc2) )  )) : 1    ;
+	@(posedge clk)   ((arb_mode=='d1)&&arb_en)  ?  (!( wavalid1_dly&&(  ((axi0_wacnt>1)&&wasuc0)  || ((axi2_wacnt>1)&&wasuc2) )  )) : 1    ;
 endproperty
 property pmode1_2;
-	@(posedge clk)   ((arb_mode=='d1)&&arb_en)  ?  (~( wavalid2_dly&&(  ((axi0_wacnt>1)&&wasuc0)  || ((axi1_wacnt>1)&&wasuc1) )  )) : 1    ;
+	@(posedge clk)   ((arb_mode=='d1)&&arb_en)  ?  (!( wavalid2_dly&&(  ((axi0_wacnt>1)&&wasuc0)  || ((axi1_wacnt>1)&&wasuc1) )  )) : 1    ;
 endproperty
 amode1 : assert property(pmode1_0 and  pmode1_1 and pmode1_2);
 /////////////////////////////////////////////////////////////////////////
 
 /////////////////////////////////////////////////////////////////////////
 property pmode2_0;
-	@(posedge clk)   ((arb_mode=='d2)&&arb_en)  ?  (~( wavalid0_dly&&(  ((axi1_wacnt>weight_setting1)&&wasuc1)  || ((axi2_wacnt>weight_setting2)&&wasuc2) )  )) : 1    ;
+	@(posedge clk)   ((arb_mode=='d2)&&arb_en)  ?  (!( wavalid0_dly&&(  ((axi1_wacnt>weight_setting1)&&wasuc1)  || ((axi2_wacnt>weight_setting2)&&wasuc2) )  )) : 1    ;
 endproperty
 property pmode2_1;
-	@(posedge clk)   ((arb_mode=='d2)&&arb_en)  ?  (~( wavalid1_dly&&(  ((axi0_wacnt>weight_setting0)&&wasuc0)  || ((axi2_wacnt>weight_setting2)&&wasuc2) )  )) : 1    ;
+	@(posedge clk)   ((arb_mode=='d2)&&arb_en)  ?  (!( wavalid1_dly&&(  ((axi0_wacnt>weight_setting0)&&wasuc0)  || ((axi2_wacnt>weight_setting2)&&wasuc2) )  )) : 1    ;
 endproperty
 property pmode2_2;
-	@(posedge clk)   ((arb_mode=='d2)&&arb_en)  ?  (~( wavalid2_dly&&(  ((axi0_wacnt>weight_setting0)&&wasuc0)  || ((axi1_wacnt>weight_setting1)&&wasuc1) )  )) : 1    ;
+	@(posedge clk)   ((arb_mode=='d2)&&arb_en)  ?  (!( wavalid2_dly&&(  ((axi0_wacnt>weight_setting0)&&wasuc0)  || ((axi1_wacnt>weight_setting1)&&wasuc1) )  )) : 1    ;
 endproperty
 amode2 : assert property(pmode2_0 and  pmode2_1 and pmode2_2);
 /////////////////////////////////////////////////////////////////////////
