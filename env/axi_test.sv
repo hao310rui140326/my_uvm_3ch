@@ -10,6 +10,20 @@ class apb_case_sequence extends uvm_sequence #(apb_transaction);
    virtual task body();
       if(starting_phase != null) 
          starting_phase.raise_objection(this);
+	
+	`ifdef AMODE0
+         	`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==8'he0;apb_wdata=='h0000;apb_rd_wr==apb_transaction::APB_WRITE;}  )
+         	`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==8'he0;apb_wdata=='h0001;apb_rd_wr==apb_transaction::APB_WRITE;}  )
+	`elsif AMODE1
+		`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==8'he0;apb_wdata=='h0002;apb_rd_wr==apb_transaction::APB_WRITE;}  )
+         	`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==8'he0;apb_wdata=='h0003;apb_rd_wr==apb_transaction::APB_WRITE;}  )
+	`elsif AMODE2
+		`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==8'he0;apb_wdata=='h0004;apb_rd_wr==apb_transaction::APB_WRITE;}  )
+         	`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==8'he0;apb_wdata=='h0005;apb_rd_wr==apb_transaction::APB_WRITE;}  )
+	`else
+		`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==8'he0;apb_wdata=='h0000;apb_rd_wr==apb_transaction::APB_WRITE;}  )
+	`endif
+
  	`ifdef MRS
          	`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==4;apb_wdata=='h4001;apb_rd_wr==apb_transaction::APB_WRITE;}  )
          	`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==5;apb_rd_wr==apb_transaction::APB_READ;}  )	 	 

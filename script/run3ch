@@ -1,2 +1,15 @@
-make  CASE=axi_3ch_test   MODE=NORMAL   TMODE=WR_RAND       DUMP=$1 
-make  CASE=axi_3ch_test   MODE=NORMAL   TMODE=RAND_ALL      DUMP=$1 
+make  CASE=axi_3ch_test   MODE=NORMAL  AMODE=AMODE0   TMODE=WR_RAND       DUMP=$1 
+make  CASE=axi_3ch_test   MODE=NORMAL  AMODE=AMODE1   TMODE=WR_RAND       DUMP=$1 
+make  CASE=axi_3ch_test   MODE=NORMAL  AMODE=AMODE2   TMODE=WR_RAND       DUMP=$1 
+make  CASE=axi_3ch_test   MODE=NORMAL  AMODE=NAMODE   TMODE=WR_RAND       DUMP=$1
+ 
+make  CASE=axi_3ch_test   MODE=NORMAL  AMODE=AMODE0   TMODE=RAND_ALL      DUMP=$1 
+make  CASE=axi_3ch_test   MODE=NORMAL  AMODE=AMODE1   TMODE=RAND_ALL      DUMP=$1 
+make  CASE=axi_3ch_test   MODE=NORMAL  AMODE=AMODE2   TMODE=RAND_ALL      DUMP=$1 
+make  CASE=axi_3ch_test   MODE=NORMAL  AMODE=NAMODE   TMODE=RAND_ALL      DUMP=$1 
+
+make  CASE=axi_3ch_test   MODE=NORMAL  AMODE=AMODE0   TMODE=SEQ_ALL       DUMP=$1 
+make  CASE=axi_3ch_test   MODE=NORMAL  AMODE=AMODE1   TMODE=SEQ_ALL       DUMP=$1 
+make  CASE=axi_3ch_test   MODE=NORMAL  AMODE=AMODE2   TMODE=SEQ_ALL       DUMP=$1 
+make  CASE=axi_3ch_test   MODE=NORMAL  AMODE=NAMODE   TMODE=SEQ_ALL       DUMP=$1 
+

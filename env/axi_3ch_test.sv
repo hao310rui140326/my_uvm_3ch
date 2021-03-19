@@ -10,6 +10,20 @@ class apb_3ch_sequence extends uvm_sequence #(apb_transaction);
    virtual task body();
       if(starting_phase != null) 
          starting_phase.raise_objection(this);
+	
+	`ifdef AMODE0
+         	`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==8'he0;apb_wdata=='h0000;apb_rd_wr==apb_transaction::APB_WRITE;}  )
+         	`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==8'he0;apb_wdata=='h0001;apb_rd_wr==apb_transaction::APB_WRITE;}  )
+	`elsif AMODE1
+		`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==8'he0;apb_wdata=='h0002;apb_rd_wr==apb_transaction::APB_WRITE;}  )
+         	`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==8'he0;apb_wdata=='h0003;apb_rd_wr==apb_transaction::APB_WRITE;}  )
+	`elsif AMODE2
+		`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==8'he0;apb_wdata=='h0004;apb_rd_wr==apb_transaction::APB_WRITE;}  )
+         	`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==8'he0;apb_wdata=='h0005;apb_rd_wr==apb_transaction::APB_WRITE;}  )
+	`else
+		`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==8'he0;apb_wdata=='h0000;apb_rd_wr==apb_transaction::APB_WRITE;}  )
+	`endif
+ 	
  	`ifdef MRS
          	`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==4;apb_wdata=='h4001;apb_rd_wr==apb_transaction::APB_WRITE;}  )
          	`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==5;apb_rd_wr==apb_transaction::APB_READ;}  )	 	 
@@ -69,7 +83,8 @@ class axi_3ch_sequence extends uvm_sequence #(axi_transaction);
                 		`uvm_do_with(m_trans,{axi_enable == 1'b1;axi_write==1'b0;axi_len==`AXI_LEN;axi_raddr==i*8*16;axi_rd_wr==axi_transaction::AXI_SEQ_ONE;}  )
  	         	end
 	        `elsif SEQ_ALL
-	        	`uvm_do_with(m_trans,{axi_enable == 1'b1;axi_len==`AXI_LEN;axi_sim_cnt==`SIM_LEN;axi_waddr==`AXI_ADDR;axi_rd_wr==axi_transaction::AXI_SEQ_ALL;}  )         
+	        	//`uvm_do_with(m_trans,{axi_enable == 1'b1;axi_len==`AXI_LEN;axi_sim_cnt==`SIM_LEN;axi_waddr==`AXI_ADDR;axi_rd_wr==axi_transaction::AXI_SEQ_ALL;}  )         
+	        	`uvm_do_with(m_trans,{axi_enable == 1'b1;axi_len==`AXI_LEN;axi_sim_cnt==`SIM_LEN;axi_rd_wr==axi_transaction::AXI_SEQ_ALL;}  )         
 	        `elsif RAND_ALL
        	               `uvm_do_with(m_trans,{axi_enable == 1'b1;axi_sim_cnt==`SIM_LEN;axi_rd_wr==axi_transaction::AXI_RAND_ALL;}  )	 
  	        `elsif WR_RAND  //wr
