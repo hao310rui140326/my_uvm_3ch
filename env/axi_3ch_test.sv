@@ -14,14 +14,18 @@ class apb_3ch_sequence extends uvm_sequence #(apb_transaction);
 	`ifdef AMODE0
          	`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==8'he0;apb_wdata=='h0000;apb_rd_wr==apb_transaction::APB_WRITE;}  )
          	`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==8'he0;apb_wdata=='h0001;apb_rd_wr==apb_transaction::APB_WRITE;}  )
+         	`uvm_info("apb_3ch_sequence", "Arbitor mode is AMODE0 !!!", UVM_LOW)      		
 	`elsif AMODE1
 		`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==8'he0;apb_wdata=='h0002;apb_rd_wr==apb_transaction::APB_WRITE;}  )
          	`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==8'he0;apb_wdata=='h0003;apb_rd_wr==apb_transaction::APB_WRITE;}  )
+         	`uvm_info("apb_3ch_sequence", "Arbitor mode is AMODE1 !!!", UVM_LOW)      				
 	`elsif AMODE2
 		`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==8'he0;apb_wdata=='h0004;apb_rd_wr==apb_transaction::APB_WRITE;}  )
          	`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==8'he0;apb_wdata=='h0005;apb_rd_wr==apb_transaction::APB_WRITE;}  )
+         	`uvm_info("apb_3ch_sequence", "Arbitor mode is AMODE2 !!!", UVM_LOW)      						
 	`else
 		`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==8'he0;apb_wdata=='h0000;apb_rd_wr==apb_transaction::APB_WRITE;}  )
+         	`uvm_info("apb_3ch_sequence", "No Arbitor mode  !!!", UVM_LOW)      						
 	`endif
  	
  	`ifdef MRS
