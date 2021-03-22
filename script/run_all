@@ -1,25 +1,25 @@
-make  CASE=axi_test   MODE=NORMAL   TMODE=WR         DUMP=$1 
-make  CASE=axi_test   MODE=NORMAL   TMODE=WR_RAND    DUMP=$1 
-make  CASE=axi_test   MODE=NORMAL   TMODE=SEQ        DUMP=$1 
-make  CASE=axi_test   MODE=NORMAL   TMODE=SEQ_ALL    DUMP=$1 
-make  CASE=axi_test   MODE=NORMAL   TMODE=RAND_ALL   DUMP=$1
-make  CASE=axi_test   MODE=PD       TMODE=WR         DUMP=$1 
-make  CASE=axi_test   MODE=PD       TMODE=WR_RAND    DUMP=$1 
-make  CASE=axi_test   MODE=PD       TMODE=SEQ        DUMP=$1 
-make  CASE=axi_test   MODE=PD       TMODE=SEQ_ALL    DUMP=$1 
-make  CASE=axi_test   MODE=PD       TMODE=RAND_ALL   DUMP=$1 
-make  CASE=axi_test   MODE=MRS      TMODE=WR         DUMP=$1 
-make  CASE=axi_test   MODE=MRS      TMODE=WR_RAND    DUMP=$1 
-make  CASE=axi_test   MODE=MRS      TMODE=SEQ        DUMP=$1 
-make  CASE=axi_test   MODE=MRS      TMODE=SEQ_ALL    DUMP=$1 
-make  CASE=axi_test   MODE=MRS      TMODE=RAND_ALL   DUMP=$1 
-make  CASE=axi_test   MODE=SR       TMODE=WR         DUMP=$1 
-make  CASE=axi_test   MODE=SR       TMODE=WR_RAND    DUMP=$1 
-make  CASE=axi_test   MODE=SR       TMODE=SEQ        DUMP=$1 
-make  CASE=axi_test   MODE=SR       TMODE=SEQ_ALL    DUMP=$1 
-make  CASE=axi_test   MODE=SR       TMODE=RAND_ALL   DUMP=$1
-make  CASE=axi_3ch_test   MODE=NORMAL   TMODE=WR_RAND       DUMP=$1 
-make  CASE=axi_3ch_test   MODE=NORMAL   TMODE=RAND_ALL      DUMP=$1  
+make  CASE=axi_test   MODE=NORMAL   TMODE=WR         	DUMP=$1 
+make  CASE=axi_test   MODE=NORMAL   TMODE=WRRAND    	DUMP=$1 
+make  CASE=axi_test   MODE=NORMAL   TMODE=SEQ        	DUMP=$1 
+make  CASE=axi_test   MODE=NORMAL   TMODE=SALL    	DUMP=$1 
+make  CASE=axi_test   MODE=NORMAL   TMODE=RALL   	DUMP=$1
+make  CASE=axi_test   MODE=PD       TMODE=WR         	DUMP=$1 
+make  CASE=axi_test   MODE=PD       TMODE=WRRAND    	DUMP=$1 
+make  CASE=axi_test   MODE=PD       TMODE=SEQ        	DUMP=$1 
+make  CASE=axi_test   MODE=PD       TMODE=SALL    	DUMP=$1 
+make  CASE=axi_test   MODE=PD       TMODE=RALL   	DUMP=$1 
+make  CASE=axi_test   MODE=MRS      TMODE=WR         	DUMP=$1 
+make  CASE=axi_test   MODE=MRS      TMODE=WRRAND    	DUMP=$1 
+make  CASE=axi_test   MODE=MRS      TMODE=SEQ        	DUMP=$1 
+make  CASE=axi_test   MODE=MRS      TMODE=SALL    	DUMP=$1 
+make  CASE=axi_test   MODE=MRS      TMODE=RALL   	DUMP=$1 
+make  CASE=axi_test   MODE=SR       TMODE=WR         	DUMP=$1 
+make  CASE=axi_test   MODE=SR       TMODE=WRRAND    	DUMP=$1 
+make  CASE=axi_test   MODE=SR       TMODE=SEQ        	DUMP=$1 
+make  CASE=axi_test   MODE=SR       TMODE=SALL    	DUMP=$1 
+make  CASE=axi_test   MODE=SR       TMODE=RALL   	DUMP=$1
+make  CASE=axi_3ch_test   MODE=NORMAL   TMODE=WRRAND    DUMP=$1 
+make  CASE=axi_3ch_test   MODE=NORMAL   TMODE=RALL      DUMP=$1  
 make  grep
 make  cov
 

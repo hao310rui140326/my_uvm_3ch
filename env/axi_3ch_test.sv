@@ -82,12 +82,12 @@ class axi_3ch_sequence extends uvm_sequence #(axi_transaction);
                 		`uvm_do_with(m_trans,{axi_enable == 1'b1;axi_write==1'b1;axi_len==`AXI_LEN;axi_waddr==i*8*16;axi_rd_wr==axi_transaction::AXI_SEQ_ONE;}  )
                 		`uvm_do_with(m_trans,{axi_enable == 1'b1;axi_write==1'b0;axi_len==`AXI_LEN;axi_raddr==i*8*16;axi_rd_wr==axi_transaction::AXI_SEQ_ONE;}  )
  	         	end
-	        `elsif SEQ_ALL
+	        `elsif SALL
 	        	//`uvm_do_with(m_trans,{axi_enable == 1'b1;axi_len==`AXI_LEN;axi_sim_cnt==`SIM_LEN;axi_waddr==`AXI_ADDR;axi_rd_wr==axi_transaction::AXI_SEQ_ALL;}  )         
 	        	`uvm_do_with(m_trans,{axi_enable == 1'b1;axi_len==`AXI_LEN;axi_sim_cnt==`SIM_LEN;axi_rd_wr==axi_transaction::AXI_SEQ_ALL;}  )         
-	        `elsif RAND_ALL
+	        `elsif RALL
        	               `uvm_do_with(m_trans,{axi_enable == 1'b1;axi_sim_cnt==`SIM_LEN;axi_rd_wr==axi_transaction::AXI_RAND_ALL;}  )	 
- 	        `elsif WR_RAND  //wr
+ 	        `elsif WRRAND  //wr
 			for (int i=0;i<=`SIM_LEN;i++) begin
  	                	`uvm_do_with(m_trans,{axi_enable == 1'b1;axi_write==1'b1;axi_rd_wr==axi_transaction::AXI_SEQ_ONE;}  )
                 		`uvm_do_with(m_trans,{axi_enable == 1'b1;axi_write==1'b0;axi_rd_wr==axi_transaction::AXI_SEQ_ONE;}  )
@@ -140,9 +140,11 @@ task axi_3ch_test::main_phase(uvm_phase phase);
       //seq1.start(env.axi_sqr0, null, 200);
       //seq2.start(env.axi_sqr1, null, 300);
       //seq3.start(env.axi_sqr2, null, 400);
-      seq1.start(env.axi_sqr0);
-      seq2.start(env.axi_sqr1);
-      seq3.start(env.axi_sqr2);
+
+      	#(`SEQ1_DELAY*1000000)		seq1.start(env.axi_sqr0);
+      	#(`SEQ2_DELAY*1000000)		seq2.start(env.axi_sqr1);
+      	#(`SEQ3_DELAY*1000000)		seq3.start(env.axi_sqr2);
+
    join
 endtask
 

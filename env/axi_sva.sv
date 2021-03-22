@@ -4,11 +4,11 @@ module axi_sva(
   tvip_axi_if axi2
 );
 
-//wire         arb_en       =  tb_top.u_ddr3_reg.arb_mode[0];
-//wire   [1:0] arb_mode     =  tb_top.u_ddr3_reg.arb_mode[2:1];
-wire            arb_en     =  'd1;
+wire         arb_en       =  tb_top.u_ddr3_reg.arb_mode[0];
+wire   [1:0] arb_mode     =  tb_top.u_ddr3_reg.arb_mode[2:1];
+//wire            arb_en     =  'd1;
 //wire     [1:0]  arb_mode   =  'd0;
-wire     [1:0]  arb_mode   =  'd1;
+//wire     [1:0]  arb_mode   =  'd1;
 //wire     [1:0]  arb_mode   =  'd2;
 
 wire   [15:0]    weight_setting0  = tb_top.u_ddr3_reg.WEIGHT_SETTING0[15:0];
