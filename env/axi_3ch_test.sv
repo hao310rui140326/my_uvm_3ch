@@ -141,9 +141,9 @@ task axi_3ch_test::main_phase(uvm_phase phase);
       //seq2.start(env.axi_sqr1, null, 300);
       //seq3.start(env.axi_sqr2, null, 400);
 
-      	#(`SEQ1_DELAY*1000000)		seq1.start(env.axi_sqr0);
-      	#(`SEQ2_DELAY*1000000)		seq2.start(env.axi_sqr1);
-      	#(`SEQ3_DELAY*1000000)		seq3.start(env.axi_sqr2);
+      	#(`SEQ1_DELAY*50000)		seq1.start(env.axi_sqr0);
+      	#(`SEQ2_DELAY*50000)		seq2.start(env.axi_sqr1);
+      	#(`SEQ3_DELAY*50000)		seq3.start(env.axi_sqr2);
 
    join
 endtask
