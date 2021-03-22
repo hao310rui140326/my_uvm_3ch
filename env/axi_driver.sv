@@ -85,8 +85,8 @@ task axi_driver::main_phase(uvm_phase phase);
 endtask
 
 task axi_driver::drive_waxi_one(axi_transaction tr);
-   `uvm_info("axi_driver", "Transaction From AXI Master Driver..", UVM_MEDIUM)
-   `uvm_info("axi_driver", "begin to WAXI_ONE", UVM_HIGH);
+   `uvm_info("axi_driver", "Transaction From AXI Master Driver..", UVM_LOW)
+   `uvm_info("axi_driver", "begin to WAXI_ONE", UVM_LOW);
 //   reg  [31:0]   taddr ;
    @(posedge vaxi.aclk);
    vaxi.awvalid    <= 1'b1;     
@@ -131,8 +131,8 @@ endtask
 
 
 task axi_driver::drive_raxi_one(axi_transaction tr);
-   `uvm_info("axi_driver", "Transaction From AXI Master Driver..", UVM_MEDIUM)
-   `uvm_info("axi_driver", "begin to RAXI_ONE", UVM_HIGH);
+   `uvm_info("axi_driver", "Transaction From AXI Master Driver..", UVM_LOW)
+   `uvm_info("axi_driver", "begin to RAXI_ONE", UVM_LOW);
    //reg  [31:0]   taddr ;  
    montr = new("montr"); 
    montr.copy(tr);
@@ -177,8 +177,8 @@ task axi_driver::drive_raxi_one(axi_transaction tr);
 endtask
 
 task axi_driver::drive_wraxi_all(axi_transaction tr);
-   `uvm_info("axi_driver", "Transaction From AXI Master Driver..", UVM_MEDIUM)
-   `uvm_info("axi_driver", "begin to WRAXI_SEQ_ALL", UVM_HIGH);
+   `uvm_info("axi_driver", "Transaction From AXI Master Driver..", UVM_LOW)
+   `uvm_info("axi_driver", "begin to WRAXI_SEQ_ALL", UVM_LOW);
 
    montr = new("montr");    
    montr.copy(tr);
@@ -252,6 +252,7 @@ task axi_driver::drive_wraxi_all(axi_transaction tr);
 	    		 if (rinfo_fifo.size>1) begin
 	    		     if (rwcnt>=1024) begin
 	    		    	rflag  <= 1'd1 ;
+	    		    	rwcnt  <= 'd1025 ;
 	    		     end
 	    		     else begin
 	    		    	rwcnt  <= rwcnt + 'd1 ;
@@ -272,7 +273,10 @@ task axi_driver::drive_wraxi_all(axi_transaction tr);
 	    		    vaxi.araddr     <= raxi_info.waddr;
 	    		    vaxi.arlen      <= raxi_info.wlen ;		
 	    		 end
-	    		 else if (vaxi.arready && vaxi.arvalid&&~rflag)  begin 
+	    		 else if (vaxi.arready && vaxi.arvalid&&~rflag  && (rwcnt>'d1024) )  begin 
+	    		    vaxi.arvalid    <= 1'b0;     
+	    		 end
+			 else if (vaxi.arready && vaxi.arvalid&&~rflag  && (rwcnt=='d1024) && (rinfo_fifo.size==0)  )  begin 
 	    		    vaxi.arvalid    <= 1'b0;     
 	    		 end
 	    		 //axi rdata

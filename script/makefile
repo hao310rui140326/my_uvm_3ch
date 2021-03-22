@@ -23,7 +23,7 @@ verdi:
 	rm -rf  my_verdi  ; mkdir my_verdi; cd my_verdi;  cp ../define.v   ../../env/ddr3_parameters.vh  ../../env/vip/tvip_axi_defines.svh  ../../env/reg_define.v     ./;  verdi -sv  -f ../tb.vc  -top tb_top &
 
 clean:
-	rm -rf *simv*  *csrc   *~ verdiLog  novas*  ucli.key  *.vpd  *.fsdb  vc_hdrs.h  *.log *case*   my_verdi   cov_report 
+	rm -rf *simv*  *csrc   *~ verdiLog  novas*  ucli.key  *.vpd  *.fsdb  vc_hdrs.h  *.log *case*   my_verdi   cov_report  DVEfiles 
 	
 
 cov:
