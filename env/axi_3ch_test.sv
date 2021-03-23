@@ -32,32 +32,36 @@ class apb_3ch_sequence extends uvm_sequence #(apb_transaction);
          	`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==4;apb_wdata=='h4001;apb_rd_wr==apb_transaction::APB_WRITE;}  )
          	`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==5;apb_rd_wr==apb_transaction::APB_READ;}  )	 	 
 		wait(tb_top.apbd.apb_rdata=='d3);
-         	`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==5;apb_rd_wr==apb_transaction::APB_READ;}  )	 	 		
-		 wait(tb_top.apbd.apb_rdata=='d0);
-         	`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==5;apb_rd_wr==apb_transaction::APB_READ;}  )	 	 		
+         	`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==5;apb_rd_wr==apb_transaction::APB_READ;}  )	 
+		`uvm_info("apb_3ch_sequence", "MRS mode  !!!", UVM_LOW)		
+		 //wait(tb_top.apbd.apb_rdata=='d0);
+         	//`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==5;apb_rd_wr==apb_transaction::APB_READ;}  )	 	 		
 	`elsif SR
          	`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==4;apb_wdata=='h8001;apb_rd_wr==apb_transaction::APB_WRITE;}  )
          	`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==5;apb_rd_wr==apb_transaction::APB_READ;}  )	 	 
 		wait(tb_top.apbd.apb_rdata=='d1);
          	`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==5;apb_rd_wr==apb_transaction::APB_READ;}  )
-         	`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==4;apb_wdata=='h0001;apb_rd_wr==apb_transaction::APB_WRITE;}  )
-         	`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==5;apb_rd_wr==apb_transaction::APB_READ;}  )		
-		wait(tb_top.apbd.apb_rdata=='d0);
-         	`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==5;apb_rd_wr==apb_transaction::APB_READ;}  )
+		`uvm_info("apb_3ch_sequence", "SR mode  !!!", UVM_LOW)				
+         	//`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==4;apb_wdata=='h0001;apb_rd_wr==apb_transaction::APB_WRITE;}  )
+         	//`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==5;apb_rd_wr==apb_transaction::APB_READ;}  )		
+		//wait(tb_top.apbd.apb_rdata=='d0);
+         	//`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==5;apb_rd_wr==apb_transaction::APB_READ;}  )
 	`elsif PD
          	`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==4;apb_wdata=='hc001;apb_rd_wr==apb_transaction::APB_WRITE;}  )
          	`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==5;apb_rd_wr==apb_transaction::APB_READ;}  )	 	 
 		wait(tb_top.apbd.apb_rdata=='d2);
          	`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==5;apb_rd_wr==apb_transaction::APB_READ;}  )
-         	`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==4;apb_wdata=='h0001;apb_rd_wr==apb_transaction::APB_WRITE;}  )
-         	`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==5;apb_rd_wr==apb_transaction::APB_READ;}  )	 	 
-		wait(tb_top.apbd.apb_rdata=='d0);
-         	`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==5;apb_rd_wr==apb_transaction::APB_READ;}  )
+		`uvm_info("apb_3ch_sequence", "PD mode  !!!", UVM_LOW)						
+         	//`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==4;apb_wdata=='h0001;apb_rd_wr==apb_transaction::APB_WRITE;}  )
+         	//`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==5;apb_rd_wr==apb_transaction::APB_READ;}  )	 	 
+		//wait(tb_top.apbd.apb_rdata=='d0);
+         	//`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==5;apb_rd_wr==apb_transaction::APB_READ;}  )
 	`else
          	`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==4;apb_wdata=='h0001;apb_rd_wr==apb_transaction::APB_WRITE;}  )
          	`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==5;apb_rd_wr==apb_transaction::APB_READ;}  )	 
 		wait(tb_top.apbd.apb_rdata=='d0);
-         	`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==5;apb_rd_wr==apb_transaction::APB_READ;}  )	 
+		`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==5;apb_rd_wr==apb_transaction::APB_READ;}  )	 
+		`uvm_info("apb_3ch_sequence", "Normal mode  !!!", UVM_LOW)						
 	`endif
       
          `uvm_info("apb_3ch_sequence", "send one transaction", UVM_LOW)      
@@ -87,8 +91,7 @@ class axi_3ch_sequence extends uvm_sequence #(axi_transaction);
                 		`uvm_do_with(m_trans,{axi_enable == 1'b1;axi_write==1'b0;axi_len==`AXI_LEN;axi_raddr==i*8*16;axi_rd_wr==axi_transaction::AXI_SEQ_ONE;}  )
  	         	end
 	        `elsif SALL
-	        	//`uvm_do_with(m_trans,{axi_enable == 1'b1;axi_len==`AXI_LEN;axi_sim_cnt==`SIM_LEN;axi_waddr==`AXI_ADDR;axi_rd_wr==axi_transaction::AXI_SEQ_ALL;}  )         
-	        	`uvm_do_with(m_trans,{axi_enable == 1'b1;axi_len==`AXI_LEN;axi_sim_cnt==`SIM_LEN;axi_waddr==`AXI_ADDR;axi_rd_wr==axi_transaction::AXI_SEQ_ALL;}  )         
+	        	  `uvm_do_with(m_trans,{axi_enable == 1'b1;axi_len==`AXI_LEN;axi_sim_cnt==`SIM_LEN;axi_waddr==`AXI_ADDR;axi_rd_wr==axi_transaction::AXI_SEQ_ALL;}  )         
 	        `elsif RALL
        	               `uvm_do_with(m_trans,{axi_enable == 1'b1;axi_sim_cnt==`SIM_LEN;axi_rd_wr==axi_transaction::AXI_RAND_ALL;}  )	 
  	        `elsif WRRAND  //wr
@@ -139,17 +142,27 @@ task axi_3ch_test::main_phase(uvm_phase phase);
 
    seq0.start(env.apb_sqr, null, 100);
 
+   `uvm_info("axi_3ch_test", "APB CONFIG DONE !!!!!", UVM_LOW)
+
    //env.i_agt.sqr.set_arbitration(SEQ_ARB_STRICT_FIFO);
-   fork
-      //seq1.start(env.axi_sqr0, null, 200);
-      //seq2.start(env.axi_sqr1, null, 300);
-      //seq3.start(env.axi_sqr2, null, 400);
+   //
+   `ifdef NAMODE
+	   `uvm_info("axi_3ch_test", "AXI NAMODE  START !!!!!", UVM_LOW)	   
+  	   seq1.start(env.axi_sqr0, null, 200);
+   	   //seq2.start(env.axi_sqr1, null, 300);
+   	   //seq3.start(env.axi_sqr2, null, 400);
+	   `uvm_info("axi_3ch_test", "AXI NAMODE  DONE !!!!!", UVM_LOW)	   
+    `else
+	   `uvm_info("axi_3ch_test", "AXI ABITOR  START !!!!!", UVM_LOW)	   
+   	fork
+   	   		#(`SEQ1_DELAY*50000)		seq1.start(env.axi_sqr0);
+   	   		#(`SEQ2_DELAY*50000)		seq2.start(env.axi_sqr1);
+   	   		#(`SEQ3_DELAY*50000)		seq3.start(env.axi_sqr2);
+   	join
+	wait fork;
+	   `uvm_info("axi_3ch_test", "AXI ABITOR  DONE !!!!!", UVM_LOW)	   
 
-      	#(`SEQ1_DELAY*50000)		seq1.start(env.axi_sqr0);
-      	#(`SEQ2_DELAY*50000)		seq2.start(env.axi_sqr1);
-      	#(`SEQ3_DELAY*50000)		seq3.start(env.axi_sqr2);
-
-   join
+     `endif
 endtask
 
 `endif

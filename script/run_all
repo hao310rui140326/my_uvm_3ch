@@ -1,25 +1,10 @@
-make  CASE=axi_test   MODE=NORMAL   TMODE=WR         	DUMP=$1 
-make  CASE=axi_test   MODE=NORMAL   TMODE=WRRAND    	DUMP=$1 
-make  CASE=axi_test   MODE=NORMAL   TMODE=SEQ        	DUMP=$1 
-make  CASE=axi_test   MODE=NORMAL   TMODE=SALL    	DUMP=$1 
-make  CASE=axi_test   MODE=NORMAL   TMODE=RALL   	DUMP=$1
-make  CASE=axi_test   MODE=PD       TMODE=WR         	DUMP=$1 
-make  CASE=axi_test   MODE=PD       TMODE=WRRAND    	DUMP=$1 
-make  CASE=axi_test   MODE=PD       TMODE=SEQ        	DUMP=$1 
-make  CASE=axi_test   MODE=PD       TMODE=SALL    	DUMP=$1 
-make  CASE=axi_test   MODE=PD       TMODE=RALL   	DUMP=$1 
-make  CASE=axi_test   MODE=MRS      TMODE=WR         	DUMP=$1 
-make  CASE=axi_test   MODE=MRS      TMODE=WRRAND    	DUMP=$1 
-make  CASE=axi_test   MODE=MRS      TMODE=SEQ        	DUMP=$1 
-make  CASE=axi_test   MODE=MRS      TMODE=SALL    	DUMP=$1 
-make  CASE=axi_test   MODE=MRS      TMODE=RALL   	DUMP=$1 
-make  CASE=axi_test   MODE=SR       TMODE=WR         	DUMP=$1 
-make  CASE=axi_test   MODE=SR       TMODE=WRRAND    	DUMP=$1 
-make  CASE=axi_test   MODE=SR       TMODE=SEQ        	DUMP=$1 
-make  CASE=axi_test   MODE=SR       TMODE=SALL    	DUMP=$1 
-make  CASE=axi_test   MODE=SR       TMODE=RALL   	DUMP=$1
-make  CASE=axi_3ch_test   MODE=NORMAL   TMODE=WRRAND    DUMP=$1 
-make  CASE=axi_3ch_test   MODE=NORMAL   TMODE=RALL      DUMP=$1  
+beginTime=`date +%M`
+./run3ch  DUMP MRS
+./run3ch  DUMP SR
+./run3ch  DUMP PD
+./run3ch  DUMP NORMAL
 make  grep
 make  cov
+endTime=`date +%M`
+echo "总共耗时:" $(($endTime-$beginTime)) "Min"
 

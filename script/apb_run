@@ -1,5 +1,0 @@
-make CASE=apb_case_rall  DUMP=$1
-
-
-
-

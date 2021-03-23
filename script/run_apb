@@ -1,3 +1,0 @@
-
-make  CASE=apb_case_rall    DUMP=$1    FORCE=FORCE
-make  CASE=apb_case_wrall   DUMP=$1    FORCE=FORCE
