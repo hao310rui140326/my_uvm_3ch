@@ -267,7 +267,7 @@ task axi_driver::drive_wraxi_all(axi_transaction tr);
 	    		    vaxi.araddr     <= raxi_info.waddr;
 	    		    vaxi.arlen      <= raxi_info.wlen ;	
 	    		 end
-	    		 else if (vaxi.arready && vaxi.arvalid&&rflag) begin
+	    		 else if (vaxi.arready && vaxi.arvalid&& (rflag || (~rflag  && (rwcnt=='d1024) && (rinfo_fifo.size>0))  ) ) begin
    	    		    raxi_info = rinfo_fifo.pop_front() ;
 	    		    vaxi.arvalid    <= 1'b1;     
 	    		    vaxi.araddr     <= raxi_info.waddr;
