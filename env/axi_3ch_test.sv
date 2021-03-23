@@ -8,8 +8,8 @@ class apb_3ch_sequence extends uvm_sequence #(apb_transaction);
    endfunction 
    
    virtual task body();
-      if(starting_phase != null) 
-         starting_phase.raise_objection(this);
+      //if(starting_phase != null) 
+      //   starting_phase.raise_objection(this);
 	
 	`ifdef AMODE0
          	`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==8'he0;apb_wdata=='h0000;apb_rd_wr==apb_transaction::APB_WRITE;}  )
@@ -66,8 +66,8 @@ class apb_3ch_sequence extends uvm_sequence #(apb_transaction);
       
          `uvm_info("apb_3ch_sequence", "send one transaction", UVM_LOW)      
       #100;
-      if(starting_phase != null) 
-         starting_phase.drop_objection(this);
+      //if(starting_phase != null) 
+      //   starting_phase.drop_objection(this);
    endtask
 
    `uvm_object_utils(apb_3ch_sequence)
@@ -81,8 +81,8 @@ class axi_3ch_sequence extends uvm_sequence #(axi_transaction);
    endfunction 
    
    virtual task body();
-      if(starting_phase != null) 
-         starting_phase.raise_objection(this);
+      //if(starting_phase != null) 
+      //   starting_phase.raise_objection(this);
       repeat (1) begin
          //`uvm_do_with(m_trans, {m_trans.pload.size < 500;})
 	        `ifdef SEQ
@@ -107,8 +107,8 @@ class axi_3ch_sequence extends uvm_sequence #(axi_transaction);
 	 `uvm_info("axi_3ch_sequence", "send one transaction", UVM_LOW)
 
       #100;
-      if(starting_phase != null) 
-         starting_phase.drop_objection(this);
+     // if(starting_phase != null) 
+     //    starting_phase.drop_objection(this);
    endtask
 
    `uvm_object_utils(axi_3ch_sequence)
@@ -130,14 +130,16 @@ task axi_3ch_test::main_phase(uvm_phase phase);
    axi_3ch_sequence seq2;
    axi_3ch_sequence seq3;
 
+   phase.raise_objection(this);
+   
    seq0 = new("seq0");
-   seq0.starting_phase = phase;
+   //seq0.starting_phase = phase;
    seq1 = new("seq1");
-   seq1.starting_phase = phase;
+   //seq1.starting_phase = phase;
    seq2 = new("seq2");
-   seq2.starting_phase = phase;
+   //seq2.starting_phase = phase;
    seq3 = new("seq3");
-   seq3.starting_phase = phase;
+   //seq3.starting_phase = phase;
 
 
    seq0.start(env.apb_sqr, null, 100);
@@ -159,10 +161,14 @@ task axi_3ch_test::main_phase(uvm_phase phase);
    	   		#(`SEQ2_DELAY*50000)		seq2.start(env.axi_sqr1);
    	   		#(`SEQ3_DELAY*50000)		seq3.start(env.axi_sqr2);
    	join
-	wait fork;
+	//wait fork;
 	   `uvm_info("axi_3ch_test", "AXI ABITOR  DONE !!!!!", UVM_LOW)	   
 
      `endif
+
+      phase.drop_objection(this);
+
+
 endtask
 
 `endif
