@@ -42,20 +42,20 @@ class apb_3ch_sequence extends uvm_sequence #(apb_transaction);
 		wait(tb_top.apbd.apb_rdata=='d1);
          	`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==5;apb_rd_wr==apb_transaction::APB_READ;}  )
 		`uvm_info("apb_3ch_sequence", "SR mode  !!!", UVM_LOW)				
-         	//`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==4;apb_wdata=='h0001;apb_rd_wr==apb_transaction::APB_WRITE;}  )
-         	//`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==5;apb_rd_wr==apb_transaction::APB_READ;}  )		
-		//wait(tb_top.apbd.apb_rdata=='d0);
-         	//`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==5;apb_rd_wr==apb_transaction::APB_READ;}  )
+         	`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==4;apb_wdata=='h0001;apb_rd_wr==apb_transaction::APB_WRITE;}  )
+         	`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==5;apb_rd_wr==apb_transaction::APB_READ;}  )		
+		wait(tb_top.apbd.apb_rdata=='d0);
+         	`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==5;apb_rd_wr==apb_transaction::APB_READ;}  )
 	`elsif PD
          	`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==4;apb_wdata=='hc001;apb_rd_wr==apb_transaction::APB_WRITE;}  )
          	`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==5;apb_rd_wr==apb_transaction::APB_READ;}  )	 	 
 		wait(tb_top.apbd.apb_rdata=='d2);
          	`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==5;apb_rd_wr==apb_transaction::APB_READ;}  )
 		`uvm_info("apb_3ch_sequence", "PD mode  !!!", UVM_LOW)						
-         	//`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==4;apb_wdata=='h0001;apb_rd_wr==apb_transaction::APB_WRITE;}  )
-         	//`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==5;apb_rd_wr==apb_transaction::APB_READ;}  )	 	 
-		//wait(tb_top.apbd.apb_rdata=='d0);
-         	//`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==5;apb_rd_wr==apb_transaction::APB_READ;}  )
+         	`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==4;apb_wdata=='h0001;apb_rd_wr==apb_transaction::APB_WRITE;}  )
+         	`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==5;apb_rd_wr==apb_transaction::APB_READ;}  )	 	 
+		wait(tb_top.apbd.apb_rdata=='d0);
+         	`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==5;apb_rd_wr==apb_transaction::APB_READ;}  )
 	`else
          	`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==4;apb_wdata=='h0001;apb_rd_wr==apb_transaction::APB_WRITE;}  )
          	`uvm_do_with(m_trans,{apb_enable == 1'b1;apb_addr==5;apb_rd_wr==apb_transaction::APB_READ;}  )	 
