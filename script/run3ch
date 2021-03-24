@@ -21,4 +21,3 @@ make  CASE=axi_3ch_test   MODE=$2  AMODE=AMODE2   TMODE=WR           SIM_LEN=128
 make  CASE=axi_3ch_test   MODE=$2  AMODE=NAMODE   TMODE=WR           SIM_LEN=128  SEQ1_DELAY=0  SEQ2_DELAY=1  SEQ3_DELAY=2   DUMP=$1     & 
 wait
 endTime=`date +%M`
-echo "总共耗时:" $(($endTime-$beginTime)) "Min"

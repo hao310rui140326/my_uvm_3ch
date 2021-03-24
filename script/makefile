@@ -10,8 +10,8 @@ SIM_LEN=64
 AXI_LEN=15
 AXI_ADDR=0
 SEQ1_DELAY=0
-SEQ2_DELAY=1
-SEQ3_DELAY=2
+SEQ2_DELAY=0
+SEQ3_DELAY=0
 COMPILE_TIME = $(shell date +"%Y-%m-%d-%H-%M-%S")
 
 verdi_path = /usr/synopsys/Verdi3_L-2016.06-1
@@ -28,7 +28,7 @@ clean:
 
 cov:
 	urg   -full64  -dir     ./*case*/cov_info.vdb    -metric line+cond+fsm+tgl -report   ./cov_report   -format both
-	/home/software/firefox/firefox  ./cov_report/hierarchy.html  &
+	/usr/bin/firefox  ./cov_report/hierarchy.html  &
 
 grep:
 	grep "CASE"  ./*case*/vcs*.log

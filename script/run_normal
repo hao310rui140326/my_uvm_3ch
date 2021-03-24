@@ -1,7 +1,8 @@
-beginTime=`date +%M`
+beginTime=`date +%y-%m-%d:%M:%S`
 ./run3ch  DUMP NORMAL
 make  grep
 make  cov
-endTime=`date +%M`
-echo "总共耗时:" $(($endTime-$beginTime)) "Min"
+endTime=`date +%y-%m-%d:%M:%S`
+echo "beginTime:" $beginTime "Min"
+echo "endTime:" $endTime "Min"
 
