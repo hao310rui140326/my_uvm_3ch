@@ -1,5 +1,7 @@
 `timescale 1ns/1ps 
 
+`include "uvm_macros.svh"
+import uvm_pkg::*;
 
 `include  "../../env/apb_transaction.sv"
 `include  "../../env/axi_transaction.sv"
