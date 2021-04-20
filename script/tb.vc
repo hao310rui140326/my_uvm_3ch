@@ -26,7 +26,8 @@
 ../../env/tb_top.sv
 ../lib.sv
 ../ddr3.sv
-../all_vp.sv 
+../dut_vp.sv 
+../lib_vp.sv 
 ../dut.sv
 +define+SIMULATION  
 +define+RTL_SIM 
