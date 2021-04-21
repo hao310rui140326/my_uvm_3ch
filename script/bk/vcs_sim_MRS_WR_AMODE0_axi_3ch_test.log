@@ -1,0 +1,793 @@
+Command: ./simv +model_data+./ +UVM_TESTNAME=axi_3ch_test +UVM_VERBOSITY=UVM_LOW -cm line+cond+fsm+tgl+branch+assert -cm_dir ./cov_info -l vcs_sim_MRS_WR_AMODE0_axi_3ch_test.log
+Chronologic VCS simulator copyright 1991-2016
+Contains Synopsys proprietary information.
+Compiler version L-2016.06_Full64; Runtime version L-2016.06_Full64;  Apr 20 17:02 2021
+----------------------------------------------------------------
+UVM-1.1d.Synopsys
+(C) 2007-2013 Mentor Graphics Corporation
+(C) 2007-2013 Cadence Design Systems, Inc.
+(C) 2006-2013 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+----------------------------------------------------------------
+UVM_INFO @ 0.0 ps: reporter [RNTST] Running test axi_3ch_test...
+UVM_INFO ../../env/axi_driver.sv(41) @ 0.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] new is called
+UVM_INFO ../../env/axi_driver.sv(41) @ 0.0 ps: uvm_test_top.env.axi_drv1 [axi_driver] new is called
+UVM_INFO ../../env/axi_driver.sv(41) @ 0.0 ps: uvm_test_top.env.axi_drv2 [axi_driver] new is called
+UVM_INFO ../../env/axi_driver.sv(46) @ 0.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] build_phase is called
+UVM_INFO ../../env/axi_driver.sv(46) @ 0.0 ps: uvm_test_top.env.axi_drv1 [axi_driver] build_phase is called
+UVM_INFO ../../env/axi_driver.sv(46) @ 0.0 ps: uvm_test_top.env.axi_drv2 [axi_driver] build_phase is called
+UVM_INFO ../../env/apb_driver.sv(37) @ 0.0 ps: uvm_test_top.env.apb_drv [apb_driver] main_phase is called
+UVM_INFO ../../env/axi_driver.sv(66) @ 0.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] main_phase is called
+UVM_INFO ../../env/axi_driver.sv(66) @ 0.0 ps: uvm_test_top.env.axi_drv1 [axi_driver] main_phase is called
+UVM_INFO ../../env/axi_driver.sv(66) @ 0.0 ps: uvm_test_top.env.axi_drv2 [axi_driver] main_phase is called
+VCD+ Writer L-2016.06_Full64 Copyright (c) 1991-2016 by Synopsys Inc.
+*Verdi3* Loading libsscore_vcs201606.so
+*Verdi3* : FSDB_GATE is set.
+*Verdi3* : FSDB_RTL is set.
+*Verdi3* : Enable Parallel Dumping.
+FSDB Dumper for VCS, Release Verdi3_L-2016.06-1, Linux x86_64/64bit, 07/10/2016
+(C) 1996 - 2016 by Synopsys, Inc.
+*Verdi3* FSDB: The switch FSDB file size might not match the input size (1000MB) because of performance concerns.
+*Verdi3* FSDB: To have the FSDB file size match the input size (1000MB), set the FSDB_ENV_PRECISE_AUTOSWITCH environment, though the dumping performance might decrease.
+*Verdi3* : Enable automatic switching of the FSDB file.
+*Verdi3* : (Filename='tb_top', Limit Size=1000MB, File Amount=100).
+*Verdi3* : Create FSDB file 'tb_top_000.fsdb'
+*Verdi3* : Create the file 'tb_top.log' to log the time range of each FSDB file.
+*Verdi3* : Create virtual FSDB file 'tb_top.vf' to log each FSDB file.
+*Verdi3* : fsdbDumpoff - All FSDB files at 110,000,000 fs.
+*Verdi3* : Begin traversing the SVA assertions, layer (0).
+*Verdi3* : End of traversing the SVA assertions.
+*Verdi3* : Begin traversing the scope (tb_top), layer (0).
+*Verdi3* : End of traversing.
+*Verdi3* : fsdbDumpon - All FSDB files at 110,000,000 fs.
+now is 1-us !!
+now is 2-us !!
+now is 3-us !!
+now is 4-us !!
+now is 5-us !!
+now is 6-us !!
+now is 7-us !!
+now is 8-us !!
+now is 9-us !!
+now is 10-us !!
+now is 11-us !!
+now is 12-us !!
+now is 13-us !!
+now is 14-us !!
+now is 15-us !!
+now is 16-us !!
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[0].mem_core.reset at time 16116582.0 ps WARNING: 200 us is required before RST_N goes inactive.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.reset at time 16116582.0 ps WARNING: 200 us is required before RST_N goes inactive.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.reset at time 16116582.0 ps WARNING: 200 us is required before RST_N goes inactive.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.reset at time 16116582.0 ps WARNING: 200 us is required before RST_N goes inactive.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[0].mem_core.reset at time 16116582.0 ps WARNING: 200 us is required before RST_N goes inactive.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[1].mem_core.reset at time 16116582.0 ps WARNING: 200 us is required before RST_N goes inactive.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.reset at time 16116582.0 ps WARNING: 200 us is required before RST_N goes inactive.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.reset at time 16116582.0 ps WARNING: 200 us is required before RST_N goes inactive.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[0].mem_core.reset at time 16116582.0 ps WARNING: 200 us is required before RST_N goes inactive.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[1].mem_core.reset at time 16116582.0 ps WARNING: 200 us is required before RST_N goes inactive.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.reset at time 16116582.0 ps WARNING: 200 us is required before RST_N goes inactive.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.reset at time 16116582.0 ps WARNING: 200 us is required before RST_N goes inactive.
+now is 17-us !!
+now is 18-us !!
+now is 19-us !!
+now is 20-us !!
+now is 21-us !!
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[0].mem_core.cmd_task at time 21265050.0 ps WARNING: 500 us is required after RST_N goes inactive before CKE goes active.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[0].mem_core.cmd_task at time 21265050.0 ps WARNING: 500 us is required after RST_N goes inactive before CKE goes active.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[0].mem_core.cmd_task at time 21265050.0 ps WARNING: 500 us is required after RST_N goes inactive before CKE goes active.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[1].mem_core.cmd_task at time 21265100.0 ps WARNING: 500 us is required after RST_N goes inactive before CKE goes active.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[1].mem_core.cmd_task at time 21265100.0 ps WARNING: 500 us is required after RST_N goes inactive before CKE goes active.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.cmd_task at time 21265100.0 ps WARNING: 500 us is required after RST_N goes inactive before CKE goes active.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.cmd_task at time 21265150.0 ps WARNING: 500 us is required after RST_N goes inactive before CKE goes active.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.cmd_task at time 21265150.0 ps WARNING: 500 us is required after RST_N goes inactive before CKE goes active.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.cmd_task at time 21265150.0 ps WARNING: 500 us is required after RST_N goes inactive before CKE goes active.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.cmd_task at time 21265200.0 ps WARNING: 500 us is required after RST_N goes inactive before CKE goes active.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.cmd_task at time 21265200.0 ps WARNING: 500 us is required after RST_N goes inactive before CKE goes active.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.cmd_task at time 21265200.0 ps WARNING: 500 us is required after RST_N goes inactive before CKE goes active.
+now is 22-us !!
+now is 23-us !!
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[0].mem_core.main: at time 23552550.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[0].mem_core.main: at time 23552550.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[0].mem_core.main: at time 23552550.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[1].mem_core.main: at time 23552600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[1].mem_core.main: at time 23552600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.main: at time 23552600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.main: at time 23552650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.main: at time 23552650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 23552650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 23552700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 23552700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 23552700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+now is 24-us !!
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[0].mem_core.main: at time 24042550.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[0].mem_core.main: at time 24042550.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[0].mem_core.main: at time 24042550.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[1].mem_core.main: at time 24042600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[1].mem_core.main: at time 24042600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.main: at time 24042600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.main: at time 24042650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.main: at time 24042650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 24042650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 24042700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 24042700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 24042700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[0].mem_core.main: at time 24532550.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[0].mem_core.main: at time 24532550.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[0].mem_core.main: at time 24532550.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[1].mem_core.main: at time 24532600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[1].mem_core.main: at time 24532600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.main: at time 24532600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.main: at time 24532650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.main: at time 24532650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 24532650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 24532700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 24532700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 24532700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+now is 25-us !!
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[0].mem_core.main: at time 25022550.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[0].mem_core.main: at time 25022550.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[0].mem_core.main: at time 25022550.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[1].mem_core.main: at time 25022600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[1].mem_core.main: at time 25022600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.main: at time 25022600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.main: at time 25022650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.main: at time 25022650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 25022650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 25022700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 25022700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 25022700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[0].mem_core.main: at time 25512550.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[0].mem_core.main: at time 25512550.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[0].mem_core.main: at time 25512550.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[1].mem_core.main: at time 25512600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[1].mem_core.main: at time 25512600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.main: at time 25512600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.main: at time 25512650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.main: at time 25512650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 25512650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 25512700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 25512700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 25512700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+now is 26-us !!
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[0].mem_core.main: at time 26002550.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[0].mem_core.main: at time 26002550.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[0].mem_core.main: at time 26002550.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[1].mem_core.main: at time 26002600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[1].mem_core.main: at time 26002600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.main: at time 26002600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.main: at time 26002650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.main: at time 26002650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 26002650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 26002700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 26002700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 26002700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[0].mem_core.main: at time 26492550.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[0].mem_core.main: at time 26492550.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[0].mem_core.main: at time 26492550.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[1].mem_core.main: at time 26492600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[1].mem_core.main: at time 26492600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.main: at time 26492600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.main: at time 26492650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.main: at time 26492650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 26492650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 26492700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 26492700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 26492700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[0].mem_core.main: at time 26982550.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[0].mem_core.main: at time 26982550.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[0].mem_core.main: at time 26982550.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[1].mem_core.main: at time 26982600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[1].mem_core.main: at time 26982600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.main: at time 26982600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.main: at time 26982650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.main: at time 26982650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 26982650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 26982700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 26982700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 26982700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+now is 27-us !!
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[0].mem_core.main: at time 27472550.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[0].mem_core.main: at time 27472550.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[0].mem_core.main: at time 27472550.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[1].mem_core.main: at time 27472600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[1].mem_core.main: at time 27472600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.main: at time 27472600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.main: at time 27472650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.main: at time 27472650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 27472650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 27472700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 27472700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 27472700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[0].mem_core.main: at time 27962550.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[0].mem_core.main: at time 27962550.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[0].mem_core.main: at time 27962550.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[1].mem_core.main: at time 27962600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[1].mem_core.main: at time 27962600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.main: at time 27962600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.main: at time 27962650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.main: at time 27962650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 27962650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 27962700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 27962700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 27962700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+now is 28-us !!
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[0].mem_core.dqs_pos_timing_check: at time 28452550.0 ps WARNING: tWLS violation on DQS bit  0 positive edge.  Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[0].mem_core.dqs_pos_timing_check: at time 28452550.0 ps WARNING: tWLS violation on DQS bit  0 positive edge.  Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[0].mem_core.dqs_pos_timing_check: at time 28452550.0 ps WARNING: tWLS violation on DQS bit  0 positive edge.  Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[1].mem_core.main: at time 28452600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[1].mem_core.main: at time 28452600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.main: at time 28452600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.main: at time 28452650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.main: at time 28452650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 28452650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 28452700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 28452700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 28452700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[1].mem_core.main: at time 28942600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[1].mem_core.main: at time 28942600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.main: at time 28942600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.main: at time 28942650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.main: at time 28942650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 28942650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 28942700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 28942700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 28942700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+now is 29-us !!
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[1].mem_core.main: at time 29432600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[1].mem_core.main: at time 29432600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.main: at time 29432600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.main: at time 29432650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.main: at time 29432650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 29432650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 29432700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 29432700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 29432700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[1].mem_core.main: at time 29922600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[1].mem_core.main: at time 29922600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.main: at time 29922600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.main: at time 29922650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.main: at time 29922650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 29922650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 29922700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 29922700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 29922700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+now is 30-us !!
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[1].mem_core.main: at time 30412600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[1].mem_core.main: at time 30412600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.main: at time 30412600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.main: at time 30412650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.main: at time 30412650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 30412650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 30412700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 30412700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 30412700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[1].mem_core.main: at time 30902600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[1].mem_core.main: at time 30902600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.main: at time 30902600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.main: at time 30902650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.main: at time 30902650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 30902650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 30902700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 30902700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 30902700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+now is 31-us !!
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[1].mem_core.main: at time 31392600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[1].mem_core.main: at time 31392600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.main: at time 31392600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.main: at time 31392650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.main: at time 31392650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 31392650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 31392700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 31392700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 31392700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[1].mem_core.main: at time 31882600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[1].mem_core.main: at time 31882600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.main: at time 31882600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.main: at time 31882650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.main: at time 31882650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 31882650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 31882700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 31882700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 31882700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+now is 32-us !!
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[1].mem_core.main: at time 32372600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[1].mem_core.main: at time 32372600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.main: at time 32372600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.main: at time 32372650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.main: at time 32372650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 32372650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 32372700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 32372700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 32372700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[1].mem_core.main: at time 32862600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[1].mem_core.main: at time 32862600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.main: at time 32862600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.main: at time 32862650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.main: at time 32862650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 32862650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 32862700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 32862700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 32862700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+now is 33-us !!
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[1].mem_core.dqs_pos_timing_check: at time 33352600.0 ps WARNING: tWLS violation on DQS bit  0 positive edge.  Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[1].mem_core.dqs_pos_timing_check: at time 33352600.0 ps WARNING: tWLS violation on DQS bit  0 positive edge.  Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.dqs_pos_timing_check: at time 33352600.0 ps WARNING: tWLS violation on DQS bit  0 positive edge.  Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.main: at time 33352650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.main: at time 33352650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 33352650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 33352700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 33352700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 33352700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.main: at time 33842650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.main: at time 33842650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 33842650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 33842700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 33842700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 33842700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+now is 34-us !!
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.main: at time 34332650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.main: at time 34332650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 34332650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 34332700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 34332700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 34332700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.main: at time 34822650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.main: at time 34822650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 34822650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 34822700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 34822700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 34822700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+now is 35-us !!
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.main: at time 35312650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.main: at time 35312650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 35312650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 35312700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 35312700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 35312700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.main: at time 35802650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.main: at time 35802650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 35802650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 35802700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 35802700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 35802700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+now is 36-us !!
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.main: at time 36292650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.main: at time 36292650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 36292650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 36292700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 36292700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 36292700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.main: at time 36782650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.main: at time 36782650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 36782650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 36782700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 36782700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 36782700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+now is 37-us !!
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.main: at time 37272650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.main: at time 37272650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 37272650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 37272700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 37272700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 37272700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.main: at time 37762650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.main: at time 37762650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 37762650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 37762700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 37762700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 37762700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+now is 38-us !!
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.dqs_pos_timing_check: at time 38252650.0 ps WARNING: tWLS violation on DQS bit  0 positive edge.  Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.dqs_pos_timing_check: at time 38252650.0 ps WARNING: tWLS violation on DQS bit  0 positive edge.  Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.dqs_pos_timing_check: at time 38252650.0 ps WARNING: tWLS violation on DQS bit  0 positive edge.  Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 38252700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 38252700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 38252700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 38742700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 38742700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 38742700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+now is 39-us !!
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 39232700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 39232700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 39232700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 39722700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 39722700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 39722700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+now is 40-us !!
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 40212700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 40212700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 40212700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 40702700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 40702700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 40702700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+now is 41-us !!
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 41192700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 41192700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 41192700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 41682700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 41682700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 41682700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+now is 42-us !!
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 42172700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 42172700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 42172700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 42662700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 42662700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 42662700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+now is 43-us !!
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.dqs_pos_timing_check: at time 43152700.0 ps WARNING: tWLS violation on DQS bit  0 positive edge.  Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.dqs_pos_timing_check: at time 43152700.0 ps WARNING: tWLS violation on DQS bit  0 positive edge.  Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.dqs_pos_timing_check: at time 43152700.0 ps WARNING: tWLS violation on DQS bit  0 positive edge.  Indeterminate CK capture is possible.
+now is 44-us !!
+now is 45-us !!
+now is 46-us !!
+now is 47-us !!
+now is 48-us !!
+now is 49-us !!
+now is 50-us !!
+now is 51-us !!
+now is 52-us !!
+now is 53-us !!
+now is 54-us !!
+now is 55-us !!
+now is 56-us !!
+now is 57-us !!
+now is 58-us !!
+now is 59-us !!
+now is 60-us !!
+now is 61-us !!
+now is 62-us !!
+now is 63-us !!
+now is 64-us !!
+now is 65-us !!
+now is 66-us !!
+now is 67-us !!
+now is 68-us !!
+now is 69-us !!
+now is 70-us !!
+now is 71-us !!
+now is 72-us !!
+now is 73-us !!
+now is 74-us !!
+now is 75-us !!
+now is 76-us !!
+now is 77-us !!
+now is 78-us !!
+now is 79-us !!
+now is 80-us !!
+now is 81-us !!
+now is 82-us !!
+now is 83-us !!
+now is 84-us !!
+now is 85-us !!
+now is 86-us !!
+now is 87-us !!
+now is 88-us !!
+now is 89-us !!
+now is 90-us !!
+now is 91-us !!
+now is 92-us !!
+now is 93-us !!
+now is 94-us !!
+now is 95-us !!
+now is 96-us !!
+now is 97-us !!
+now is 98-us !!
+now is 99-us !!
+now is 100-us !!
+now is 101-us !!
+now is 102-us !!
+now is 103-us !!
+now is 104-us !!
+now is 105-us !!
+now is 106-us !!
+now is 107-us !!
+now is 108-us !!
+now is 109-us !!
+now is 110-us !!
+now is 111-us !!
+now is 112-us !!
+now is 113-us !!
+now is 114-us !!
+now is 115-us !!
+now is 116-us !!
+now is 117-us !!
+now is 118-us !!
+now is 119-us !!
+now is 120-us !!
+now is 121-us !!
+now is 122-us !!
+now is 123-us !!
+now is 124-us !!
+tb_top.monitor------:124427000.0 ps dfi_init_complete is high now!
+UVM_INFO ../../env/apb_driver.sv(48) @ 124430000.0 ps: uvm_test_top.env.apb_drv [apb_driver] ddr3_ini_done
+UVM_INFO ../../env/axi_driver.sv(69) @ 124436582.0 ps: uvm_test_top.env.axi_drv2 [axi_driver] ddr3_ini_done
+UVM_INFO ../../env/axi_driver.sv(69) @ 124436582.0 ps: uvm_test_top.env.axi_drv1 [axi_driver] ddr3_ini_done
+UVM_INFO ../../env/axi_driver.sv(69) @ 124436582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] ddr3_ini_done
+UVM_INFO ../../env/axi_3ch_test.sv(17) @ 124590000.0 ps: uvm_test_top.env.apb_sqr@@seq0 [apb_3ch_sequence] Arbitor mode is AMODE0 !!!
+UVM_INFO @ 124730000.0 ps: reporter [MISCMP] Miscompare for uvm_sequence_item.apb_rdata: lhs = 'h8000 : rhs = 'h3
+UVM_INFO @ 124730000.0 ps: reporter [MISCMP] 1 Miscompare(s) for object uvm_sequence_item@2293 vs. uvm_sequence_item@2297
+now is 125-us !!
+UVM_INFO ../../env/apb_scoreboard.sv(46) @ 125250000.0 ps: uvm_test_top.env.apb_scb [apb_scoreboard] Compare SUCCESSFULLY
+--------------------------------------------------
+Name               Type             Size  Value   
+--------------------------------------------------
+uvm_sequence_item  apb_transaction  -     @2415   
+  apb_addr         integral         8     'h5     
+  apb_wdata        integral         16    'h0     
+  apb_rdata        integral         16    'h3     
+  apb_enable       integral         1     'h1     
+  apb_rd_wr        apb_rd_wr_e      32    APB_READ
+--------------------------------------------------
+UVM_INFO ../../env/apb_scoreboard.sv(55) @ 125250000.0 ps: uvm_test_top.env.apb_scb [apb_scoreboard] DDR3  under pd     state !!!!
+UVM_INFO ../../env/axi_3ch_test.sv(36) @ 125270000.0 ps: uvm_test_top.env.apb_sqr@@seq0 [apb_3ch_sequence] MRS mode  !!!
+UVM_INFO ../../env/axi_3ch_test.sv(67) @ 125270000.0 ps: uvm_test_top.env.apb_sqr@@seq0 [apb_3ch_sequence] send one transaction
+UVM_INFO ../../env/axi_3ch_test.sv(147) @ 125370000.0 ps: uvm_test_top [axi_3ch_test] APB CONFIG DONE !!!!!
+UVM_INFO ../../env/axi_3ch_test.sv(158) @ 125370000.0 ps: uvm_test_top [axi_3ch_test] AXI ABITOR  START !!!!!
+UVM_INFO ../../env/axi_driver.sv(88) @ 125370000.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 125370000.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[0].mem_core.main: at time 125735050.0 ps WARNING: tDLLK violation during ODT transition.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.main: at time 125735100.0 ps WARNING: tDLLK violation during ODT transition.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 125735150.0 ps WARNING: tDLLK violation during ODT transition.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 125735200.0 ps WARNING: tDLLK violation during ODT transition.
+now is 126-us !!
+UVM_INFO ../../env/axi_driver.sv(134) @ 126046582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 126046582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[0].mem_core.cmd_task: at time 126245050.0 ps WARNING: tDLLK violation during Read     .
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[0].mem_core.main: at time 126245050.0 ps WARNING: tDLLK violation during ODT transition.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.cmd_task: at time 126245100.0 ps WARNING: tDLLK violation during Read     .
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.main: at time 126245100.0 ps WARNING: tDLLK violation during ODT transition.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.cmd_task: at time 126245150.0 ps WARNING: tDLLK violation during Read     .
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 126245150.0 ps WARNING: tDLLK violation during ODT transition.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.cmd_task: at time 126245200.0 ps WARNING: tDLLK violation during Read     .
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 126245200.0 ps WARNING: tDLLK violation during ODT transition.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[0].mem_core.cmd_task: at time 126255050.0 ps WARNING: tDLLK violation during Read     .
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.cmd_task: at time 126255100.0 ps WARNING: tDLLK violation during Read     .
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.cmd_task: at time 126255150.0 ps WARNING: tDLLK violation during Read     .
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.cmd_task: at time 126255200.0 ps WARNING: tDLLK violation during Read     .
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[0].mem_core.cmd_task: at time 126265050.0 ps WARNING: tDLLK violation during Read     .
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.cmd_task: at time 126265100.0 ps WARNING: tDLLK violation during Read     .
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.cmd_task: at time 126265150.0 ps WARNING: tDLLK violation during Read     .
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.cmd_task: at time 126265200.0 ps WARNING: tDLLK violation during Read     .
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[0].mem_core.cmd_task: at time 126275050.0 ps WARNING: tDLLK violation during Read     .
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.cmd_task: at time 126275100.0 ps WARNING: tDLLK violation during Read     .
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.cmd_task: at time 126275150.0 ps WARNING: tDLLK violation during Read     .
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.cmd_task: at time 126275200.0 ps WARNING: tDLLK violation during Read     .
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[0].mem_core.cmd_task: at time 126285050.0 ps WARNING: tDLLK violation during Read     .
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.cmd_task: at time 126285100.0 ps WARNING: tDLLK violation during Read     .
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.cmd_task: at time 126285150.0 ps WARNING: tDLLK violation during Read     .
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.cmd_task: at time 126285200.0 ps WARNING: tDLLK violation during Read     .
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[0].mem_core.cmd_task: at time 126295050.0 ps WARNING: tDLLK violation during Read     .
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.cmd_task: at time 126295100.0 ps WARNING: tDLLK violation during Read     .
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.cmd_task: at time 126295150.0 ps WARNING: tDLLK violation during Read     .
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.cmd_task: at time 126295200.0 ps WARNING: tDLLK violation during Read     .
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[0].mem_core.cmd_task: at time 126305050.0 ps WARNING: tDLLK violation during Read     .
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.cmd_task: at time 126305100.0 ps WARNING: tDLLK violation during Read     .
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.cmd_task: at time 126305150.0 ps WARNING: tDLLK violation during Read     .
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.cmd_task: at time 126305200.0 ps WARNING: tDLLK violation during Read     .
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[0].mem_core.cmd_task: at time 126315050.0 ps WARNING: tDLLK violation during Read     .
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.cmd_task: at time 126315100.0 ps WARNING: tDLLK violation during Read     .
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.cmd_task: at time 126315150.0 ps WARNING: tDLLK violation during Read     .
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.cmd_task: at time 126315200.0 ps WARNING: tDLLK violation during Read     .
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[0].mem_core.cmd_task: at time 126325050.0 ps WARNING: tDLLK violation during Read     .
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.cmd_task: at time 126325100.0 ps WARNING: tDLLK violation during Read     .
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.cmd_task: at time 126325150.0 ps WARNING: tDLLK violation during Read     .
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.cmd_task: at time 126325200.0 ps WARNING: tDLLK violation during Read     .
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[0].mem_core.cmd_task: at time 126335050.0 ps WARNING: tDLLK violation during Read     .
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.cmd_task: at time 126335100.0 ps WARNING: tDLLK violation during Read     .
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.cmd_task: at time 126335150.0 ps WARNING: tDLLK violation during Read     .
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.cmd_task: at time 126335200.0 ps WARNING: tDLLK violation during Read     .
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 126336582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[0].mem_core.cmd_task: at time 126345050.0 ps WARNING: tDLLK violation during Read     .
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.cmd_task: at time 126345100.0 ps WARNING: tDLLK violation during Read     .
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.cmd_task: at time 126345150.0 ps WARNING: tDLLK violation during Read     .
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.cmd_task: at time 126345200.0 ps WARNING: tDLLK violation during Read     .
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 126346582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[0].mem_core.cmd_task: at time 126355050.0 ps WARNING: tDLLK violation during Read     .
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.cmd_task: at time 126355100.0 ps WARNING: tDLLK violation during Read     .
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.cmd_task: at time 126355150.0 ps WARNING: tDLLK violation during Read     .
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.cmd_task: at time 126355200.0 ps WARNING: tDLLK violation during Read     .
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 126356582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[0].mem_core.cmd_task: at time 126365050.0 ps WARNING: tDLLK violation during Read     .
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.cmd_task: at time 126365100.0 ps WARNING: tDLLK violation during Read     .
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.cmd_task: at time 126365150.0 ps WARNING: tDLLK violation during Read     .
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.cmd_task: at time 126365200.0 ps WARNING: tDLLK violation during Read     .
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 126366582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[0].mem_core.cmd_task: at time 126375050.0 ps WARNING: tDLLK violation during Read     .
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.cmd_task: at time 126375100.0 ps WARNING: tDLLK violation during Read     .
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.cmd_task: at time 126375150.0 ps WARNING: tDLLK violation during Read     .
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.cmd_task: at time 126375200.0 ps WARNING: tDLLK violation during Read     .
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 126376582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[0].mem_core.cmd_task: at time 126385050.0 ps WARNING: tDLLK violation during Read     .
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.cmd_task: at time 126385100.0 ps WARNING: tDLLK violation during Read     .
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.cmd_task: at time 126385150.0 ps WARNING: tDLLK violation during Read     .
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.cmd_task: at time 126385200.0 ps WARNING: tDLLK violation during Read     .
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 126386582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[0].mem_core.cmd_task: at time 126395050.0 ps WARNING: tDLLK violation during Read     .
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.cmd_task: at time 126395100.0 ps WARNING: tDLLK violation during Read     .
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.cmd_task: at time 126395150.0 ps WARNING: tDLLK violation during Read     .
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.cmd_task: at time 126395200.0 ps WARNING: tDLLK violation during Read     .
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 126396582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 126406582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 126416582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 126426582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 126436582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 126446582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 126456582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 126466582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 126476582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_3ch_test.sv(107) @ 126476582.0 ps: uvm_test_top.env.axi_sqr0@@seq1 [axi_3ch_sequence] send one transaction
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 126486582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+now is 127-us !!
+now is 128-us !!
+now is 129-us !!
+now is 130-us !!
+now is 131-us !!
+now is 132-us !!
+now is 133-us !!
+now is 134-us !!
+now is 135-us !!
+now is 136-us !!
+now is 137-us !!
+now is 138-us !!
+now is 139-us !!
+now is 140-us !!
+now is 141-us !!
+now is 142-us !!
+now is 143-us !!
+now is 144-us !!
+now is 145-us !!
+now is 146-us !!
+now is 147-us !!
+now is 148-us !!
+now is 149-us !!
+now is 150-us !!
+now is 151-us !!
+now is 152-us !!
+now is 153-us !!
+now is 154-us !!
+now is 155-us !!
+now is 156-us !!
+now is 157-us !!
+now is 158-us !!
+now is 159-us !!
+now is 160-us !!
+now is 161-us !!
+now is 162-us !!
+now is 163-us !!
+now is 164-us !!
+now is 165-us !!
+now is 166-us !!
+now is 167-us !!
+now is 168-us !!
+now is 169-us !!
+now is 170-us !!
+now is 171-us !!
+now is 172-us !!
+now is 173-us !!
+now is 174-us !!
+now is 175-us !!
+UVM_INFO ../../env/axi_driver.sv(88) @ 175370000.0 ps: uvm_test_top.env.axi_drv1 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 175370000.0 ps: uvm_test_top.env.axi_drv1 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_driver.sv(134) @ 175726582.0 ps: uvm_test_top.env.axi_drv1 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 175726582.0 ps: uvm_test_top.env.axi_drv1 [axi_driver] begin to RAXI_ONE
+now is 176-us !!
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 176016582.0 ps: uvm_test_top.env.axi_scb1 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 176026582.0 ps: uvm_test_top.env.axi_scb1 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 176036582.0 ps: uvm_test_top.env.axi_scb1 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 176046582.0 ps: uvm_test_top.env.axi_scb1 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 176056582.0 ps: uvm_test_top.env.axi_scb1 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 176066582.0 ps: uvm_test_top.env.axi_scb1 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 176076582.0 ps: uvm_test_top.env.axi_scb1 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 176086582.0 ps: uvm_test_top.env.axi_scb1 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 176096582.0 ps: uvm_test_top.env.axi_scb1 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 176106582.0 ps: uvm_test_top.env.axi_scb1 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 176116582.0 ps: uvm_test_top.env.axi_scb1 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 176126582.0 ps: uvm_test_top.env.axi_scb1 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 176136582.0 ps: uvm_test_top.env.axi_scb1 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 176146582.0 ps: uvm_test_top.env.axi_scb1 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 176156582.0 ps: uvm_test_top.env.axi_scb1 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_3ch_test.sv(107) @ 176156582.0 ps: uvm_test_top.env.axi_sqr1@@seq2 [axi_3ch_sequence] send one transaction
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 176166582.0 ps: uvm_test_top.env.axi_scb1 [axi_scoreboard] Compare SUCCESSFULLY
+now is 177-us !!
+now is 178-us !!
+now is 179-us !!
+now is 180-us !!
+now is 181-us !!
+now is 182-us !!
+now is 183-us !!
+now is 184-us !!
+now is 185-us !!
+now is 186-us !!
+now is 187-us !!
+now is 188-us !!
+now is 189-us !!
+now is 190-us !!
+now is 191-us !!
+now is 192-us !!
+now is 193-us !!
+now is 194-us !!
+now is 195-us !!
+now is 196-us !!
+now is 197-us !!
+now is 198-us !!
+now is 199-us !!
+now is 200-us !!
+now is 201-us !!
+now is 202-us !!
+now is 203-us !!
+now is 204-us !!
+now is 205-us !!
+now is 206-us !!
+now is 207-us !!
+now is 208-us !!
+now is 209-us !!
+now is 210-us !!
+now is 211-us !!
+now is 212-us !!
+now is 213-us !!
+now is 214-us !!
+now is 215-us !!
+now is 216-us !!
+now is 217-us !!
+now is 218-us !!
+now is 219-us !!
+now is 220-us !!
+now is 221-us !!
+now is 222-us !!
+now is 223-us !!
+now is 224-us !!
+now is 225-us !!
+UVM_INFO ../../env/axi_driver.sv(88) @ 225370000.0 ps: uvm_test_top.env.axi_drv2 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 225370000.0 ps: uvm_test_top.env.axi_drv2 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_driver.sv(134) @ 225726582.0 ps: uvm_test_top.env.axi_drv2 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 225726582.0 ps: uvm_test_top.env.axi_drv2 [axi_driver] begin to RAXI_ONE
+now is 226-us !!
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 226016582.0 ps: uvm_test_top.env.axi_scb2 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 226026582.0 ps: uvm_test_top.env.axi_scb2 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 226036582.0 ps: uvm_test_top.env.axi_scb2 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 226046582.0 ps: uvm_test_top.env.axi_scb2 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 226056582.0 ps: uvm_test_top.env.axi_scb2 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 226066582.0 ps: uvm_test_top.env.axi_scb2 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 226076582.0 ps: uvm_test_top.env.axi_scb2 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 226086582.0 ps: uvm_test_top.env.axi_scb2 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 226096582.0 ps: uvm_test_top.env.axi_scb2 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 226106582.0 ps: uvm_test_top.env.axi_scb2 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 226116582.0 ps: uvm_test_top.env.axi_scb2 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 226126582.0 ps: uvm_test_top.env.axi_scb2 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 226136582.0 ps: uvm_test_top.env.axi_scb2 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 226146582.0 ps: uvm_test_top.env.axi_scb2 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 226156582.0 ps: uvm_test_top.env.axi_scb2 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_3ch_test.sv(107) @ 226156582.0 ps: uvm_test_top.env.axi_sqr2@@seq3 [axi_3ch_sequence] send one transaction
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 226166582.0 ps: uvm_test_top.env.axi_scb2 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_3ch_test.sv(165) @ 226256582.0 ps: uvm_test_top [axi_3ch_test] AXI ABITOR  DONE !!!!!
+TEST CASE PASSED
+
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   88
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[MISCMP]     2
+[RNTST]     1
+[apb_3ch_sequence]     3
+[apb_driver]     2
+[apb_scoreboard]     2
+[axi_3ch_sequence]     3
+[axi_3ch_test]     3
+[axi_driver]    24
+[axi_scoreboard]    48
+$finish called from file "/usr/synopsys/L-2016.06/etc/uvm/base/uvm_root.svh", line 439.
+$finish at simulation time 226256582.0 ps
+
+---------------------------------------------------------------------------
+VCS Coverage Metrics: during simulation line, cond, FSM, branch, tgl was monitored
+---------------------------------------------------------------------------
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 226256582027 fs
+CPU Time:   2382.730 seconds;       Data structure size:  14.9Mb
+Tue Apr 20 17:39:33 2021

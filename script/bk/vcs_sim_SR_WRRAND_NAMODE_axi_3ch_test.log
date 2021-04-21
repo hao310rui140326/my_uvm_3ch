@@ -1,0 +1,1459 @@
+Command: ./simv +model_data+./ +UVM_TESTNAME=axi_3ch_test +UVM_VERBOSITY=UVM_LOW -cm line+cond+fsm+tgl+branch+assert -cm_dir ./cov_info -l vcs_sim_SR_WRRAND_NAMODE_axi_3ch_test.log
+Chronologic VCS simulator copyright 1991-2016
+Contains Synopsys proprietary information.
+Compiler version L-2016.06_Full64; Runtime version L-2016.06_Full64;  Apr 20 17:57 2021
+----------------------------------------------------------------
+UVM-1.1d.Synopsys
+(C) 2007-2013 Mentor Graphics Corporation
+(C) 2007-2013 Cadence Design Systems, Inc.
+(C) 2006-2013 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+----------------------------------------------------------------
+UVM_INFO @ 0.0 ps: reporter [RNTST] Running test axi_3ch_test...
+UVM_INFO ../../env/axi_driver.sv(41) @ 0.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] new is called
+UVM_INFO ../../env/axi_driver.sv(41) @ 0.0 ps: uvm_test_top.env.axi_drv1 [axi_driver] new is called
+UVM_INFO ../../env/axi_driver.sv(41) @ 0.0 ps: uvm_test_top.env.axi_drv2 [axi_driver] new is called
+UVM_INFO ../../env/axi_driver.sv(46) @ 0.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] build_phase is called
+UVM_INFO ../../env/axi_driver.sv(46) @ 0.0 ps: uvm_test_top.env.axi_drv1 [axi_driver] build_phase is called
+UVM_INFO ../../env/axi_driver.sv(46) @ 0.0 ps: uvm_test_top.env.axi_drv2 [axi_driver] build_phase is called
+UVM_INFO ../../env/apb_driver.sv(37) @ 0.0 ps: uvm_test_top.env.apb_drv [apb_driver] main_phase is called
+UVM_INFO ../../env/axi_driver.sv(66) @ 0.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] main_phase is called
+UVM_INFO ../../env/axi_driver.sv(66) @ 0.0 ps: uvm_test_top.env.axi_drv1 [axi_driver] main_phase is called
+UVM_INFO ../../env/axi_driver.sv(66) @ 0.0 ps: uvm_test_top.env.axi_drv2 [axi_driver] main_phase is called
+VCD+ Writer L-2016.06_Full64 Copyright (c) 1991-2016 by Synopsys Inc.
+*Verdi3* Loading libsscore_vcs201606.so
+*Verdi3* : FSDB_GATE is set.
+*Verdi3* : FSDB_RTL is set.
+*Verdi3* : Enable Parallel Dumping.
+FSDB Dumper for VCS, Release Verdi3_L-2016.06-1, Linux x86_64/64bit, 07/10/2016
+(C) 1996 - 2016 by Synopsys, Inc.
+*Verdi3* FSDB: The switch FSDB file size might not match the input size (1000MB) because of performance concerns.
+*Verdi3* FSDB: To have the FSDB file size match the input size (1000MB), set the FSDB_ENV_PRECISE_AUTOSWITCH environment, though the dumping performance might decrease.
+*Verdi3* : Enable automatic switching of the FSDB file.
+*Verdi3* : (Filename='tb_top', Limit Size=1000MB, File Amount=100).
+*Verdi3* : Create FSDB file 'tb_top_000.fsdb'
+*Verdi3* : Create the file 'tb_top.log' to log the time range of each FSDB file.
+*Verdi3* : Create virtual FSDB file 'tb_top.vf' to log each FSDB file.
+*Verdi3* : fsdbDumpoff - All FSDB files at 110,000,000 fs.
+*Verdi3* : Begin traversing the SVA assertions, layer (0).
+*Verdi3* : End of traversing the SVA assertions.
+*Verdi3* : Begin traversing the scope (tb_top), layer (0).
+*Verdi3* : End of traversing.
+*Verdi3* : fsdbDumpon - All FSDB files at 110,000,000 fs.
+now is 1-us !!
+now is 2-us !!
+now is 3-us !!
+now is 4-us !!
+now is 5-us !!
+now is 6-us !!
+now is 7-us !!
+now is 8-us !!
+now is 9-us !!
+now is 10-us !!
+now is 11-us !!
+now is 12-us !!
+now is 13-us !!
+now is 14-us !!
+now is 15-us !!
+now is 16-us !!
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[0].mem_core.reset at time 16116582.0 ps WARNING: 200 us is required before RST_N goes inactive.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.reset at time 16116582.0 ps WARNING: 200 us is required before RST_N goes inactive.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.reset at time 16116582.0 ps WARNING: 200 us is required before RST_N goes inactive.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.reset at time 16116582.0 ps WARNING: 200 us is required before RST_N goes inactive.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[0].mem_core.reset at time 16116582.0 ps WARNING: 200 us is required before RST_N goes inactive.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[1].mem_core.reset at time 16116582.0 ps WARNING: 200 us is required before RST_N goes inactive.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.reset at time 16116582.0 ps WARNING: 200 us is required before RST_N goes inactive.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.reset at time 16116582.0 ps WARNING: 200 us is required before RST_N goes inactive.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[0].mem_core.reset at time 16116582.0 ps WARNING: 200 us is required before RST_N goes inactive.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[1].mem_core.reset at time 16116582.0 ps WARNING: 200 us is required before RST_N goes inactive.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.reset at time 16116582.0 ps WARNING: 200 us is required before RST_N goes inactive.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.reset at time 16116582.0 ps WARNING: 200 us is required before RST_N goes inactive.
+now is 17-us !!
+now is 18-us !!
+now is 19-us !!
+now is 20-us !!
+now is 21-us !!
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[0].mem_core.cmd_task at time 21265050.0 ps WARNING: 500 us is required after RST_N goes inactive before CKE goes active.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[0].mem_core.cmd_task at time 21265050.0 ps WARNING: 500 us is required after RST_N goes inactive before CKE goes active.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[0].mem_core.cmd_task at time 21265050.0 ps WARNING: 500 us is required after RST_N goes inactive before CKE goes active.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[1].mem_core.cmd_task at time 21265100.0 ps WARNING: 500 us is required after RST_N goes inactive before CKE goes active.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[1].mem_core.cmd_task at time 21265100.0 ps WARNING: 500 us is required after RST_N goes inactive before CKE goes active.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.cmd_task at time 21265100.0 ps WARNING: 500 us is required after RST_N goes inactive before CKE goes active.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.cmd_task at time 21265150.0 ps WARNING: 500 us is required after RST_N goes inactive before CKE goes active.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.cmd_task at time 21265150.0 ps WARNING: 500 us is required after RST_N goes inactive before CKE goes active.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.cmd_task at time 21265150.0 ps WARNING: 500 us is required after RST_N goes inactive before CKE goes active.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.cmd_task at time 21265200.0 ps WARNING: 500 us is required after RST_N goes inactive before CKE goes active.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.cmd_task at time 21265200.0 ps WARNING: 500 us is required after RST_N goes inactive before CKE goes active.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.cmd_task at time 21265200.0 ps WARNING: 500 us is required after RST_N goes inactive before CKE goes active.
+now is 22-us !!
+now is 23-us !!
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[0].mem_core.main: at time 23552550.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[0].mem_core.main: at time 23552550.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[0].mem_core.main: at time 23552550.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[1].mem_core.main: at time 23552600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[1].mem_core.main: at time 23552600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.main: at time 23552600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.main: at time 23552650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.main: at time 23552650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 23552650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 23552700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 23552700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 23552700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+now is 24-us !!
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[0].mem_core.main: at time 24042550.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[0].mem_core.main: at time 24042550.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[0].mem_core.main: at time 24042550.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[1].mem_core.main: at time 24042600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[1].mem_core.main: at time 24042600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.main: at time 24042600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.main: at time 24042650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.main: at time 24042650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 24042650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 24042700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 24042700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 24042700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[0].mem_core.main: at time 24532550.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[0].mem_core.main: at time 24532550.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[0].mem_core.main: at time 24532550.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[1].mem_core.main: at time 24532600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[1].mem_core.main: at time 24532600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.main: at time 24532600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.main: at time 24532650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.main: at time 24532650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 24532650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 24532700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 24532700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 24532700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+now is 25-us !!
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[0].mem_core.main: at time 25022550.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[0].mem_core.main: at time 25022550.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[0].mem_core.main: at time 25022550.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[1].mem_core.main: at time 25022600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[1].mem_core.main: at time 25022600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.main: at time 25022600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.main: at time 25022650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.main: at time 25022650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 25022650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 25022700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 25022700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 25022700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[0].mem_core.main: at time 25512550.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[0].mem_core.main: at time 25512550.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[0].mem_core.main: at time 25512550.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[1].mem_core.main: at time 25512600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[1].mem_core.main: at time 25512600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.main: at time 25512600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.main: at time 25512650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.main: at time 25512650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 25512650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 25512700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 25512700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 25512700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+now is 26-us !!
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[0].mem_core.main: at time 26002550.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[0].mem_core.main: at time 26002550.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[0].mem_core.main: at time 26002550.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[1].mem_core.main: at time 26002600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[1].mem_core.main: at time 26002600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.main: at time 26002600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.main: at time 26002650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.main: at time 26002650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 26002650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 26002700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 26002700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 26002700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[0].mem_core.main: at time 26492550.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[0].mem_core.main: at time 26492550.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[0].mem_core.main: at time 26492550.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[1].mem_core.main: at time 26492600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[1].mem_core.main: at time 26492600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.main: at time 26492600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.main: at time 26492650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.main: at time 26492650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 26492650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 26492700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 26492700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 26492700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[0].mem_core.main: at time 26982550.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[0].mem_core.main: at time 26982550.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[0].mem_core.main: at time 26982550.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[1].mem_core.main: at time 26982600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[1].mem_core.main: at time 26982600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.main: at time 26982600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.main: at time 26982650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.main: at time 26982650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 26982650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 26982700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 26982700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 26982700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+now is 27-us !!
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[0].mem_core.main: at time 27472550.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[0].mem_core.main: at time 27472550.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[0].mem_core.main: at time 27472550.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[1].mem_core.main: at time 27472600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[1].mem_core.main: at time 27472600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.main: at time 27472600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.main: at time 27472650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.main: at time 27472650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 27472650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 27472700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 27472700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 27472700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[0].mem_core.main: at time 27962550.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[0].mem_core.main: at time 27962550.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[0].mem_core.main: at time 27962550.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[1].mem_core.main: at time 27962600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[1].mem_core.main: at time 27962600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.main: at time 27962600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.main: at time 27962650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.main: at time 27962650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 27962650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 27962700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 27962700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 27962700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+now is 28-us !!
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[0].mem_core.dqs_pos_timing_check: at time 28452550.0 ps WARNING: tWLS violation on DQS bit  0 positive edge.  Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[0].mem_core.dqs_pos_timing_check: at time 28452550.0 ps WARNING: tWLS violation on DQS bit  0 positive edge.  Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[0].mem_core.dqs_pos_timing_check: at time 28452550.0 ps WARNING: tWLS violation on DQS bit  0 positive edge.  Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[1].mem_core.main: at time 28452600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[1].mem_core.main: at time 28452600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.main: at time 28452600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.main: at time 28452650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.main: at time 28452650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 28452650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 28452700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 28452700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 28452700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[1].mem_core.main: at time 28942600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[1].mem_core.main: at time 28942600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.main: at time 28942600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.main: at time 28942650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.main: at time 28942650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 28942650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 28942700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 28942700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 28942700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+now is 29-us !!
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[1].mem_core.main: at time 29432600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[1].mem_core.main: at time 29432600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.main: at time 29432600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.main: at time 29432650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.main: at time 29432650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 29432650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 29432700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 29432700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 29432700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[1].mem_core.main: at time 29922600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[1].mem_core.main: at time 29922600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.main: at time 29922600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.main: at time 29922650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.main: at time 29922650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 29922650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 29922700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 29922700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 29922700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+now is 30-us !!
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[1].mem_core.main: at time 30412600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[1].mem_core.main: at time 30412600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.main: at time 30412600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.main: at time 30412650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.main: at time 30412650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 30412650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 30412700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 30412700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 30412700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[1].mem_core.main: at time 30902600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[1].mem_core.main: at time 30902600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.main: at time 30902600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.main: at time 30902650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.main: at time 30902650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 30902650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 30902700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 30902700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 30902700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+now is 31-us !!
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[1].mem_core.main: at time 31392600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[1].mem_core.main: at time 31392600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.main: at time 31392600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.main: at time 31392650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.main: at time 31392650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 31392650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 31392700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 31392700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 31392700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[1].mem_core.main: at time 31882600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[1].mem_core.main: at time 31882600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.main: at time 31882600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.main: at time 31882650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.main: at time 31882650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 31882650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 31882700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 31882700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 31882700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+now is 32-us !!
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[1].mem_core.main: at time 32372600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[1].mem_core.main: at time 32372600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.main: at time 32372600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.main: at time 32372650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.main: at time 32372650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 32372650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 32372700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 32372700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 32372700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[1].mem_core.main: at time 32862600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[1].mem_core.main: at time 32862600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.main: at time 32862600.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.main: at time 32862650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.main: at time 32862650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 32862650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 32862700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 32862700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 32862700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+now is 33-us !!
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[1].mem_core.dqs_pos_timing_check: at time 33352600.0 ps WARNING: tWLS violation on DQS bit  0 positive edge.  Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[1].mem_core.dqs_pos_timing_check: at time 33352600.0 ps WARNING: tWLS violation on DQS bit  0 positive edge.  Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[1].mem_core.dqs_pos_timing_check: at time 33352600.0 ps WARNING: tWLS violation on DQS bit  0 positive edge.  Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.main: at time 33352650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.main: at time 33352650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 33352650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 33352700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 33352700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 33352700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.main: at time 33842650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.main: at time 33842650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 33842650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 33842700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 33842700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 33842700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+now is 34-us !!
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.main: at time 34332650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.main: at time 34332650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 34332650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 34332700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 34332700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 34332700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.main: at time 34822650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.main: at time 34822650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 34822650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 34822700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 34822700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 34822700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+now is 35-us !!
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.main: at time 35312650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.main: at time 35312650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 35312650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 35312700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 35312700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 35312700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.main: at time 35802650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.main: at time 35802650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 35802650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 35802700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 35802700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 35802700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+now is 36-us !!
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.main: at time 36292650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.main: at time 36292650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 36292650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 36292700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 36292700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 36292700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.main: at time 36782650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.main: at time 36782650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 36782650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 36782700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 36782700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 36782700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+now is 37-us !!
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.main: at time 37272650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.main: at time 37272650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 37272650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 37272700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 37272700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 37272700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.main: at time 37762650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.main: at time 37762650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.main: at time 37762650.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 37762700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 37762700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 37762700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+now is 38-us !!
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[2].mem_core.dqs_pos_timing_check: at time 38252650.0 ps WARNING: tWLS violation on DQS bit  0 positive edge.  Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[2].mem_core.dqs_pos_timing_check: at time 38252650.0 ps WARNING: tWLS violation on DQS bit  0 positive edge.  Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[2].mem_core.dqs_pos_timing_check: at time 38252650.0 ps WARNING: tWLS violation on DQS bit  0 positive edge.  Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 38252700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 38252700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 38252700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 38742700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 38742700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 38742700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+now is 39-us !!
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 39232700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 39232700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 39232700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 39722700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 39722700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 39722700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+now is 40-us !!
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 40212700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 40212700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 40212700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 40702700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 40702700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 40702700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+now is 41-us !!
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 41192700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 41192700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 41192700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 41682700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 41682700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 41682700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+now is 42-us !!
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 42172700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 42172700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 42172700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.main: at time 42662700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.main: at time 42662700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.main: at time 42662700.0 ps WARNING: tWLH violation on DQS bit           0 positive edge.   Indeterminate CK capture is possible.
+now is 43-us !!
+tb_top.u_ddr_wrapper.u_ddr_2.u_ddr3_model.i_mem[3].mem_core.dqs_pos_timing_check: at time 43152700.0 ps WARNING: tWLS violation on DQS bit  0 positive edge.  Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_1.u_ddr3_model.i_mem[3].mem_core.dqs_pos_timing_check: at time 43152700.0 ps WARNING: tWLS violation on DQS bit  0 positive edge.  Indeterminate CK capture is possible.
+tb_top.u_ddr_wrapper.u_ddr_0.u_ddr3_model.i_mem[3].mem_core.dqs_pos_timing_check: at time 43152700.0 ps WARNING: tWLS violation on DQS bit  0 positive edge.  Indeterminate CK capture is possible.
+now is 44-us !!
+now is 45-us !!
+now is 46-us !!
+now is 47-us !!
+now is 48-us !!
+now is 49-us !!
+now is 50-us !!
+now is 51-us !!
+now is 52-us !!
+now is 53-us !!
+now is 54-us !!
+now is 55-us !!
+now is 56-us !!
+now is 57-us !!
+now is 58-us !!
+now is 59-us !!
+now is 60-us !!
+now is 61-us !!
+now is 62-us !!
+now is 63-us !!
+now is 64-us !!
+now is 65-us !!
+now is 66-us !!
+now is 67-us !!
+now is 68-us !!
+now is 69-us !!
+now is 70-us !!
+now is 71-us !!
+now is 72-us !!
+now is 73-us !!
+now is 74-us !!
+now is 75-us !!
+now is 76-us !!
+now is 77-us !!
+now is 78-us !!
+now is 79-us !!
+now is 80-us !!
+now is 81-us !!
+now is 82-us !!
+now is 83-us !!
+now is 84-us !!
+now is 85-us !!
+now is 86-us !!
+now is 87-us !!
+now is 88-us !!
+now is 89-us !!
+now is 90-us !!
+now is 91-us !!
+now is 92-us !!
+now is 93-us !!
+now is 94-us !!
+now is 95-us !!
+now is 96-us !!
+now is 97-us !!
+now is 98-us !!
+now is 99-us !!
+now is 100-us !!
+now is 101-us !!
+now is 102-us !!
+now is 103-us !!
+now is 104-us !!
+now is 105-us !!
+now is 106-us !!
+now is 107-us !!
+now is 108-us !!
+now is 109-us !!
+now is 110-us !!
+now is 111-us !!
+now is 112-us !!
+now is 113-us !!
+now is 114-us !!
+now is 115-us !!
+now is 116-us !!
+now is 117-us !!
+now is 118-us !!
+now is 119-us !!
+now is 120-us !!
+now is 121-us !!
+now is 122-us !!
+now is 123-us !!
+now is 124-us !!
+tb_top.monitor------:124427000.0 ps dfi_init_complete is high now!
+UVM_INFO ../../env/apb_driver.sv(48) @ 124430000.0 ps: uvm_test_top.env.apb_drv [apb_driver] ddr3_ini_done
+UVM_INFO ../../env/axi_driver.sv(69) @ 124436582.0 ps: uvm_test_top.env.axi_drv2 [axi_driver] ddr3_ini_done
+UVM_INFO ../../env/axi_driver.sv(69) @ 124436582.0 ps: uvm_test_top.env.axi_drv1 [axi_driver] ddr3_ini_done
+UVM_INFO ../../env/axi_driver.sv(69) @ 124436582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] ddr3_ini_done
+UVM_INFO ../../env/axi_3ch_test.sv(28) @ 124510000.0 ps: uvm_test_top.env.apb_sqr@@seq0 [apb_3ch_sequence] No Arbitor mode  !!!
+UVM_INFO @ 124650000.0 ps: reporter [MISCMP] Miscompare for uvm_sequence_item.apb_rdata: lhs = 'h8000 : rhs = 'h1
+UVM_INFO @ 124650000.0 ps: reporter [MISCMP] 1 Miscompare(s) for object uvm_sequence_item@2293 vs. uvm_sequence_item@2297
+now is 125-us !!
+UVM_INFO ../../env/apb_scoreboard.sv(46) @ 125170000.0 ps: uvm_test_top.env.apb_scb [apb_scoreboard] Compare SUCCESSFULLY
+--------------------------------------------------
+Name               Type             Size  Value   
+--------------------------------------------------
+uvm_sequence_item  apb_transaction  -     @2411   
+  apb_addr         integral         8     'h5     
+  apb_wdata        integral         16    'h0     
+  apb_rdata        integral         16    'h1     
+  apb_enable       integral         1     'h1     
+  apb_rd_wr        apb_rd_wr_e      32    APB_READ
+--------------------------------------------------
+UVM_INFO ../../env/apb_scoreboard.sv(53) @ 125170000.0 ps: uvm_test_top.env.apb_scb [apb_scoreboard] DDR3  under mrs    state !!!!
+UVM_INFO ../../env/axi_3ch_test.sv(44) @ 125190000.0 ps: uvm_test_top.env.apb_sqr@@seq0 [apb_3ch_sequence] SR mode  !!!
+UVM_INFO @ 125330000.0 ps: reporter [MISCMP] Miscompare for uvm_sequence_item.apb_rdata: lhs = 'h8001 : rhs = 'h0
+UVM_INFO @ 125330000.0 ps: reporter [MISCMP] 1 Miscompare(s) for object uvm_sequence_item@2293 vs. uvm_sequence_item@2419
+now is 126-us !!
+now is 127-us !!
+now is 128-us !!
+now is 129-us !!
+now is 130-us !!
+now is 131-us !!
+now is 132-us !!
+now is 133-us !!
+now is 134-us !!
+UVM_INFO ../../env/apb_scoreboard.sv(46) @ 134850000.0 ps: uvm_test_top.env.apb_scb [apb_scoreboard] Compare SUCCESSFULLY
+--------------------------------------------------
+Name               Type             Size  Value   
+--------------------------------------------------
+uvm_sequence_item  apb_transaction  -     @2431   
+  apb_addr         integral         8     'h5     
+  apb_wdata        integral         16    'h0     
+  apb_rdata        integral         16    'h0     
+  apb_enable       integral         1     'h1     
+  apb_rd_wr        apb_rd_wr_e      32    APB_READ
+--------------------------------------------------
+UVM_INFO ../../env/apb_scoreboard.sv(52) @ 134850000.0 ps: uvm_test_top.env.apb_scb [apb_scoreboard] DDR3  under normal state !!!!
+UVM_INFO ../../env/axi_3ch_test.sv(67) @ 134870000.0 ps: uvm_test_top.env.apb_sqr@@seq0 [apb_3ch_sequence] send one transaction
+UVM_INFO ../../env/axi_3ch_test.sv(147) @ 134970000.0 ps: uvm_test_top [axi_3ch_test] APB CONFIG DONE !!!!!
+UVM_INFO ../../env/axi_3ch_test.sv(152) @ 134970000.0 ps: uvm_test_top [axi_3ch_test] AXI NAMODE  START !!!!!
+UVM_INFO ../../env/axi_driver.sv(88) @ 134970000.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 134970000.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+now is 135-us !!
+UVM_INFO ../../env/axi_driver.sv(134) @ 135196582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 135196582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 135496582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 135506582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 135516582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 135526582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 135536582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 135546582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 135556582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 135566582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 135576582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 135586582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 135596582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 135606582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 135616582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(88) @ 135616582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 135616582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 135626582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(134) @ 135906582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 135906582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+now is 136-us !!
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 136206582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 136216582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(88) @ 136216582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 136216582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 136226582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(134) @ 136506582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 136506582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 136826582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 136836582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 136846582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 136856582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 136866582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(88) @ 136866582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 136866582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 136876582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+now is 137-us !!
+UVM_INFO ../../env/axi_driver.sv(134) @ 137146582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 137146582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 137466582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 137476582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 137486582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 137496582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 137506582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 137516582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 137526582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 137536582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 137546582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 137556582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 137566582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 137576582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 137586582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 137596582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 137606582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(88) @ 137606582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 137606582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 137616582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(134) @ 137896582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 137896582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+now is 138-us !!
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 138216582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 138226582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(88) @ 138226582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 138226582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 138236582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(134) @ 138536582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 138536582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 138836582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 138846582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 138856582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 138866582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 138876582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 138886582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 138896582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 138906582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(88) @ 138906582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 138906582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 138916582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+now is 139-us !!
+UVM_INFO ../../env/axi_driver.sv(134) @ 139266582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 139266582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 139586582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 139596582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 139606582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 139616582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 139626582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 139636582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 139646582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 139656582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 139666582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 139676582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 139686582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(88) @ 139686582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 139686582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 139696582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(134) @ 139906582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 139906582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+now is 140-us !!
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 140206582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 140216582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 140226582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 140236582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 140246582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 140256582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 140266582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 140276582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(88) @ 140276582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 140276582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 140286582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(134) @ 140596582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 140596582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 140916582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 140926582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(88) @ 140926582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 140926582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 140936582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+now is 141-us !!
+UVM_INFO ../../env/axi_driver.sv(134) @ 141276582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 141276582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 141596582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 141606582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 141616582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 141626582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 141636582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 141646582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 141656582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 141666582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(88) @ 141666582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 141666582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 141676582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+now is 142-us !!
+now is 143-us !!
+now is 144-us !!
+UVM_INFO ../../env/axi_driver.sv(134) @ 144236582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 144236582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 144536582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 144546582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 144556582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 144566582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 144576582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 144586582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 144596582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(88) @ 144596582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 144596582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 144606582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(134) @ 144836582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 144836582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+now is 145-us !!
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 145156582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 145166582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 145176582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 145186582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 145196582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 145206582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 145216582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 145226582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 145236582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 145246582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 145256582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 145266582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 145276582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 145286582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(88) @ 145286582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 145286582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 145296582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(134) @ 145566582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 145566582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+UVM_INFO ../../env/axi_driver.sv(88) @ 145856582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 145856582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 145866582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+now is 146-us !!
+UVM_INFO ../../env/axi_driver.sv(134) @ 146116582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 146116582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+UVM_INFO ../../env/axi_driver.sv(88) @ 146406582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 146406582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 146416582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(134) @ 146676582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 146676582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 146996582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+now is 147-us !!
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 147006582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(88) @ 147006582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 147006582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 147016582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(134) @ 147236582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 147236582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 147556582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 147566582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 147576582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 147586582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 147596582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 147606582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 147616582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 147626582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(88) @ 147626582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 147626582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 147636582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(134) @ 147956582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 147956582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+now is 148-us !!
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 148276582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 148286582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 148296582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 148306582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 148316582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 148326582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 148336582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 148346582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 148356582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 148366582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 148376582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 148386582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(88) @ 148386582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 148386582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 148396582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(134) @ 148636582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 148636582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 148956582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 148966582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 148976582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 148986582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 148996582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+now is 149-us !!
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 149006582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 149016582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 149026582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 149036582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 149046582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 149056582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 149066582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(88) @ 149066582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 149066582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 149076582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(134) @ 149306582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 149306582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 149626582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 149636582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 149646582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 149656582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 149666582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 149676582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 149686582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 149696582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 149706582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 149716582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(88) @ 149716582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 149716582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 149726582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+now is 150-us !!
+UVM_INFO ../../env/axi_driver.sv(134) @ 150086582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 150086582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 150406582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 150416582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 150426582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 150436582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 150446582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 150456582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 150466582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 150476582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(88) @ 150476582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 150476582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 150486582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(134) @ 150716582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 150716582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+now is 151-us !!
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 151036582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(88) @ 151036582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 151036582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 151046582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(134) @ 151266582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 151266582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+UVM_INFO ../../env/axi_driver.sv(88) @ 151576582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 151576582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 151586582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(134) @ 151816582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 151816582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+now is 152-us !!
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 152116582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 152126582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 152136582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 152146582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(88) @ 152146582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 152146582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 152156582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(134) @ 152386582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 152386582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 152706582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 152716582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 152726582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 152736582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 152746582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 152756582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 152766582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 152776582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 152786582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 152796582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 152806582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 152816582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 152826582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(88) @ 152826582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 152826582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 152836582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+now is 153-us !!
+UVM_INFO ../../env/axi_driver.sv(134) @ 153086582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 153086582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 153406582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 153416582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 153426582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 153436582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 153446582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 153456582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 153466582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 153476582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 153486582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 153496582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 153506582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 153516582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 153526582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(88) @ 153526582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 153526582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 153536582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(134) @ 153796582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 153796582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+now is 154-us !!
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 154116582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 154126582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 154136582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 154146582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(88) @ 154146582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 154146582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 154156582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(134) @ 154376582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 154376582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 154696582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 154706582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 154716582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 154726582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 154736582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 154746582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 154756582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 154766582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 154776582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 154786582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(88) @ 154786582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 154786582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 154796582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+now is 155-us !!
+UVM_INFO ../../env/axi_driver.sv(134) @ 155096582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 155096582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 155416582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 155426582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 155436582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 155446582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(88) @ 155446582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 155446582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 155456582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(134) @ 155706582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 155706582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+now is 156-us !!
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 156026582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 156036582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 156046582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 156056582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 156066582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 156076582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 156086582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 156096582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 156106582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 156116582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(88) @ 156116582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 156116582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 156126582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(134) @ 156406582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 156406582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+UVM_INFO ../../env/axi_driver.sv(88) @ 156716582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 156716582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 156726582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(134) @ 156976582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 156976582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+now is 157-us !!
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 157296582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 157306582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 157316582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 157326582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 157336582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 157346582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 157356582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 157366582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 157376582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 157386582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 157396582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(88) @ 157396582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 157396582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 157406582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(134) @ 157696582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 157696582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+now is 158-us !!
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 158016582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 158026582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 158036582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 158046582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(88) @ 158046582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 158046582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 158056582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(134) @ 158316582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 158316582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+UVM_INFO ../../env/axi_driver.sv(88) @ 158626582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 158626582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 158636582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(134) @ 158996582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 158996582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+now is 159-us !!
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 159316582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 159326582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 159336582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 159346582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 159356582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 159366582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(88) @ 159366582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 159366582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 159376582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(134) @ 159696582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 159696582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+now is 160-us !!
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 160016582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 160026582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 160036582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(88) @ 160036582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 160036582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 160046582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(134) @ 160416582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 160416582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 160736582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 160746582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 160756582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 160766582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 160776582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 160786582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 160796582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 160806582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 160816582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 160826582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 160836582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 160846582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 160856582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(88) @ 160856582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 160856582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 160866582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+now is 161-us !!
+UVM_INFO ../../env/axi_driver.sv(134) @ 161106582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 161106582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 161426582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 161436582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 161446582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 161456582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 161466582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 161476582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 161486582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 161496582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 161506582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 161516582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 161526582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 161536582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 161546582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 161556582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 161566582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(88) @ 161566582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 161566582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 161576582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(134) @ 161876582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 161876582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+now is 162-us !!
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 162196582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 162206582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 162216582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 162226582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 162236582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 162246582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 162256582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 162266582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 162276582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 162286582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 162296582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 162306582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(88) @ 162306582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 162306582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 162316582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(134) @ 162606582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 162606582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 162926582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 162936582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 162946582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 162956582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 162966582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 162976582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 162986582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 162996582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+now is 163-us !!
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 163006582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 163016582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 163026582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 163036582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 163046582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(88) @ 163046582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 163046582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 163056582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(134) @ 163406582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 163406582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 163726582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 163736582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 163746582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 163756582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 163766582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 163776582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 163786582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(88) @ 163786582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 163786582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 163796582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+now is 164-us !!
+UVM_INFO ../../env/axi_driver.sv(134) @ 164116582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 164116582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 164436582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 164446582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 164456582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(88) @ 164456582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 164456582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 164466582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(134) @ 164736582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 164736582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+now is 165-us !!
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 165056582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 165066582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 165076582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 165086582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 165096582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 165106582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 165116582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 165126582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 165136582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 165146582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 165156582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 165166582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(88) @ 165166582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 165166582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 165176582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(134) @ 165426582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 165426582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+UVM_INFO ../../env/axi_driver.sv(88) @ 165736582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 165736582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 165746582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+now is 166-us !!
+UVM_INFO ../../env/axi_driver.sv(134) @ 166076582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 166076582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 166396582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 166406582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 166416582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 166426582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 166436582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 166446582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 166456582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(88) @ 166456582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 166456582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 166466582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(134) @ 166756582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 166756582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+now is 167-us !!
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 167076582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 167086582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 167096582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(88) @ 167096582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 167096582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 167106582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(134) @ 167416582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 167416582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 167736582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 167746582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 167756582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 167766582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 167776582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 167786582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 167796582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 167806582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 167816582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 167826582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 167836582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 167846582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 167856582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 167866582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 167876582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(88) @ 167876582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 167876582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 167886582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+now is 168-us !!
+UVM_INFO ../../env/axi_driver.sv(134) @ 168206582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 168206582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 168526582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 168536582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 168546582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 168556582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 168566582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 168576582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 168586582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 168596582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 168606582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 168616582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 168626582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 168636582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(88) @ 168636582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 168636582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 168646582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(134) @ 168896582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 168896582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+now is 169-us !!
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 169216582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 169226582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 169236582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 169246582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 169256582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 169266582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 169276582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 169286582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 169296582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 169306582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 169316582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 169326582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 169336582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 169346582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(88) @ 169346582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 169346582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 169356582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(134) @ 169646582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 169646582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 169966582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 169976582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 169986582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 169996582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+now is 170-us !!
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 170006582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 170016582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 170026582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(88) @ 170026582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 170026582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 170036582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(134) @ 170396582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 170396582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 170716582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 170726582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 170736582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(88) @ 170736582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 170736582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 170746582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+now is 171-us !!
+UVM_INFO ../../env/axi_driver.sv(134) @ 171076582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 171076582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 171396582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 171406582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 171416582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 171426582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 171436582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 171446582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 171456582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(88) @ 171456582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 171456582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 171466582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(134) @ 171706582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 171706582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+now is 172-us !!
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 172026582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 172036582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(88) @ 172036582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 172036582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 172046582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(134) @ 172416582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 172416582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 172736582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 172746582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 172756582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 172766582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 172776582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 172786582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 172796582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 172806582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 172816582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 172826582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(88) @ 172826582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 172826582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 172836582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+now is 173-us !!
+UVM_INFO ../../env/axi_driver.sv(134) @ 173116582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 173116582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 173436582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 173446582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 173456582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 173466582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 173476582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 173486582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 173496582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 173506582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 173516582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 173526582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 173536582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 173546582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 173556582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 173566582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(88) @ 173566582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 173566582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 173576582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(134) @ 173826582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 173826582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+now is 174-us !!
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 174146582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 174156582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 174166582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 174176582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 174186582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 174196582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 174206582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 174216582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 174226582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 174236582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 174246582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 174256582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 174266582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 174276582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(88) @ 174276582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 174276582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 174286582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(134) @ 174526582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 174526582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 174846582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 174856582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 174866582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 174876582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 174886582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 174896582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(88) @ 174896582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 174896582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 174906582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+now is 175-us !!
+UVM_INFO ../../env/axi_driver.sv(134) @ 175226582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 175226582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 175546582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 175556582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 175566582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 175576582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 175586582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 175596582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 175606582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 175616582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(88) @ 175616582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 175616582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 175626582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(134) @ 175966582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 175966582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+now is 176-us !!
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 176286582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 176296582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 176306582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 176316582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 176326582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 176336582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 176346582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 176356582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 176366582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 176376582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 176386582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 176396582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(88) @ 176396582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 176396582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 176406582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(134) @ 176626582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 176626582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 176946582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 176956582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 176966582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 176976582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 176986582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 176996582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+now is 177-us !!
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 177006582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 177016582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 177026582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 177036582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 177046582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(88) @ 177046582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 177046582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 177056582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(134) @ 177396582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 177396582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 177716582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 177726582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 177736582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 177746582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 177756582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 177766582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 177776582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 177786582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 177796582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(88) @ 177796582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 177796582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 177806582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+now is 178-us !!
+UVM_INFO ../../env/axi_driver.sv(134) @ 178096582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 178096582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 178416582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 178426582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 178436582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 178446582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 178456582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 178466582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 178476582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 178486582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 178496582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 178506582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 178516582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 178526582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 178536582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(88) @ 178536582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 178536582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 178546582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(134) @ 178886582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 178886582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+now is 179-us !!
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 179206582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 179216582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 179226582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 179236582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(88) @ 179236582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 179236582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 179246582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(134) @ 179536582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 179536582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 179856582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 179866582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 179876582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 179886582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 179896582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 179906582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 179916582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 179926582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 179936582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 179946582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 179956582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 179966582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 179976582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 179986582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(88) @ 179986582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 179986582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 179996582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+now is 180-us !!
+UVM_INFO ../../env/axi_driver.sv(134) @ 180286582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 180286582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 180606582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 180616582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 180626582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 180636582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 180646582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 180656582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(88) @ 180656582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(89) @ 180656582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to WAXI_ONE
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 180666582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_driver.sv(134) @ 180976582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] Transaction From AXI Master Driver..
+UVM_INFO ../../env/axi_driver.sv(135) @ 180976582.0 ps: uvm_test_top.env.axi_drv0 [axi_driver] begin to RAXI_ONE
+now is 181-us !!
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 181296582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 181306582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 181316582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 181326582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 181336582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 181346582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 181356582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 181366582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 181376582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 181386582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_3ch_test.sv(107) @ 181386582.0 ps: uvm_test_top.env.axi_sqr0@@seq1 [axi_3ch_sequence] send one transaction
+UVM_INFO ../../env/axi_scoreboard.sv(90) @ 181396582.0 ps: uvm_test_top.env.axi_scb0 [axi_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../../env/axi_3ch_test.sv(156) @ 181486582.0 ps: uvm_test_top [axi_3ch_test] AXI NAMODE  DONE !!!!!
+TEST CASE PASSED
+
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :  861
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[MISCMP]     4
+[RNTST]     1
+[apb_3ch_sequence]     3
+[apb_driver]     2
+[apb_scoreboard]     4
+[axi_3ch_sequence]     1
+[axi_3ch_test]     3
+[axi_driver]   272
+[axi_scoreboard]   571
+$finish called from file "/usr/synopsys/L-2016.06/etc/uvm/base/uvm_root.svh", line 439.
+$finish at simulation time 181486582.0 ps
+
+---------------------------------------------------------------------------
+VCS Coverage Metrics: during simulation line, cond, FSM, branch, tgl was monitored
+---------------------------------------------------------------------------
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 181486582027 fs
+CPU Time:   2018.930 seconds;       Data structure size:  14.9Mb
+Tue Apr 20 18:28:22 2021
