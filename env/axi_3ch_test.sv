@@ -162,9 +162,12 @@ task axi_3ch_test::main_phase(uvm_phase phase);
    //uvm_config_db#(int)::set(null,seq1.get_full_name(),"id",0);
    //uvm_config_db#(int)::set(null,seq2.get_full_name(),"id",1);
    //uvm_config_db#(int)::set(null,seq3.get_full_name(),"id",2);
-   uvm_config_db#(int)::set(null,"uvm_test_top.env.axi_sqr0.*","id",0);
-   uvm_config_db#(int)::set(null,"uvm_test_top.env.axi_sqr1.*","id",1);
-   uvm_config_db#(int)::set(null,"uvm_test_top.env.axi_sqr2.*","id",2);
+   //uvm_config_db#(int)::set(null,"uvm_test_top.env.axi_sqr0.*","id",0);
+   //uvm_config_db#(int)::set(null,"uvm_test_top.env.axi_sqr1.*","id",1);
+   //uvm_config_db#(int)::set(null,"uvm_test_top.env.axi_sqr2.*","id",2);
+   uvm_config_db#(int)::set(null,"uvm_test_top.env.axi_sqr0.seq1","id",0);
+   uvm_config_db#(int)::set(null,"uvm_test_top.env.axi_sqr1.seq2","id",1);
+   uvm_config_db#(int)::set(null,"uvm_test_top.env.axi_sqr2.seq3","id",2);
 
    seq0.start(env.apb_sqr, null, 100);
 
