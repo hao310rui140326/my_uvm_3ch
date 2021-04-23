@@ -2,11 +2,19 @@
 `define AXI_3CH__SV
 class apb_3ch_sequence extends uvm_sequence #(apb_transaction);
    apb_transaction m_trans;
-
+   int id ;
    function  new(string name= "apb_3ch_sequence");
       super.new(name);
    endfunction 
-   
+    
+   virtual task pre_body();
+//     if (uvm_config_db#(int)::get(null,get_full_name(),"id",id))
+//		`uvm_info("apb_3ch_sequence", $sformatf("get id value %0d via config_db",id), UVM_LOW);
+//     else 
+//		`uvm_error("apb_3ch_sequence", "can't get id value !!!");
+     $display("get_full_name() = %s",get_full_name());
+   endtask
+
    virtual task body();
       //if(starting_phase != null) 
       //   starting_phase.raise_objection(this);
@@ -75,14 +83,24 @@ endclass
 
 class axi_3ch_sequence extends uvm_sequence #(axi_transaction);
    axi_transaction m_trans;
+   int id ;
 
    function  new(string name= "axi_3ch_sequence");
       super.new(name);
    endfunction 
    
+   virtual task pre_body();
+     if (uvm_config_db#(int)::get(null,get_full_name(),"id",id))
+		`uvm_info("axi_3ch_sequence", $sformatf("get id value %0d via config_db",id), UVM_LOW)
+     else 
+		`uvm_error("axi_3ch_sequence", "can't get id value !!!")
+     $display("get_full_name() = %s",get_full_name());
+   endtask
+
    virtual task body();
       //if(starting_phase != null) 
       //   starting_phase.raise_objection(this);
+      `uvm_info("axi_3ch_sequence", $sformatf("get id value %0d via config_db",id), UVM_LOW)      
       repeat (1) begin
          //`uvm_do_with(m_trans, {m_trans.pload.size < 500;})
 	        `ifdef SEQ
@@ -141,6 +159,9 @@ task axi_3ch_test::main_phase(uvm_phase phase);
    seq3 = new("seq3");
    //seq3.starting_phase = phase;
 
+   uvm_config_db#(int)::set(null,seq1.get_full_name(),"id",0);
+   uvm_config_db#(int)::set(null,seq2.get_full_name(),"id",1);
+   uvm_config_db#(int)::set(null,seq3.get_full_name(),"id",2);
 
    seq0.start(env.apb_sqr, null, 100);
 
