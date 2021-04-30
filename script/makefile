@@ -35,7 +35,8 @@ verdi_simv:
 verdi_f:
 	verdi -sv  -f ../tb.vc  -top tb_top &
 
-
+dve:
+	dve -full64 -vpd vcdplus.vpd &
 
 clean:
 	rm -rf *simv*  *csrc   *~ verdiLog  novas*  ucli.key  *.vpd  *.fsdb  vc_hdrs.h  *.log *case*   my_verdi   cov_report  DVEfiles 
@@ -55,4 +56,6 @@ gen_v:
 	perl my_cat.pl lib.vc  lib.sv v
 	cat  ../../../example_design/bench/mem/ddr3.sv   >> all.sv
 	##vcs -full64 +sv  -protect128 all.sv
+
+
 
