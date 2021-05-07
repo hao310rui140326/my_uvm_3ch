@@ -259,26 +259,32 @@ task axi_driver::drive_wraxi_all(axi_transaction tr);
 	    		     end
 	    		 end
 	    		 else begin
-	    		    	rflag  <= 1'd0 ;
-	    		    	rwcnt  <=  'd0  ;
+	    		    	//rflag  <= 1'd0 ;
+	    		    	//rwcnt  <=  'd0  ;
 	    		 end
 	    		 if ( (rwcnt==1023) &&(rinfo_fifo.size>1)) begin
 	    		    vaxi.arvalid    <= 1'b1;     
 	    		    vaxi.araddr     <= raxi_info.waddr;
 	    		    vaxi.arlen      <= raxi_info.wlen ;	
 	    		 end
-	    		 else if (vaxi.arready && vaxi.arvalid&& (rflag || (~rflag  && (rwcnt=='d1024) && (rinfo_fifo.size>0))  ) ) begin
+	    		 //else if (vaxi.arready && vaxi.arvalid&& (rflag || (~rflag  && (rwcnt=='d1024) && (rinfo_fifo.size>0))  ) ) begin
+	    		 else if (vaxi.arready && vaxi.arvalid&& (rflag && (rinfo_fifo.size>0))  ) begin
    	    		    raxi_info = rinfo_fifo.pop_front() ;
 	    		    vaxi.arvalid    <= 1'b1;     
 	    		    vaxi.araddr     <= raxi_info.waddr;
 	    		    vaxi.arlen      <= raxi_info.wlen ;		
 	    		 end
-	    		 else if (vaxi.arready && vaxi.arvalid&&~rflag  && (rwcnt>'d1024) )  begin 
+	    		 //else if (vaxi.arready && vaxi.arvalid&&~rflag  && (rwcnt>'d1024) )  begin 
+	    		 //   vaxi.arvalid    <= 1'b0;     
+	    		 //end
+			 //else if (vaxi.arready && vaxi.arvalid&&~rflag  && (rwcnt=='d1024) && (rinfo_fifo.size==0)  )  begin 
+	    		 //   vaxi.arvalid    <= 1'b0;     
+	    		 //end
+			 else if (vaxi.arready && vaxi.arvalid&& rflag && (rinfo_fifo.size==0)  )  begin 
 	    		    vaxi.arvalid    <= 1'b0;     
 	    		 end
-			 else if (vaxi.arready && vaxi.arvalid&&~rflag  && (rwcnt=='d1024) && (rinfo_fifo.size==0)  )  begin 
-	    		    vaxi.arvalid    <= 1'b0;     
-	    		 end
+
+
 	    		 //axi rdata
             		 if (vaxi.rvalid) begin
 	    		    vmem.re     <= 'd1 ;
