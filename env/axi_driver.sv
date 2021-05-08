@@ -22,6 +22,7 @@ class axi_driver extends uvm_driver#(axi_transaction);
    reg  [255:0]   tdata ;   
    reg  [ 15:0]   waddr_cnt ;   
    reg  [ 31:0]   wdata_cnt ;   
+   reg  [ 31:0]   wdata_acnt ;   
    reg  [ 15:0]   raddr_cnt ;   
    reg  [ 31:0]   rdata_cnt ;
    t_winfo        winfo_fifo[$]  ;   
@@ -31,6 +32,8 @@ class axi_driver extends uvm_driver#(axi_transaction);
    t_winfo        wmem_info          ;   
    t_winfo        raxi_info          ;   
    t_winfo        rmem_info          ;   
+
+   string data_msg;
 
    reg                  rflag              ;   
    reg  [15:0]          rwcnt              ;   
@@ -187,6 +190,7 @@ task axi_driver::drive_wraxi_all(axi_transaction tr);
    wdata_cnt  <= 'd0 ;   
    raddr_cnt  <= 'd0 ;   
    rdata_cnt  <= 'd0 ;   
+   wdata_acnt  <= 'd0 ;   
 
  @(posedge vaxi.aclk);
    vaxi.awvalid    <= 1'b1;     
@@ -223,9 +227,13 @@ task axi_driver::drive_wraxi_all(axi_transaction tr);
 	    		 //////////////////////////////////////////////
   	    		 //axi waddr	     
 	    		 if(vaxi.awready && vaxi.awvalid) begin
+				 wdata_acnt <= wdata_acnt + vaxi.awlen + 1 ;
 	    		         if (waddr_cnt>=tr.axi_sim_cnt)  begin 
 	    		    		vaxi.awvalid    <= 1'b0     ;
-				        $display("axi driver  %d  tx  done !!!",tr.axi_sim_cnt);	
+				        //$display("%m,%t,axi driver  waddr:%d   wdata_acnt:%d  tx  done !!!", $time ,(waddr_cnt+1),  (wdata_acnt + vaxi.awlen + 1)   );	
+                                        $sformat(data_msg, " waddr:%d   wdata_acnt:%d  tx  done !!!",  (waddr_cnt+1),  (wdata_acnt + vaxi.awlen + 1)  );
+   					`uvm_info("axi_driver", data_msg , UVM_LOW);
+										
 	    		         end
 	    		         else begin
 	    		    		vaxi.awvalid    <= 1'b1;
@@ -237,8 +245,8 @@ task axi_driver::drive_wraxi_all(axi_transaction tr);
 					else begin 
 	    		    			vaxi.awaddr     <= vaxi.awaddr + 8*16 ;	
 					end
-	    		                waddr_cnt       <= waddr_cnt   +  'd1 ;			
 	    		         end
+	    		         waddr_cnt       <= waddr_cnt   +  'd1 ;			
 				 if (|waddr_cnt)   begin
 	    		    		winfo.waddr   =  vaxi.awaddr   ;
    	    		    		winfo.wlen    =  vaxi.awlen    ;
@@ -262,37 +270,77 @@ task axi_driver::drive_wraxi_all(axi_transaction tr);
 	    		    	//rflag  <= 1'd0 ;
 	    		    	//rwcnt  <=  'd0  ;
 	    		 end
-	    		 if ( (rwcnt==1023) &&(rinfo_fifo.size>1)) begin
+	    		 //if ( (rwcnt==1023) &&(rinfo_fifo.size>1)) begin
+	    		 //   vaxi.arvalid    <= 1'b1;     
+	    		 //   vaxi.araddr     <= raxi_info.waddr;
+	    		 //   vaxi.arlen      <= raxi_info.wlen ;	
+	    		 //end
+	    		 //else if (vaxi.arready && vaxi.arvalid&& ( (rflag&&(rinfo_fifo.size>0))   || (~rflag  && (rwcnt=='d1024) && (rinfo_fifo.size>1))  ) ) begin
+	    		 ////else if (vaxi.arready && vaxi.arvalid&& (rflag && (rinfo_fifo.size>0))  ) begin
+   	    		 //   raxi_info = rinfo_fifo.pop_front() ;
+	    		 //   vaxi.arvalid    <= 1'b1;     
+	    		 //   vaxi.araddr     <= raxi_info.waddr;
+	    		 //   vaxi.arlen      <= raxi_info.wlen ;		
+	    		 //end
+	    		 ////else if (vaxi.arready && vaxi.arvalid&&~rflag  && (rwcnt>'d1024) )  begin 
+	    		 ////   vaxi.arvalid    <= 1'b0;     
+	    		 ////end
+			 ////else if (vaxi.arready && vaxi.arvalid&&~rflag  && (rwcnt=='d1024) && (rinfo_fifo.size==0)  )  begin 
+	    		 ////   vaxi.arvalid    <= 1'b0;     
+	    		 ////end
+			 //else if (vaxi.arready && vaxi.arvalid&& rflag && (rinfo_fifo.size==0)  )  begin 
+	    		 //   vaxi.arvalid    <= 1'b0;     
+	    		 //end
+
+			 if ( (rwcnt==1024) &&(rinfo_fifo.size>1)) begin
 	    		    vaxi.arvalid    <= 1'b1;     
 	    		    vaxi.araddr     <= raxi_info.waddr;
 	    		    vaxi.arlen      <= raxi_info.wlen ;	
 	    		 end
-	    		 else if (vaxi.arready && vaxi.arvalid&& ( (rflag&&(rinfo_fifo.size>0))   || (~rflag  && (rwcnt=='d1024) && (rinfo_fifo.size>1))  ) ) begin
-	    		 //else if (vaxi.arready && vaxi.arvalid&& (rflag && (rinfo_fifo.size>0))  ) begin
-   	    		    raxi_info = rinfo_fifo.pop_front() ;
-	    		    vaxi.arvalid    <= 1'b1;     
-	    		    vaxi.araddr     <= raxi_info.waddr;
-	    		    vaxi.arlen      <= raxi_info.wlen ;		
+	    		 else if (vaxi.arready && vaxi.arvalid  ) begin
+			    if (raddr_cnt>=tr.axi_sim_cnt)  begin
+	    		    		vaxi.arvalid    <= 1'b0;     				        
+				        //$display("%m,%t,axi driver raddr:%d  waddr:%d rx  done !!!", $time ,(raddr_cnt+1) ,waddr_cnt );	
+					$sformat(data_msg, " raddr:%d  waddr:%d rx  done !!!",  (raddr_cnt+1) ,waddr_cnt  );
+   					`uvm_info("axi_driver", data_msg , UVM_LOW);
+			    end
+			    else begin
+				    if (rinfo_fifo.size==0) begin
+					//$display("%m,%t,axi driver raddr:%d  waddr:%d  rinfo_fifo  error !!!", $time ,(raddr_cnt+1) ,waddr_cnt );
+					$sformat(data_msg, " raddr:%d  waddr:%d  rinfo_fifo  error !!!", (raddr_cnt+1) ,waddr_cnt   );
+   					`uvm_info("axi_driver", data_msg , UVM_LOW);	
+				    end
+   	    		    	raxi_info = rinfo_fifo.pop_front() ;
+	    		    	vaxi.arvalid    <= 1'b1;     
+	    		    	vaxi.araddr     <= raxi_info.waddr;
+	    		    	vaxi.arlen      <= raxi_info.wlen ;	
+	    		    	raddr_cnt       <= raddr_cnt   +  'd1 ;					    	    	    
+		    	    end
 	    		 end
-	    		 //else if (vaxi.arready && vaxi.arvalid&&~rflag  && (rwcnt>'d1024) )  begin 
-	    		 //   vaxi.arvalid    <= 1'b0;     
-	    		 //end
-			 //else if (vaxi.arready && vaxi.arvalid&&~rflag  && (rwcnt=='d1024) && (rinfo_fifo.size==0)  )  begin 
-	    		 //   vaxi.arvalid    <= 1'b0;     
-	    		 //end
-			 else if (vaxi.arready && vaxi.arvalid&& rflag && (rinfo_fifo.size==0)  )  begin 
-	    		    vaxi.arvalid    <= 1'b0;     
-	    		 end
-
 
 	    		 //axi rdata
             		 if (vaxi.rvalid) begin
 	    		    vmem.re     <= 'd1 ;
 	    		    vmem.raddr  <=  raddr[31:3] ;
 	    		    raddr       <=  raddr + 'd8;
+			    rdata_cnt   <= rdata_cnt + 1'd1 ;			    
 	    		    if(vaxi.rlast)    begin
-	    		    	if (rmem_fifo.size<=1) begin
-					$display("axi driver  read done !!!");	
+	    		    	//if (rmem_fifo.size<=1) begin
+				//	$display("axi driver  read done !!!");	
+	    		    	//	break;
+	    		    	//end
+				if (rmem_fifo.size<1) begin
+					if ( (wdata_cnt==wdata_acnt) &&  ((rdata_cnt+1)==wdata_acnt)  ) begin
+						//$display("%m,%t,axi driver  rdata :%d   wdata:%d  all_data:%d done !!!",$time,(rdata_cnt+1) , wdata_cnt ,  wdata_acnt );
+						$sformat(data_msg, " rdata :%d   wdata:%d  all_data:%d done !!!", (rdata_cnt+1) , wdata_cnt ,  wdata_acnt    );
+   						`uvm_info("axi_driver", data_msg , UVM_LOW);	
+					end
+					else  begin
+						//$display("%m,%t,CASE FAILED axi driver  rdata :%d   wdata:%d  all_data:%d done !!!",$time,(rdata_cnt+1) , wdata_cnt ,  wdata_acnt );
+						$sformat(data_msg, "CASE FAILED  rdata :%d   wdata:%d  all_data:%d done !!!", (rdata_cnt+1) , wdata_cnt ,  wdata_acnt    );
+   						//`uvm_error("axi_driver", data_msg , UVM_LOW);	
+   						`uvm_fatal("axi_driver", data_msg );	
+					end
 	    		    		break;
 	    		    	end
 	    		    	else begin	
@@ -318,6 +366,7 @@ task axi_driver::drive_wraxi_all(axi_transaction tr);
 	    		    else begin
 	    		    	taddr       <=  taddr + 'd8;			
 	    		    end
+			    wdata_cnt <= wdata_cnt + 1'd1 ;
 	    		 end
      	    		 else begin
 	    		    vmem.we     <= 'd0 ;
@@ -345,11 +394,13 @@ task axi_driver::drive_wraxi_all(axi_transaction tr);
 		    	`endif
             		 end
 	   end
-          @(posedge vaxi.aclk);
-		vmem.we     <= 'd0 ;
-		vmem.re     <= 'd0 ;
+	   repeat (128) begin
+              @(posedge vaxi.aclk);
+		  vmem.we     <= 'd0 ;
+		  vmem.re     <= 'd0 ;
+	   end
 
-   `uvm_info("axi_driver", "end_WRAXI_SEQ_ALL ", UVM_HIGH);
+   `uvm_info("axi_driver", "end_WRAXI_SEQ_ALL ", UVM_LOW);
 endtask
 
 
