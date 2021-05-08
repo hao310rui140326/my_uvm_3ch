@@ -40,6 +40,7 @@ VCS_OPTS +=  -debug_all
 ##VCS_OPTS += -debug_access+pp
 
 
+ERR_OPTS += UVM_MAX_QUIT_COUNT=10,NO
 COV_OPTS +=  -cm line+cond+fsm+tgl+branch+assert -cm_dir ./cov_info 
 CASE_OPTS += +UVM_TESTNAME=${CASE} +UVM_VERBOSITY=${UVM_INFO} 
 
@@ -47,7 +48,7 @@ COMPILE_TIME = $(shell date +"%Y-%m-%d-%H-%M-%S")
 
 
 default:
-	rm -rf $(CASE) ; mkdir case_$(MODE)_$(TMODE)_$(AMODE)_$(CASE)_$(COMPILE_TIME); cd case_$(MODE)_$(TMODE)_$(AMODE)_$(CASE)_$(COMPILE_TIME);echo "\`define  $(DUMP)       "  >    define.v ; echo "\`define  $(LONG)       "  >>   define.v ;echo "\`define  $(UVM_INFO)       "  >>   define.v ;echo "\`define  $(FORCE)       "  >>   define.v ;echo "\`define  $(MODE)       "  >>   define.v ;echo "\`define  $(TMODE)       "  >>   define.v ;echo "\`define  $(AMODE)       "  >>   define.v ;echo "\`define  AXI_LEN  $(AXI_LEN)       "  >>   define.v ;echo "\`define  AXI_ADDR  $(AXI_ADDR)       "  >>   define.v ;echo "\`define  SIM_LEN  $(SIM_LEN)       "  >>   define.v ; echo "\`define  SEQ1_DELAY  $(SEQ1_DELAY)       "  >>   define.v ;echo "\`define  SEQ2_DELAY  $(SEQ2_DELAY)       "  >>   define.v ; echo "\`define  SEQ3_DELAY  $(SEQ3_DELAY)       "  >>   define.v ;cp  ../makefile  ../../env/ddr3_parameters.vh  ../../env/vip/tvip_axi_defines.svh  ../../env/reg_define.v        ./  ; vcs  $(VCS_OPTS)   -f ../tb.vc -top  tb_top  $(COV_OPTS)   $(UVM_OPTS)    -l vcs_com.log ; ./simv   +model_data+"./"      $(CASE_OPTS)    $(COV_OPTS)       -l vcs_sim_$(MODE)_$(TMODE)_$(AMODE)_${CASE}.log $(GUI_OPTS)   $(UVM_OPTS)
+	rm -rf $(CASE) ; mkdir case_$(MODE)_$(TMODE)_$(AMODE)_$(CASE)_$(COMPILE_TIME); cd case_$(MODE)_$(TMODE)_$(AMODE)_$(CASE)_$(COMPILE_TIME);echo "\`define  $(DUMP)       "  >    define.v ; echo "\`define  $(LONG)       "  >>   define.v ;echo "\`define  $(UVM_INFO)       "  >>   define.v ;echo "\`define  $(FORCE)       "  >>   define.v ;echo "\`define  $(MODE)       "  >>   define.v ;echo "\`define  $(TMODE)       "  >>   define.v ;echo "\`define  $(AMODE)       "  >>   define.v ;echo "\`define  AXI_LEN  $(AXI_LEN)       "  >>   define.v ;echo "\`define  AXI_ADDR  $(AXI_ADDR)       "  >>   define.v ;echo "\`define  SIM_LEN  $(SIM_LEN)       "  >>   define.v ; echo "\`define  SEQ1_DELAY  $(SEQ1_DELAY)       "  >>   define.v ;echo "\`define  SEQ2_DELAY  $(SEQ2_DELAY)       "  >>   define.v ; echo "\`define  SEQ3_DELAY  $(SEQ3_DELAY)       "  >>   define.v ;cp  ../makefile  ../../env/ddr3_parameters.vh  ../../env/vip/tvip_axi_defines.svh  ../../env/reg_define.v        ./  ; vcs  $(VCS_OPTS)   -f ../tb.vc -top  tb_top  $(COV_OPTS)   $(UVM_OPTS)    -l vcs_com.log ; ./simv   +model_data+"./"      $(CASE_OPTS)    $(COV_OPTS)  $(ERR_OPTS)     -l vcs_sim_$(MODE)_$(TMODE)_$(AMODE)_${CASE}.log      $(GUI_OPTS)   $(UVM_OPTS)
 
 verdi:
 	rm -rf  my_verdi  ; mkdir my_verdi; cd my_verdi;  cp ../define.v   ../../env/ddr3_parameters.vh  ../../env/vip/tvip_axi_defines.svh  ../../env/reg_define.v     ./;  verdi -sv  -f ../tb.vc  -top tb_top &
