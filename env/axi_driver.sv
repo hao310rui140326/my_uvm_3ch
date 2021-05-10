@@ -230,7 +230,6 @@ task axi_driver::drive_wraxi_all(axi_transaction tr);
 				 wdata_acnt <= wdata_acnt + vaxi.awlen + 1 ;
 	    		         if (waddr_cnt>=tr.axi_sim_cnt)  begin 
 	    		    		vaxi.awvalid    <= 1'b0     ;
-				        //$display("%m,%t,axi driver  waddr:%d   wdata_acnt:%d  tx  done !!!", $time ,(waddr_cnt+1),  (wdata_acnt + vaxi.awlen + 1)   );	
                                         $sformat(data_msg, " waddr:%d   wdata_acnt:%d  tx  done !!!",  (waddr_cnt+1),  (wdata_acnt + vaxi.awlen + 1)  );
    					`uvm_info("axi_driver", data_msg , UVM_LOW);
 										
@@ -300,13 +299,11 @@ task axi_driver::drive_wraxi_all(axi_transaction tr);
 	    		 else if (vaxi.arready && vaxi.arvalid  ) begin
 			    if (raddr_cnt>=tr.axi_sim_cnt)  begin
 	    		    		vaxi.arvalid    <= 1'b0;     				        
-				        //$display("%m,%t,axi driver raddr:%d  waddr:%d rx  done !!!", $time ,(raddr_cnt+1) ,waddr_cnt );	
 					$sformat(data_msg, " raddr:%d  waddr:%d rx  done !!!",  (raddr_cnt+1) ,waddr_cnt  );
    					`uvm_info("axi_driver", data_msg , UVM_LOW);
 			    end
 			    else begin
 				    if (rinfo_fifo.size==0) begin
-					//$display("%m,%t,axi driver raddr:%d  waddr:%d  rinfo_fifo  error !!!", $time ,(raddr_cnt+1) ,waddr_cnt );
 					$sformat(data_msg, " raddr:%d  waddr:%d  rinfo_fifo  error !!!", (raddr_cnt+1) ,waddr_cnt   );
    					`uvm_info("axi_driver", data_msg , UVM_LOW);	
 				    end
@@ -331,12 +328,10 @@ task axi_driver::drive_wraxi_all(axi_transaction tr);
 	    		    	//end
 				if (rmem_fifo.size<1) begin
 					if ( (wdata_cnt==wdata_acnt) &&  ((rdata_cnt+1)==wdata_acnt)  ) begin
-						//$display("%m,%t,axi driver  rdata :%d   wdata:%d  all_data:%d done !!!",$time,(rdata_cnt+1) , wdata_cnt ,  wdata_acnt );
 						$sformat(data_msg, " rdata :%d   wdata:%d  all_data:%d done !!!", (rdata_cnt+1) , wdata_cnt ,  wdata_acnt    );
    						`uvm_info("axi_driver", data_msg , UVM_LOW);	
 					end
 					else  begin
-						//$display("%m,%t,CASE FAILED axi driver  rdata :%d   wdata:%d  all_data:%d done !!!",$time,(rdata_cnt+1) , wdata_cnt ,  wdata_acnt );
 						$sformat(data_msg, "CASE FAILED  rdata :%d   wdata:%d  all_data:%d done !!!", (rdata_cnt+1) , wdata_cnt ,  wdata_acnt    );
    						//`uvm_error("axi_driver", data_msg , UVM_LOW);	
    						`uvm_fatal("axi_driver", data_msg );	
