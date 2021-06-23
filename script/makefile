@@ -67,8 +67,8 @@ clean:
 	
 
 cov:
-	urg   -full64  -dir     ./*case*/cov_info.vdb    -metric line+cond+fsm+tgl+branch+assert -report   ./cov_report   -format both
-	/home/software/firefox/firefox  ./cov_report/hierarchy.html  &
+	urg   -full64  -dir     ./*case*/cov_info.vdb    -report   ./cov_report   -format both
+	firefox  ./cov_report/hierarchy.html  &
 
 grep:
 	grep "CASE"  ./*case*/vcs*.log
