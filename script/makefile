@@ -32,16 +32,16 @@ VCS_OPTS +=  -timescale=1ns/1ps
 VCS_OPTS +=  -P  $(verdi_path)/share/PLI/VCS/LINUX64/novas.tab   $(verdi_path)/share/PLI/VCS/LINUX64/pli.a 
 VCS_OPTS +=  +vcs+lic+wait
 
-##VCS_OPTS +=  -sverilog +verilog2001ext+.v  +lint=TFIPC-L  -ntb_opts uvm
-VCS_OPTS +=  -sverilog ../../uvm-1.1d/src/dpi/uvm_dpi.cc  -CFLAGS -DVCS  +verilog2001ext+.v  +lint=TFIPC-L  
+VCS_OPTS +=  -sverilog +verilog2001ext+.v  +lint=TFIPC-L  -ntb_opts uvm
+##VCS_OPTS +=  -sverilog ../../uvm-1.1d/src/dpi/uvm_dpi.cc  -CFLAGS -DVCS  +verilog2001ext+.v  +lint=TFIPC-L  
 
 VCS_OPTS +=  +define+UVM_NO_DEPRECATED+UVM_OBJECT_MUST_HAVE_CONSTRUCTO  
-VCS_OPTS +=  -debug_all 
+VCS_OPTS +=  -debug_all -cm_tgl mda  
 ##VCS_OPTS += -debug_access+pp
 
 
 ERR_OPTS += UVM_MAX_QUIT_COUNT=10,NO
-COV_OPTS +=  -cm line+cond+fsm+tgl+branch+assert -cm_dir ./cov_info 
+COV_OPTS +=  -cm line+cond+fsm+tgl+branch+assert -cm_dir ./cov_info  -cm_hier  test.cfg 
 CASE_OPTS += +UVM_TESTNAME=${CASE} +UVM_VERBOSITY=${UVM_INFO} 
 
 COMPILE_TIME = $(shell date +"%Y-%m-%d-%H-%M-%S")

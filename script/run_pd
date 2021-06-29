@@ -1,7 +1,0 @@
-beginTime=`date +%y-%m-%d-%H:%M:%S`
-./run3ch  DUMP PD
-make  grep
-make  cov
-endTime=`date +%y-%m-%d-%H:%M:%S`
-echo "beginTime:" $beginTime "Min"
-echo "endTime:" $endTime "Min"
